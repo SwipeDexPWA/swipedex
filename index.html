@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.9/dist/cjs/handlebars.min.js"></script>
-    </head>
-    <body>
-        <div id="output"></div>
+<head>
+  <meta charset="UTF-8">
 
-<!-- Handlebars Template -->
+  <!-- Load Handlebars -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+
+<div id="output"></div>
+
+<!-- TEMPLATE -->
 <script id="template" type="text/x-handlebars-template">
   <p>{{firstname}} {{lastname}}</p>
   <p>{{loud firstname}}</p>
 </script>
 
 <script>
-  // Register Helper
-  Handlebars.registerHelper('loud', function(string) {
-    return string.toUpperCase();
+
+  // HELPER
+  Handlebars.registerHelper('loud', function(str) {
+    return str.toUpperCase();
   });
 
-  // Your data
+  // DATA
   const data = {
     firstname: "Yehuda",
     lastname: "Katz"
   };
 
-  // Get template
+  // GET TEMPLATE HTML
   const source = document.getElementById('template').innerHTML;
 
-  // Compile template
+  // COMPILE
   const template = Handlebars.compile(source);
 
-  // Generate HTML
-  const html = template(data);
+  // RENDER
+  const result = template(data);
 
-  // Display
-  document.getElementById('output').innerHTML = html;
+  // OUTPUT
+  document.getElementById('output').innerHTML = result;
+
 </script>
-    </body>
+
+</body>
 </html>
