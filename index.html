@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{doesWhat}}</title>
+        <title></title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.9/dist/cjs/handlebars.min.js"></script>
-<script>
-  var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
-  console.log(template({ doesWhat: "rocks!" }));
-</script>
     </head>
     <body>
+        <div id="output"></div>
+
+<!-- Handlebars Template -->
+<script id="template" type="text/x-handlebars-template">
+  <p>{{firstname}} {{lastname}}</p>
+  <p>{{loud firstname}}</p>
+</script>
+
+<script>
+  // Register Helper
+  Handlebars.registerHelper('loud', function(string) {
+    return string.toUpperCase();
+  });
+
+  // Your data
+  const data = {
+    firstname: "Yehuda",
+    lastname: "Katz"
+  };
+
+  // Get template
+  const source = document.getElementById('template').innerHTML;
+
+  // Compile template
+  const template = Handlebars.compile(source);
+
+  // Generate HTML
+  const html = template(data);
+
+  // Display
+  document.getElementById('output').innerHTML = html;
+</script>
     </body>
 </html>
