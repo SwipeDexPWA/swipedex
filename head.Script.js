@@ -23,4 +23,5 @@ document.write(`
 </head>
 
 <body>
+<div class="loader-body" id="loader"><div class="loader"></div></div>
 `);
