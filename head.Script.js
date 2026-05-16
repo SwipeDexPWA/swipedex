@@ -4,9 +4,63 @@ document.write(`
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{firstname}} {{middlename}} {{lastname}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-status-bar" content="{{pwacolor}}">
+  <meta name="theme-color" content="{{pwacolor}}">
+
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png" />
+
+  <title>{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠</title>
   <meta name="description" content="{{companyname}} - {{companydescription}}">
+  <meta name="keywords" content="{{firstname}}, {{middlename}}, {{lastname}}, {{companyposition}}, {{companyname}}">
+  <meta name="author" content="[SD] SwipeDex℠ by {{firstname}} {{middleinitial}} {{lastname}}">
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
+  <meta property="og:description" content="{{companyname}} - {{companydescription}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{sharepwa}}" />
+  <meta property="og:image" content="{{sharepwa}}/thumbnail.png">
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
+  <meta name="twitter:description" content="{{companyname}} - {{companydescription}}" />
+  <meta name="twitter:image" content="{{sharepwa}}/thumbnail.png" />
+
+  <link rel="canonical" href="{{sharepwa}}">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
+  <link rel="apple-touch-icon" href="{{sharepwa}}/icon-192x192.png" />
+
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <meta name="msapplication-TileColor" content="{{pwacolor}}" />
+  <meta name="msapplication-TileImage" content="icon-192x192.png" />
+
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠",
+    "url": "{{sharepwa}}",
+    "description": "{{companyname}} - {{companydescription}}",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "image": "{{sharepwa}}/thumbnail.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠",
+      "url": "{{sharepwa}}"
+        }
+    }
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.16/dist/css/uikit.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.16/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.16/dist/js/uikit-icons.min.js"></script>
@@ -20,6 +74,7 @@ document.write(`
   <link rel="stylesheet" href="../pwa.Loader.css">
   <link href="../google.Font.css" rel="stylesheet">
   <link href="../page.Style.css" rel="stylesheet">
+
 </head>
 
 <body>
