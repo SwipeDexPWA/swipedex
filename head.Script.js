@@ -23,20 +23,20 @@ document.write(`
   <meta property="og:description" content="{{companyname}} - {{companydescription}}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{sharepwa}}" />
-  <meta property="og:image" content="{{sharepwa}}/thumbnail.png">
+  <meta property="og:image" content="thumbnail.png">
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
   <meta name="twitter:description" content="{{companyname}} - {{companydescription}}" />
-  <meta name="twitter:image" content="{{sharepwa}}/thumbnail.png" />
+  <meta name="twitter:image" content="thumbnail.png" />
 
   <link rel="canonical" href="{{sharepwa}}">
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
-  <link rel="apple-touch-icon" href="{{sharepwa}}/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="icon-192x192.png" />
 
   <meta name="mobile-web-app-capable" content="yes" />
 
@@ -52,7 +52,7 @@ document.write(`
     "description": "{{companyname}} - {{companydescription}}",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "All",
-    "image": "{{sharepwa}}/thumbnail.png",
+    "image": "thumbnail.png",
     "publisher": {
       "@type": "Organization",
       "name": "{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠",
