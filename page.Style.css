@@ -24,17 +24,30 @@ p {
 }
 
 /* Scroll Snap */
- html {
-     height: 100vh;
-     overflow-y: scroll;
-     scroll-snap-type: y mandatory;
- }
+html {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 
- .uk-section {
-     scroll-snap-align: start;
-     height: 100vh;
- }
+.uk-section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
 
- html.no-snap {
-     scroll-snap-type: none !important;
- }
+html.no-snap {
+    scroll-snap-type: none !important;
+}
+
+.staticHtml {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* prevents text from wrapping into a tall column */
+    border: 0;
+}
