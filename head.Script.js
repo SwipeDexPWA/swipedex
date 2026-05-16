@@ -1,8 +1,4 @@
 document.write(`
-<!DOCTYPE html>
-<html>
-
-<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,13 +14,6 @@ document.write(`
   <meta name="keywords" content="{{firstname}}, {{middlename}}, {{lastname}}, {{companyposition}}, {{companyname}}">
   <meta name="author" content="[SD] SwipeDex℠ by {{firstname}} {{middleinitial}} {{lastname}}">
   <meta name="robots" content="index, follow" />
-
-  <meta property="og:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
-  <meta property="og:description" content="{{companyname}} - {{companydescription}}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{sharepwa}}" />
-  <meta property="og:image" content="thumbnail.png">
-  <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
@@ -74,9 +63,4 @@ document.write(`
   <link rel="stylesheet" href="../pwa.Loader.css">
   <link href="../google.Font.css" rel="stylesheet">
   <link href="../page.Style.css" rel="stylesheet">
-
-</head>
-
-<body>
-<div class="loader-body" id="loader"><div class="loader"></div></div>
 `);
