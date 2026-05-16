@@ -9,16 +9,8 @@ document.write(`
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png" />
 
-  <title>{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠</title>
-  <meta name="description" content="{{companyname}} - {{companydescription}}">
-  <meta name="keywords" content="{{firstname}}, {{middlename}}, {{lastname}}, {{companyposition}}, {{companyname}}">
   <meta name="author" content="[SD] SwipeDex℠ by {{firstname}} {{middleinitial}} {{lastname}}">
   <meta name="robots" content="index, follow" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
-  <meta name="twitter:description" content="{{companyname}} - {{companydescription}}" />
-  <meta name="twitter:image" content="thumbnail.png" />
 
   <link rel="canonical" href="{{sharepwa}}">
 
