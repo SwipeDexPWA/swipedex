@@ -9,9 +9,9 @@ document.write(`
   <meta name="apple-mobile-web-app-status-bar" content="{{pwacolor}}">
   <meta name="theme-color" content="{{pwacolor}}">
 
-  <link rel="shortcut icon" href="{{sharepwa}}/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="{{sharepwa}}/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="{{sharepwa}}/icon-192x192.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png" />
 
   <title>{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠</title>
   <meta name="description" content="{{companyname}} - {{companydescription}}">
@@ -23,25 +23,25 @@ document.write(`
   <meta property="og:description" content="{{companyname}} - {{companydescription}}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{sharepwa}}" />
-  <meta property="og:image" content="{{sharepwa}}/thumbnail.png">
+  <meta property="og:image" content="thumbnail.png">
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
   <meta name="twitter:description" content="{{companyname}} - {{companydescription}}" />
-  <meta name="twitter:image" content="{{sharepwa}}/thumbnail.png" />
+  <meta name="twitter:image" content="thumbnail.png" />
 
   <link rel="canonical" href="{{sharepwa}}">
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠" />
-  <link rel="apple-touch-icon" href="{{sharepwa}}/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="icon-192x192.png" />
 
   <meta name="mobile-web-app-capable" content="yes" />
 
   <meta name="msapplication-TileColor" content="{{pwacolor}}" />
-  <meta name="msapplication-TileImage" content="{{sharepwa}}/icon-192x192.png" />
+  <meta name="msapplication-TileImage" content="icon-192x192.png" />
 
   <script type="application/ld+json">
     {
@@ -52,7 +52,7 @@ document.write(`
     "description": "{{companyname}} - {{companydescription}}",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "All",
-    "image": "{{sharepwa}}/thumbnail.png",
+    "image": "thumbnail.png",
     "publisher": {
       "@type": "Organization",
       "name": "{{firstname}} {{middleinitial}} {{lastname}} - [SD] SwipeDex℠",
