@@ -1,7 +1,11 @@
 const data = {
 
+    sharepwa: "https://swipedex.app/joelgallinero",
+    pwacolor: "#000000",
+
     firstname: "Joel",
-    middlename: "L.",
+    middlename: "Legislador",
+    middleinitial: "L.",
     lastname: "Gallinero",
     companyname: "BrushNetwork",
     companydescription: "a Graphic Design & Web Development company since 1997",
