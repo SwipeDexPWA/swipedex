@@ -1,4 +1,4 @@
-document.write(`
+document.getElementById("slider").innerHTML = `
 <div class="uk-section uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
         <div id="slideshows" class="uk-visible-toggle" tabindex="-1"
@@ -18,4 +18,4 @@ document.write(`
         </div>
     </div>
 </div>
-`);
+`;
