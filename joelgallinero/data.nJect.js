@@ -1,7 +1,7 @@
 const data = {
 
     sharepwa: "https://swipedex.app/joelgallinero",
-    pwacolor: "#000000",
+    pwacolor: "#ffffff",
 
     firstname: "Joel",
     middlename: "Legislador",
