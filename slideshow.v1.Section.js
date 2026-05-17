@@ -1,8 +1,8 @@
 document.getElementById("slider").innerHTML = `
 <div class="uk-section uk-padding-remove-vertical">
-    <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
+    <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove" uk-height-viewport>
         <div id="slideshows" class="uk-visible-toggle" tabindex="-1"
-            uk-slideshow="autoplay: true; autoplay-interval: 4000; animation: push; ratio: false">
+            uk-slideshow="autoplay: true; autoplay-interval: 4000; animation: push; ratio: false" uk-height-viewport>
             <div class="uk-slideshow-items" uk-height-viewport>
                 {{slideshow1}}
                 {{slideshow2}}
