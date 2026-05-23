@@ -37,14 +37,19 @@
 
 <script>
 
-document.getElementById("contact-form")
+document
+.getElementById("contact-form")
 .addEventListener("submit", async function(e){
 
   e.preventDefault();
 
+  const button = this.querySelector("button");
+  button.disabled = true;
+  button.innerText = "Sending...";
+
   const data = {
 
-    clientId: "restaurant123",  // 👈 ONLY CHANGE THIS PER PWA
+    clientId: "joelgallinero", // 👈 CHANGE PER PWA
 
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -52,22 +57,32 @@ document.getElementById("contact-form")
 
   };
 
-  const res = await fetch(
-    "https://script.google.com/macros/s/AKfycbw5AZVxFE8Vkwpzv-BXOwJgAU4lElSHoIbRFHhxtB2eW_Ab05MOcPxs3dEVXXibdpxF/exec",
-    {
-      method: "POST",
-      body: JSON.stringify(data)
+  try {
+
+    const res = await fetch(
+      "https://script.google.com/macros/s/AKfycbw5AZVxFE8Vkwpzv-BXOwJgAU4lElSHoIbRFHhxtB2eW_Ab05MOcPxs3dEVXXibdpxF/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(data)
+      }
+    );
+
+    const result = await res.json();
+
+    if (result.success) {
+      alert("Message sent!");
+      this.reset();
+    } else {
+      alert("Failed: " + result.error);
     }
-  );
 
-  const result = await res.json();
-
-  if (result.success) {
-    alert("Message sent!");
-    this.reset();
-  } else {
-    alert("Client not found!");
+  } catch (err) {
+    console.log(err);
+    alert("Network error");
   }
+
+  button.disabled = false;
+  button.innerText = "Send";
 
 });
 
