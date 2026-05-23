@@ -16,14 +16,10 @@ if (!isAllowedHost || !isMobileOrTablet) {
     self.addEventListener("fetch", function (event) {
         const url = event.request.url;
 
-  // 🚨 BYPASS ALL EXTERNAL REQUESTS
-  if (
-    url.startsWith("https://script.google.com") ||
-    url.startsWith("https://script.googleapis.com")
-  ) {
-    event.respondWith(fetch(event.request));
-    return;
-  }
+if (url.includes("script.google.com")) {
+  event.respondWith(fetch(event.request));
+  return;
+}
         event.respondWith(
             caches.match(event.request).then(function (response) {
                 return response || fetch(event.request);
