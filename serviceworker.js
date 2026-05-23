@@ -13,19 +13,26 @@ if (!isAllowedHost || !isMobileOrTablet) {
             })
         );
     });
-    self.addEventListener("fetch", function (event) {
-        const url = event.request.url;
-        if (
-            url.startsWith("https://script.google.com") ||
-            url.startsWith("https://script.googleapis.com")
-        ) {
-            event.respondWith(fetch(event.request));
-            return;
-        }
-        event.respondWith(
-            caches.match(event.request).then(function (response) {
-                return response || fetch(event.request);
-            })
-        );
-    });
+    self.addEventListener("fetch", event => {
+
+  const url = event.request.url;
+
+  // 🚨 NEVER TOUCH EXTERNAL APIS
+  if (
+    url.includes("script.google.com") ||
+    url.includes("googleapis.com")
+  ) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+
+  // OPTIONAL: your existing cache logic below
+  event.respondWith(
+    fetch(event.request).catch(() => {
+      // fallback if offline
+      return caches.match(event.request);
+    })
+  );
+
+});
 }
