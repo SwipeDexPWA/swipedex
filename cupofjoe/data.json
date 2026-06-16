@@ -1,50 +1,165 @@
 {
+  "swipedex": "https://swipedex.app",
   "premium": false,
-  "name": "Joel L. Gallinero",
-  "position": "Photopea Designer & Elementor Developer",
+  "prefix": "",
+  "firstname": "Joel",
+  "middlename": "L.",
+  "lastname": "Gallinero",
+  "suffix": "",
   "useName": true,
-  "company": "BrushNetwork.com",
-  "description": "a Graphic Design & Web Development company since 1997",
-  "keywords": "Philippine, Filipino, Photopea, Graphic Designer, Graphic Design, Elementor, WordPress, Web Developer, Web Development, Iloilo City, Philippines",
-  "url": "https://swipedex.app/joelgallinero",
-  "mobile": "+639164729358",
+  "company": "Cup of Joe",
+  "position": "Wholesaler",
+  "street": "San Antonio, Oton",
+  "zipcode": "5020",
   "city": "Iloilo",
-  "countryinitial": "PH",
-
-  "logo": "icon-512x512.png",
-
-  "slide1": "Robusta (Coffea Canephora)",
-  "show1": "Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae. Though widely known as Coffea robusta, the plant is scientifically identified as Coffea canephora, which has two main varieties, robusta and nganda (nom. illeg.).[2]",
-  "slide2": "Barako (Coffea Liberica)",
-  "show2": "Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.[2][3][4]",
-  "slide3": "Arabica (Coffea Arabica)",
-  "show3": "Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.[2] Coffee produced from the less acidic, more bitter, and more highly caffeinated robusta bean (C. canephora) makes up most of the remaining coffee production. The natural populations of Coffea arabica are restricted to the forests of South Ethiopia, South Sudan, and Yemen.[3][4][5]",
-  "slide4": "",
-  "show4": "",
-  "slide5": "",
-  "show5": "",
-  "slide6": "",
-  "show6": "",
-
-  "caption1": "Caption 1",
-  "caption2": "Caption 2",
-  "caption3": "Caption 3",
-  "caption4": "Caption 4",
-  "caption5": "Caption 5",
-  "caption6": "Caption 6",
-  "caption7": "Caption 7",
-  "caption8": "Caption 8",
-  "caption9": "Caption 9",
-  "caption10": "Caption 10",
-  "caption11": "Caption 11",
-  "caption12": "Caption 12",
-
-  "qrcode1": "share.svg",
-  "qrtitle1": "Share",
-  "qrcode2": "onlinevcard.svg",
-  "qrtitle2": "Online vCard",
-  "qrcode3": "offlinevcard.svg",
-  "qrtitle3": "Offline vCard",
-  "qrcode4": "messenger.svg",
-  "qrtitle4": "Messenger"
+  "state": "",
+  "country": "Philippines",
+  "initial": "PH",
+  "logo": "logo.png",
+  "photo": "",
+  "share": "https://swipedex.app/cupofjoe",
+  "description": "Coffee for the Common Man",
+  "keywords": "Philippine, Native Coffee, Robusta Beans, Liberica Beans, Barako, Arabica Beans, Philippines",
+  "author": "[SD] SwipeDex℠",
+  "contacts": {
+    "mobile": "+639164729358",
+    "landline": "",
+    "fax": "",
+    "sms": "+639164729358",
+    "messenger": "https://m.me/joelgallinero",
+    "whatsapp": "",
+    "viber": "",
+    "telegram": "",
+    "email": "joelgallinero@gmail.com",
+    "website": "https://www.brushnetwork.com"
+  },
+  "maps": {
+    "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "https://linkedin.com/in/joelgallinero",
+    "fiverr": "https://fiverr.com/joelgallinero"
+  },
+  "socials": {
+    "facebook": "https://facebook.com/joelgallinero",
+    "x": "",
+    "youtube": "",
+    "tiktok": "",
+    "instagram": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "mobile",
+    "sms",
+    "email",
+    "website",
+    "googlemaps",
+    "fiverr",
+    "linkedin",
+    "facebook"
+  ],
+  "vcfOrder": [
+    "share",
+    "messenger",
+    "googlemaps",
+    "fiverr",
+    "linkedin",
+    "facebook"
+  ],
+  "slideshow": [
+    {
+      "image": "slideshow1.webp",
+      "title": "Robusta (Coffea Canephora)",
+      "description": "Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae. Though widely known as Coffea robusta, the plant is scientifically identified as Coffea canephora, which has two main varieties, robusta and nganda (nom. illeg.).[2]"
+    },
+    {
+      "image": "slideshow2.webp",
+      "title": "Barako (Coffea Liberica)",
+      "description": "Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.[2][3][4]"
+    },
+    {
+      "image": "slideshow3.webp",
+      "title": "Arabica (Coffea Arabica)",
+      "description": "Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.[2] Coffee produced from the less acidic, more bitter, and more highly caffeinated robusta bean (C. canephora) makes up most of the remaining coffee production. The natural populations of Coffea arabica are restricted to the forests of South Ethiopia, South Sudan, and Yemen.[3][4][5]"
+    }
+  ],
+  "gallery": {
+    "gridClass": "uk-child-width-1-3@s uk-child-width-1-2",
+    "items": [
+      {
+        "image": "gallery1.webp",
+        "title": "Title1"
+      },
+      {
+        "image": "gallery2.webp",
+        "title": "Title2"
+      },
+      {
+        "image": "gallery3.webp",
+        "title": "Title3"
+      },
+      {
+        "image": "gallery4.webp",
+        "title": "Title4"
+      },
+      {
+        "image": "gallery5.webp",
+        "title": "Title5"
+      },
+      {
+        "image": "gallery6.webp",
+        "title": "Title6"
+      }
+    ]
+  },
+  "rates": [
+    {
+      "name": "Arabica",
+      "price": "₱1,151 per Kilo"
+    },
+    {
+      "name": "Robusta",
+      "price": "₱761 per Kilo"
+    },
+    {
+      "name": "Liberica (Barako)",
+      "price": "₱797 per Kilo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between Arabica, Robusta, and Liberica coffee beans?",
+      "answer": "Arabica beans are known for their smooth, aromatic flavor with mild acidity and notes of fruit, chocolate, or nuts. They generally contain less caffeine. Robusta beans have a stronger, bolder taste with earthy and chocolate-like notes. They contain more caffeine and produce a richer crema, making them popular for espresso blends. Liberica beans are unique for their larger size and distinctive flavor profile, often described as fruity, floral, smoky, and woody. They are less common and sought after by specialty coffee enthusiasts."
+    },
+    {
+      "question": "What packaging sizes do you offer for wholesale orders?",
+      "answer": "We offer flexible packaging options to meet different business needs, including: 1 kg bags, 5 kg bags, 25 kg sacks & 50 kg sacks. Custom packaging and private labeling options may also be available for qualified wholesale customers."
+    },
+    {
+      "question": "Do you supply green coffee beans or roasted coffee beans?",
+      "answer": "We can supply: Green (unroasted) coffee beans, Roasted whole beans, Ground coffee (upon request). Customers can choose the roast level and grind size depending on their requirements."
+    },
+    {
+      "question": "What is your minimum order quantity (MOQ)?",
+      "answer": "Our minimum order quantity varies depending on the product and packaging selected. Typical wholesale orders start at: 25 kg for green beans, 10 kg for roasted beans. Please contact us for customized orders or mixed-bean purchases."
+    },
+    {
+      "question": "How do I place an order and request a quotation?",
+      "answer": "Simply provide the following information: Coffee variety (Arabica, Robusta, Liberica, or blend), Required quantity, Preferred packaging size, Delivery location & Business name and contact details. Our sales team will prepare a quotation, shipping estimate, and expected delivery schedule."
+    }
+  ],
+  "license": {
+    "expires": "2076-08-20T00:00:00",
+    "disabled": false,
+    "redirect": "https://m.me/joelgallinero"
+  }
 }
