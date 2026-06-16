@@ -370,7 +370,7 @@
   const grid = document.getElementById("qr-codes");
   let buttons = [];
   try {
-    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"joelgallinero.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/joelgallinero"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+639164729358"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+639164729358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.brushnetwork.com"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"fiverr","label":"Fiverr","icon":"../fiverr.svg","qr":"qr-fiverr.svg","value":"https://fiverr.com/joelgallinero"},{"key":"linkedin","label":"LinkedIn","icon":"../linkedin.svg","qr":"qr-linkedin.svg","value":"https://linkedin.com/in/joelgallinero"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://facebook.com/joelgallinero"}] || [];
+    buttons = [{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/joelgallinero"},{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"joelgallinero.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+639164729358"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+639164729358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.brushnetwork.com"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"fiverr","label":"Fiverr","icon":"../fiverr.svg","qr":"qr-fiverr.svg","value":"https://fiverr.com/joelgallinero"},{"key":"linkedin","label":"LinkedIn","icon":"../linkedin.svg","qr":"qr-linkedin.svg","value":"https://linkedin.com/in/joelgallinero"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://facebook.com/joelgallinero"}] || [];
   } catch (e) {
     console.error("QR BUTTONS ERROR:", e);
   }
@@ -434,19 +434,18 @@
 </script>
     </div>
 
-    <div id="license" uk-modal="bg-close: false; esc-close: false">
-        <div class="uk-modal-dialog uk-modal-body uk-text-center">
-            <h3>Subscription Renewal Required</h3>
+    <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
+        <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative" uk-height-viewport>
+            <div class="uk-padding-large uk-position-center">
+                <h2 class="uk-margin-small-bottom">Subscription Renewal Required</h2>
+            <h4 class="uk-margin-small-top">Subscription has Expired or has been Disabled.</h4>
             <p>
-                This digital business card subscription has expired or has been disabled.
+                To Renew your Subscription or Reactivate your Account,
+                Please Contact your Provider.
             </p>
-            <p>
-                To renew your subscription, request updates, or reactivate your account,
-                please contact your provider.
-            </p>
-            <button id="provider" class="uk-button uk-button-primary">
+            <button id="provider" class="uk-button">
                 Contact Provider
-            </button>
+            </button></div>
         </div>
     </div>
 
