@@ -1,0 +1,116 @@
+/* Typography */
+
+* {
+    font-family: "Poppins";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+h1 {
+    font-size: calc(1.1vw + 1.1rem);
+}
+
+h2 {
+    font-size: calc(1vw + 1rem);
+}
+
+h3 {
+    font-size: calc(0.9vw + 0.9rem);
+}
+
+h4 {
+    font-size: calc(0.8vw + 0.8rem);
+}
+
+h5 {
+    font-size: calc(0.7vw + 0.7rem);
+}
+
+h6 {
+    font-size: calc(0.6vw + 0.6rem);
+}
+
+p {
+    font-size: calc(0.5vw + 0.5rem);
+}
+
+/* Logo & Icons */
+.logo {
+    width: calc(10vw + 7vh);
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.3));
+}
+
+.icon {
+    width: calc(1.6vw + 1.6vh);
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.3));
+}
+
+/* Menu */
+#menu .uk-nav a {
+    color: #000000 !important;
+    font-size: 12px;
+}
+#menu .uk-description-list {
+    color: #000000 !important;
+    font-size: 12px;
+}
+#menu .uk-margin-remove-bottom, #menu .uk-margin-remove-top {
+    color: #000000 !important;
+    font-size: 9px;
+}
+
+/* Console */
+.qr-trigger img {
+    width: calc(3.5vw + 3vh);
+}
+
+.qr-trigger .uk-small-text {
+    width: calc(0.75vw + 0.25vh);
+}
+
+.qr-trigger .uk-small-text,
+a.qr-trigger {
+    color: rgb(255, 255, 255);
+}
+
+h3#qr-title {
+    color: rgb(0, 0, 0);
+    font-size: calc(2vw + 1.5vh);
+}
+
+img#qr-image {
+    width: calc(20vw + 15vh);
+}
+
+a#qr-link {
+    color: rgb(0, 0, 0);
+    font-size: calc(1.5vw + 1vh);
+}
+
+/* Scroll Snap */
+html {
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+.uk-section {
+    scroll-snap-align: none;
+}
+
+.uk-section.snap {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+.uk-section.snap.full {
+    min-height: 100vh;
+}

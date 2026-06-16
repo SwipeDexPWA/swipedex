@@ -1,19 +1,3 @@
-document.write(`
-            <ul class="uk-nav uk-nav-default poppins-semibold uk-dark">
-                <li><a href="" id="installLink"><span class="uk-margin-xsmall-right" uk-icon="icon: tablet"></span>
-                        Add
-                        to Home Screen</a></li>
-                <li><a href="" onclick="refreshApp(); return false;"><span class="uk-margin-xsmall-right"
-                            uk-icon="icon: refresh"></span> Update Web App</a></li>
-                <li><a href="" id="fullscreenLink"><span class="uk-margin-xsmall-right" uk-icon="icon: expand"></span>
-                        Go Fullscreen</a></li>
-                <li><a href=""><span class="uk-margin-xsmall-right" uk-icon="icon: cart"></span>
-                        Buy, Renew or Revise</a></li>
-                <li><a href="" onclick="UIkit.offcanvas('#menu').hide(); return false;"><span
-                            class="uk-margin-xsmall-right" uk-icon="icon: close-circle"></span> Exit Menu</a></li>
-            </ul>
-`);
-
 // Add to Home Screen
 let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -90,3 +74,68 @@ function updateFullscreenLink() {
 }
 document.addEventListener("fullscreenchange", updateFullscreenLink);
 document.addEventListener("webkitfullscreenchange", updateFullscreenLink);
+// Valid Thru
+const countdownEl = document.getElementById("countdown");
+fetch("data.json")
+  .then(res => {
+    if (!res.ok) throw new Error("Unable to load data.json");
+    return res.json();
+  })
+  .then(siteData => {
+    const license = siteData.license;
+    function showLicenseDialog() {
+
+      UIkit.modal("#license-modal").show();
+
+      document.getElementById("contact-provider").onclick = () => {
+        window.location.href = license.redirect;
+      };
+
+    }
+    if (!license) return;
+    const expireTime = new Date(license.expires).getTime();
+    const redirectURL = license.redirect;
+    function redirect() {
+      window.location.replace(redirectURL);
+    }
+    // Disabled by reseller
+    if (license.disabled) {
+      showLicenseDialog();
+      return;
+    }
+    // Already expired
+    if (Date.now() >= expireTime) {
+      showLicenseDialog();
+      return;
+    }
+    function updateCountdown() {
+      let diff = expireTime - Date.now();
+      if (diff <= 0) {
+        clearInterval(timer);
+        showLicenseDialog();
+        return;
+      }
+      const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+      diff %= (1000 * 60 * 60 * 24 * 365);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      diff %= (1000 * 60 * 60 * 24);
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      diff %= (1000 * 60 * 60);
+      const minutes = Math.floor(diff / (1000 * 60));
+      diff %= (1000 * 60);
+      const seconds = Math.floor(diff / 1000);
+      countdownEl.textContent =
+        `${String(years).padStart(2, "0")}Y ` +
+        `${String(days).padStart(2, "0")}D ` +
+        `${String(hours).padStart(2, "0")}H ` +
+        `${String(minutes).padStart(2, "0")}M ` +
+        `${String(seconds).padStart(2, "0")}S`;
+    }
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+// Copyright
+document.getElementById("copyright-year").textContent = new Date().getFullYear();

@@ -1,0 +1,116 @@
+{
+  "share": {
+    "label": "Share",
+    "icon": "../share.svg"
+  },
+  "onlinevcard": {
+    "label": "Online vCard",
+    "icon": "../onlinevcard.svg"
+  },
+  "offlinevcard": {
+    "label": "Offline vCard",
+    "icon": "../offlinevcard.svg"
+  },
+
+
+  "messenger": {
+    "label": "Messenger",
+    "icon": "../messenger.svg"
+  },
+  "whatsapp": {
+    "label": "WhatsApp",
+    "icon": "../whatsapp.svg"
+  },
+  "viber": {
+    "label": "Viber",
+    "icon": "../viber.svg"
+  },
+  "telegram": {
+    "label": "Telegram",
+    "icon": "../telegram.svg"
+  },
+
+
+  "mobile": {
+    "label": "Mobile",
+    "icon": "../mobile.svg"
+  },
+  "landline": {
+    "label": "Landline",
+    "icon": "../landline.svg"
+  },
+  "fax": {
+    "label": "Fax",
+    "icon": "../fax.svg"
+  },
+  "sms": {
+    "label": "SMS",
+    "icon": "../sms.svg"
+  },
+
+
+  "email": {
+    "label": "Email",
+    "icon": "../email.svg"
+  },
+  "website": {
+    "label": "Website",
+    "icon": "../website.svg"
+  },
+
+
+  "googlemaps": {
+    "label": "GoogleMaps",
+    "icon": "../googlemaps.svg"
+  },
+  "waze": {
+    "label": "Waze",
+    "icon": "../waze.svg"
+  },
+  "openstreetmap": {
+    "label": "OpenStreetMap",
+    "icon": "../openstreetmap.svg"
+  },
+
+
+  "linkedin": {
+    "label": "LinkedIn",
+    "icon": "../linkedin.svg"
+  },
+  "fiverr": {
+    "label": "Fiverr",
+    "icon": "../fiverr.svg"
+  },
+
+
+  "zoom": {
+    "label": "Zoom",
+    "icon": "../zoom.svg"
+  },
+  "jitsi": {
+    "label": "Jitsi",
+    "icon": "../jitsi.svg"
+  },
+
+
+  "facebook": {
+    "label": "Facebook",
+    "icon": "../facebook.svg"
+  },
+  "x": {
+    "label": "X",
+    "icon": "../x.svg"
+  },
+  "youtube": {
+    "label": "YouTube",
+    "icon": "../youtube.svg"
+  },
+  "tiktok": {
+    "label": "TikTok",
+    "icon": "../tiktok.svg"
+  },
+  "instagram": {
+    "label": "Instagram",
+    "icon": "../instagram.svg"
+  }
+}
