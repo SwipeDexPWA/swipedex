@@ -85,6 +85,9 @@
         let expireTime = null;
         let redirectURL = null;
         fetch("data.json")
+        fetch(`data.json?v=${Date.now()}`, {
+            cache: "no-store"
+        })
             .then(r => r.json())
             .then(data => {
                 license = data.license;
@@ -435,17 +438,19 @@
     </div>
 
     <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
-        <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative" uk-height-viewport>
+        <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
+            uk-height-viewport>
             <div class="uk-padding-large uk-position-center">
                 <h2 class="uk-margin-small-bottom">Subscription Renewal Required</h2>
-            <h4 class="uk-margin-small-top">Subscription has Expired or has been Disabled.</h4>
-            <p>
-                To Renew your Subscription or Reactivate your Account,
-                Please Contact your Provider.
-            </p>
-            <button id="provider" class="uk-button">
-                Contact Provider
-            </button></div>
+                <h4 class="uk-margin-small-top">Subscription has Expired or has been Disabled.</h4>
+                <p>
+                    To Renew your Subscription or Reactivate your Account,
+                    Please Contact your Provider.
+                </p>
+                <button id="provider" class="uk-button">
+                    Contact Provider
+                </button>
+            </div>
         </div>
     </div>
 
