@@ -171,7 +171,7 @@
       "answer": "Simply provide the following information: Coffee variety (Arabica, Robusta, Liberica, or blend), Required quantity, Preferred packaging size, Delivery location & Business name and contact details. Our sales team will prepare a quotation, shipping estimate, and expected delivery schedule."
     }
   ],
-  "color": "#000000",
+  "theme": "#000000",
   "license": {
     "expires": "2076-08-20T00:00:00",
     "disabled": false,
