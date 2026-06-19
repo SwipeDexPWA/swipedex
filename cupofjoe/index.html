@@ -63,7 +63,7 @@
     "name": "Joel L. Gallinero, Cup of Joe",
     "image": "https://swipedex.app/cupofjoe/thumbnail.png",
     "url": "https://swipedex.app/cupofjoe",
-    "telephone": "+639164729358",
+    "telephone": "+63 916 472 9358",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Iloilo",
@@ -122,7 +122,7 @@
     </script>
 
     <style>
-        #pwa {
+        #pwa2 {
             display: none;
         }
 
@@ -153,8 +153,8 @@
 
 <body>
     <div id="pwa">
-        <div class="uk-position-top-left uk-padding uk-position-z-index"><img class="logo" src="logo.png"></div>
-<div class="uk-position-top-right uk-padding uk-position-z-index"><a href="#menu" uk-toggle><img class="icon"
+        <div class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp"></div>
+<div class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#menu" uk-toggle><img class="icon"
             src="../ellipsis.svg"></a>
     <div id="menu" uk-offcanvas="flip: true; mode: push">
         <div class="uk-background-default uk-offcanvas-bar">
@@ -166,8 +166,8 @@
                             uk-icon="icon: refresh"></span> Update Web App</a></li>
                 <li><a href="" id="fullscreenLink"><span class="uk-margin-xsmall-right" uk-icon="icon: expand"></span>
                         Go Fullscreen</a></li>
-                <li><a href=""><span class="uk-margin-xsmall-right" uk-icon="icon: cart"></span>
-                        Buy, Renew or Revise</a></li>
+                <li><a href="https://m.me/cupofjoe"><span class="uk-margin-xsmall-right" uk-icon="icon: users"></span>
+                        Contact Provider</a></li>
                 <li><a href="" onclick="UIkit.offcanvas('#menu').hide(); return false;"><span
                             class="uk-margin-xsmall-right" uk-icon="icon: close-circle"></span> Exit Menu</a></li>
             </ul>
@@ -185,27 +185,30 @@
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
     <div class="uk-visible-toggle" tabindex="-1"
-      uk-slideshow="autoplay: true; autoplay-interval: 4000; animation: push; ratio: false">
+      uk-slideshow="autoplay: true; autoplay-interval: 7000; animation: push; ratio: false">
       <div class="uk-slideshow-items" uk-height-viewport>
         
-        <div><img src="slideshow1.webp" alt="Robusta (Coffea Canephora)" uk-cover>
+        <div><video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>
           <div class="uk-position-bottom-left uk-position-large">
-            <h5 uk-slideshow-parallax="y: 100, 0, 100">Robusta (Coffea Canephora)</h5>
-            <p uk-slideshow-parallax="y: 200, 0, 200">Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae. Though widely known as Coffea robusta, the plant is scientifically identified as Coffea canephora, which has two main varieties, robusta and nganda (nom. illeg.).[2]</p>
+            <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Robusta (Coffea Canephora)</h4>
+            <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>
+            <div uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a></div>
           </div>
         </div>
 
-        <div><img src="slideshow2.webp" alt="Barako (Coffea Liberica)" uk-cover>
+        <div><img src='slideshow2.webp' uk-cover>
           <div class="uk-position-bottom-left uk-position-large">
-            <h5 uk-slideshow-parallax="y: 100, 0, 100">Barako (Coffea Liberica)</h5>
-            <p uk-slideshow-parallax="y: 200, 0, 200">Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.[2][3][4]</p>
+            <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Barako (Coffea Liberica)</h4>
+            <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p>
+            <div uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a></div>
           </div>
         </div>
 
-        <div><img src="slideshow3.webp" alt="Arabica (Coffea Arabica)" uk-cover>
+        <div><img src='slideshow3.webp' uk-cover>
           <div class="uk-position-bottom-left uk-position-large">
-            <h5 uk-slideshow-parallax="y: 100, 0, 100">Arabica (Coffea Arabica)</h5>
-            <p uk-slideshow-parallax="y: 200, 0, 200">Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.[2] Coffee produced from the less acidic, more bitter, and more highly caffeinated robusta bean (C. canephora) makes up most of the remaining coffee production. The natural populations of Coffea arabica are restricted to the forests of South Ethiopia, South Sudan, and Yemen.[3][4][5]</p>
+            <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Arabica (Coffea Arabica)</h4>
+            <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p>
+            <div uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a></div>
           </div>
         </div>
 
@@ -225,27 +228,27 @@
 <div class="uk-child-width-1-3@s uk-child-width-1-2 uk-grid-collapse" uk-grid uk-lightbox="animation: slide; counter: true" uk-height-match="row: false; target: > img" uk-height-viewport>
 
     <div class="uk-cover-container">
-    <a href="gallery1.webp" data-caption="Title1"><img src="gallery1.webp" alt="Title1" uk-cover></a>
+    <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)"><img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery2.webp" data-caption="Title2"><img src="gallery2.webp" alt="Title2" uk-cover></a>
+    <a href="gallery2.webp" data-caption="Coffee Machines"><img src="gallery2.webp" alt="Coffee Machines" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery3.webp" data-caption="Title3"><img src="gallery3.webp" alt="Title3" uk-cover></a>
+    <a href="gallery3.webp" data-caption="Medium Coffee Grounds"><img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery4.webp" data-caption="Title4"><img src="gallery4.webp" alt="Title4" uk-cover></a>
+    <a href="gallery4.webp" data-caption="Espresso Machine"><img src="gallery4.webp" alt="Espresso Machine" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery5.webp" data-caption="Title5"><img src="gallery5.webp" alt="Title5" uk-cover></a>
+    <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)"><img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery6.webp" data-caption="Title6"><img src="gallery6.webp" alt="Title6" uk-cover></a>
+    <a href="gallery6.webp" data-caption="Roaster Machine"><img src="gallery6.webp" alt="Roaster Machine" uk-cover></a>
     </div>
 
 </div>
@@ -257,20 +260,39 @@
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
         <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary uk-flex"
-            data-src="console.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
+            data-src="about.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
 
-            <div class="uk-padding-large uk-margin-auto uk-margin-auto-vertical uk-text-center">
-                <h1 uk-parallax="opacity: 0,1; y: 150,0; end: 70vh + 70%; easing: -2">We are a trusted
-                    wholesale
-                    supplier of Arabica, Robusta, and Liberica coffee beans</h1>
-                <p uk-parallax="opacity: 0,1; y: 150,0; end: 60vh + 60%; easing: -2">Serving roasters,
-                    cafés,
-                    retailers, and distributors. Committed to quality and sustainability, we source carefully
-                    selected
-                    beans to deliver exceptional flavor, freshness, and value. Whether you need green beans, roasted
-                    coffee, or bulk supply solutions, we are dedicated to helping your coffee business grow.</p>
-                <a uk-parallax="opacity: 0,1; y: 150,0; end: 50vh + 50%; easing: -2" class="uk-button" href="#">Contact
-                    Us</a>
+            <div id="js-sticky-parallax-container" class="uk-position-relative uk-text-center uk-height-viewport-3">
+                <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-sticky"
+                    uk-sticky="end: #js-sticky-parallax-container" style="position: sticky; top: 0px;">
+                    <div class="uk-padding-large">
+                        <h1 class="uk-margin-remove-bottom" uk-parallax="opacity: 0,1; y: 150,0; end: 70vh + 70%; easing: -2">We are a Trusted
+                            wholesale
+                            supplier of</h1>
+                        <h1 class="uk-heading-large uk-margin-remove-vertical">
+                            <span class="uk-display-inline-block"
+                                uk-parallax="target: #js-sticky-parallax-container; x: -15vw,0; easing: -1; start: 80vh; end: 100vh;"
+                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Arabica,
+                                Robusta</span>
+                            <br>
+                            <span class="uk-display-inline-block"
+                                uk-parallax="target: #js-sticky-parallax-container; x: 10vw,0; easing: -1; start: 70vh; end: 100vh;"
+                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">& Liberica
+                                (Barako)</span>
+                        </h1>
+                        <h1 class="uk-margin-remove-top">Coffee Beans</h1>
+                        <p>Serving roasters,
+                            cafés,
+                            retailers, and distributors. Committed to quality and sustainability, we source carefully
+                            selected
+                            beans to deliver exceptional flavor, freshness, and value. Whether you need green beans,
+                            roasted
+                            coffee, or bulk supply solutions, we are dedicated to helping your coffee business grow.</p>
+                        <a class="uk-button"
+                            href="#">Contact
+                            Us</a>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -342,18 +364,48 @@
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
     <div
-      class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary uk-position-relative uk-background-fixed"
+      class="uk-background-cover uk-background-center-center uk-background-blend-multiply uk-background-secondary uk-position-relative uk-background-fixed"
       data-src="console.webp" uk-img uk-height-viewport>
 
       <div id="qr-codes"
-        class="uk-child-width-1-6@xl uk-child-width-1-5@l uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2 uk-grid-small uk-padding-large uk-position-center uk-text-center"
+        class="viewport-grid uk-child-width-1-6@l uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-3 uk-grid-collapse uk-text-center"
         uk-grid>
       </div>
+      <style>
+        .viewport-grid {
+          min-height: 100vh;
+          padding: 40px;
+          box-sizing: border-box;
+        }
+
+        .qr-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .qr-trigger {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+        }
+
+        .qr-trigger img {
+          width: min(60px, 6vw);
+          height: min(60px, 6vw);
+          object-fit: contain;
+        }
+      </style>
 
     </div>
 
     <div id="qr-popup" class="uk-modal-full" uk-modal>
-      <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative" uk-height-viewport>
+      <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
+        uk-height-viewport>
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
@@ -373,7 +425,7 @@
   const grid = document.getElementById("qr-codes");
   let buttons = [];
   try {
-    buttons = [{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/joelgallinero"},{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"joelgallinero.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+639164729358"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+639164729358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.brushnetwork.com"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"fiverr","label":"Fiverr","icon":"../fiverr.svg","qr":"qr-fiverr.svg","value":"https://fiverr.com/joelgallinero"},{"key":"linkedin","label":"LinkedIn","icon":"../linkedin.svg","qr":"qr-linkedin.svg","value":"https://linkedin.com/in/joelgallinero"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://facebook.com/joelgallinero"}] || [];
+    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"joelgallinero.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/cupofjoe"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 916 472 9358"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+63 916 472 9358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.cupofjoe.wholesaler"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/cupofjoe"},{"key":"instagram","label":"Instagram","icon":"../instagram.svg","qr":"qr-instagram.svg","value":"https://www.instagram.com/cupofjoe"},{"key":"x","label":"X","icon":"../x.svg","qr":"qr-x.svg","value":"https://www.x.com/cupofjoe"},{"key":"youtube","label":"YouTube","icon":"../youtube.svg","qr":"qr-youtube.svg","value":"https://www.youtube.com/cupofjoe"},{"key":"tiktok","label":"TikTok","icon":"../tiktok.svg","qr":"qr-tiktok.svg","value":"https://www.tiktok.com/cupofjoe"}] || [];
   } catch (e) {
     console.error("QR BUTTONS ERROR:", e);
   }
@@ -393,7 +445,7 @@
      data-qr="${item.qr}"
      data-link="${item.value || ''}">
     <img src="${item.icon}">
-    <div class="uk-text-small uk-margin-small-top">
+    <div class="qr-label uk-margin-small-top">
       ${item.label}
     </div>
   </a>

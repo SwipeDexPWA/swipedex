@@ -1,57 +1,54 @@
 /* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato";
+}
+
+p {
+    font-family: "";
+}
 
 
 /* Slideshow */
-#slideshow h5 {
-    font-size: calc(0.7vw + 0.7rem);
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(19, 10, 0, 0.6);
-    text-shadow: 1px 1px 2px #000000;
-    padding: 1.5vw;
-    margin: 0px;
-    display: inline-block;
+#slideshow h4 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px #000000;
 }
 
 #slideshow p {
-    font-size: calc(0.5vw + 0.5rem);
-    width: 75vw;
     color: rgb(255, 255, 255);
-    background-color: rgba(47, 25, 1, 0.3);
-    text-shadow: 1px 1px 2px #000000;
-    padding: 1.5vw;
-    margin: 0px;
+    text-shadow: 1px 1px 8px #000000;
+    width: 65vw;
 }
 
-/* CTA */
-#cta {
-    background-color: rgb(17, 9, 1);
-}
-
-#cta h2 {
+#slideshow .uk-button {
     color: rgb(255, 255, 255);
-    margin: 0px;
-}
-
-#cta p {
-    color: rgb(255, 255, 255);
-}
-
-#cta .uk-button {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
     border-radius: 30px;
-    color: rgb(0, 0, 0);
 }
 
 /* About */
 #about h1 {
     color: rgb(255, 255, 255);
 }
+
 #about p {
     color: rgb(255, 255, 255);
 }
+
 #about .uk-button {
-    background-color: rgb(37, 17, 3);
     color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
     border-radius: 30px;
 }
 
@@ -68,14 +65,17 @@
 #faqs {
     background-color: rgb(82, 15, 0);
 }
+
 #faqs h1 {
     color: rgb(255, 255, 255);
     margin: 0px;
 }
+
 #faqs h6 {
     color: rgb(255, 255, 255);
     margin: 0px;
 }
+
 #faqs p {
     color: rgb(255, 255, 255);
     margin-top: 0px;

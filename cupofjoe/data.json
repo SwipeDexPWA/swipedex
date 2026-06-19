@@ -1,6 +1,7 @@
 {
   "swipedex": "https://swipedex.app",
   "premium": false,
+  "vcardDisplay": "company",
   "prefix": "",
   "firstname": "Joel",
   "middlename": "L.",
@@ -15,23 +16,23 @@
   "state": "",
   "country": "Philippines",
   "initial": "PH",
-  "logo": "logo.png",
+  "logo": "CupOfJoe.webp",
   "photo": "",
   "share": "https://swipedex.app/cupofjoe",
   "description": "Coffee for the Common Man",
   "keywords": "Philippine, Native Coffee, Robusta Beans, Liberica Beans, Barako, Arabica Beans, Philippines",
   "author": "[SD] SwipeDex℠",
   "contacts": {
-    "mobile": "+639164729358",
+    "mobile": "+63 916 472 9358",
     "landline": "",
     "fax": "",
-    "sms": "+639164729358",
-    "messenger": "https://m.me/joelgallinero",
+    "sms": "+63 916 472 9358",
+    "messenger": "https://m.me/cupofjoe",
     "whatsapp": "",
     "viber": "",
     "telegram": "",
     "email": "joelgallinero@gmail.com",
-    "website": "https://www.brushnetwork.com"
+    "website": "https://www.cupofjoe.wholesaler"
   },
   "maps": {
     "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
@@ -43,15 +44,15 @@
     "jitsi": ""
   },
   "links": {
-    "linkedin": "https://linkedin.com/in/joelgallinero",
-    "fiverr": "https://fiverr.com/joelgallinero"
+    "linkedin": "",
+    "fiverr": ""
   },
   "socials": {
-    "facebook": "https://facebook.com/joelgallinero",
-    "x": "",
-    "youtube": "",
-    "tiktok": "",
-    "instagram": ""
+    "facebook": "https://www.facebook.com/cupofjoe",
+    "x": "https://www.x.com/cupofjoe",
+    "youtube": "https://www.youtube.com/cupofjoe",
+    "instagram": "https://www.instagram.com/cupofjoe",
+    "tiktok": "https://www.tiktok.com/cupofjoe"
   },
   "qrOrder": [
     "share",
@@ -63,33 +64,40 @@
     "email",
     "website",
     "googlemaps",
-    "fiverr",
-    "linkedin",
-    "facebook"
+    "facebook",
+    "instagram",
+    "x",
+    "youtube",
+    "tiktok"
   ],
   "vcfOrder": [
     "share",
     "messenger",
     "googlemaps",
-    "fiverr",
-    "linkedin",
-    "facebook"
+    "facebook",
+    "instagram",
+    "x",
+    "youtube",
+    "tiktok"
   ],
   "slideshow": [
     {
-      "image": "slideshow1.webp",
+      "media": "<video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>",
       "title": "Robusta (Coffea Canephora)",
-      "description": "Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae. Though widely known as Coffea robusta, the plant is scientifically identified as Coffea canephora, which has two main varieties, robusta and nganda (nom. illeg.).[2]"
+      "description": "Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>"
     },
     {
-      "image": "slideshow2.webp",
+      "media": "<img src='slideshow2.webp' uk-cover>",
       "title": "Barako (Coffea Liberica)",
-      "description": "Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.[2][3][4]"
+      "description": "Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>"
     },
     {
-      "image": "slideshow3.webp",
+      "media": "<img src='slideshow3.webp' uk-cover>",
       "title": "Arabica (Coffea Arabica)",
-      "description": "Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.[2] Coffee produced from the less acidic, more bitter, and more highly caffeinated robusta bean (C. canephora) makes up most of the remaining coffee production. The natural populations of Coffea arabica are restricted to the forests of South Ethiopia, South Sudan, and Yemen.[3][4][5]"
+      "description": "Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>"
     }
   ],
   "gallery": {
@@ -97,27 +105,33 @@
     "items": [
       {
         "image": "gallery1.webp",
-        "title": "Title1"
+        "title": "Robusta (Coffea Canephora)",
+        "media": "gallery1.webp"
       },
       {
         "image": "gallery2.webp",
-        "title": "Title2"
+        "title": "Coffee Machines",
+        "media": "gallery2.webp"
       },
       {
         "image": "gallery3.webp",
-        "title": "Title3"
+        "title": "Medium Coffee Grounds",
+        "media": "gallery3.webp"
       },
       {
         "image": "gallery4.webp",
-        "title": "Title4"
+        "title": "Espresso Machine",
+        "media": "gallery4.webp"
       },
       {
         "image": "gallery5.webp",
-        "title": "Title5"
+        "title": "Barako (Coffea Liberica)",
+        "media": "gallery5.webp"
       },
       {
         "image": "gallery6.webp",
-        "title": "Title6"
+        "title": "Roaster Machine",
+        "media": "gallery6.webp"
       }
     ]
   },
@@ -157,8 +171,9 @@
       "answer": "Simply provide the following information: Coffee variety (Arabica, Robusta, Liberica, or blend), Required quantity, Preferred packaging size, Delivery location & Business name and contact details. Our sales team will prepare a quotation, shipping estimate, and expected delivery schedule."
     }
   ],
+  "color": "#000000",
   "license": {
-    "expires": "2076-08-20T00:00:00",
+    "expires": "2016-08-20T00:00:00",
     "disabled": false,
     "redirect": "https://m.me/joelgallinero"
   }
