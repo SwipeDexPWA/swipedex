@@ -22,8 +22,6 @@
     <meta property="og:site_name" content="[SD] SwipeDex℠">
     <meta property="og:locale" content="en_US" />
 
-    <meta name="theme-color" content="#000000" />
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Joel L. Gallinero, Cup of Joe">
     <meta name="twitter:description" content="Cup of Joe - Coffee for the Common Man">
@@ -122,7 +120,7 @@
     </script>
 
     <style>
-        #pwa {
+        #pwa2 {
             display: none;
         }
 
@@ -151,7 +149,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #000000;">
     <div id="pwa">
         <div class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp"></div>
 <div class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#menu" uk-toggle><img class="icon"
@@ -395,8 +393,8 @@
         }
 
         .qr-trigger img {
-          width: min(60px, 6vw);
-          height: min(60px, 6vw);
+          width: min(50px, 5vw);
+          height: min(50px, 5vw);
           object-fit: contain;
         }
       </style>
@@ -445,7 +443,7 @@
      data-qr="${item.qr}"
      data-link="${item.value || ''}">
     <img src="${item.icon}">
-    <div class="qr-label uk-margin-small-top">
+    <div class="qr-label uk-margin-xsmall-top">
       ${item.label}
     </div>
   </a>
