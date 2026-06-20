@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Joel L. Gallinero, Cup of Joe" />
     <meta property="og:description" content="Cup of Joe - Coffee for the Common Man">
-    <meta property="og:image" content="https://swipedex.app/cupofjoe/thumbnail.png">
+    <meta property="og:image" content="https://swipedex.app/cupofjoe/thumbnail.webp">
     <meta property="og:url" content="https://swipedex.app/cupofjoe">
     <meta property="og:site_name" content="[SD] SwipeDex℠">
     <meta property="og:locale" content="en_US" />
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Joel L. Gallinero, Cup of Joe">
     <meta name="twitter:description" content="Cup of Joe - Coffee for the Common Man">
-    <meta name="twitter:image" content="https://swipedex.app/cupofjoe/thumbnail.png">
+    <meta name="twitter:image" content="https://swipedex.app/cupofjoe/thumbnail.webp">
 
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -59,7 +59,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Joel L. Gallinero, Cup of Joe",
-    "image": "https://swipedex.app/cupofjoe/thumbnail.png",
+    "image": "https://swipedex.app/cupofjoe/thumbnail.webp",
     "url": "https://swipedex.app/cupofjoe",
     "telephone": "+63 916 472 9358",
     "address": {
@@ -120,26 +120,26 @@
     </script>
 
     <style>
-        #pwa {
+        #pwa2 {
             display: none;
         }
 
-        h2 {
+        #license h2 {
             font-family: Montserrat;
             font-weight: 800;
             text-transform: uppercase;
         }
 
-        h4 {
+        #license h4 {
             font-family: Montserrat;
             font-weight: 700;
         }
 
-        p {
+        #license p {
             font-family: Poppins;
         }
 
-        .uk-button {
+        #license .uk-button {
             font-family: Poppins;
             color: #fff;
             background-color: #000;
@@ -149,7 +149,9 @@
 
 </head>
 
-<body style="background-color: #000000;">
+<script src="cloak.js"></script>
+
+<body>
     <div id="pwa">
         <div class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp"></div>
 <div class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#menu" uk-toggle><img class="icon"
@@ -484,6 +486,39 @@
       linkEl.style.display = "none";
     }
   });
+</script>
+<script>
+    // Global
+    //UIkit.grid('[anigen-container]', {});
+    //UIkit.heightViewport('[anigen-fullscreen]', {});
+    //UIkit.img('[anigen-background]', {});
+    //UIkit.modal('[anigen-popup]', {});
+
+    // Slideshow
+    //UIkit.slideshow('#slideshow [anigen-slides]', { autoplay: 'true', autoplayInterval: '4000', animation: 'push', ratio: 'false' });
+    //UIkit.slideshowParallax('#slideshow h5[anigen-slidescroll]', { y: '100, 0, 100' });
+    //UIkit.slideshowParallax('#slideshow p[anigen-slidescroll]', { y: '200, 0, 200' });
+
+    // Grid
+    //UIkit.lightbox('#grid [anigen-gallery]', { animation: 'slide', counter: 'true' });
+    //UIkit.heightMatch('#grid [anigen-equal]', { row: 'false', target: '> img' });
+
+    // Rates
+    //UIkit.leader('#rates [anigen-dottedline]', {});
+
+    // About
+    //UIkit.img('#about [anigen-background]', { dataSrc: 'slideshow1.webp' });
+    //UIkit.parallax('#about [anigen-scroll]', { bgy: '-300' });
+    //UIkit.scrollspy('#about h1[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '300' });
+    //UIkit.scrollspy('#about p[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '400' });
+    //UIkit.scrollspy('#about a[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '500' });
+
+    // FAQs
+    //UIkit.accordion('#faqs [anigen-collapse]', {});
+    //UIkit.accordionIcon('#faqs [anigen-plus]', {});
+
+    // Console
+    //UIkit.img('#console [anigen-background]', { dataSrc: 'console.webp' });
 </script>
     </div>
 
