@@ -7,7 +7,7 @@
     <noscript>
         <meta http-equiv="refresh" content="0;url=https://swipedex.app">
     </noscript>
-    <title>Joel L. Gallinero, Cup of Joe</title>
+    <title>Cup of Joe - Coffee for the Common Man</title>
     <meta name="description" content="Cup of Joe - Coffee for the Common Man">
     <meta name="keywords" content="Philippine, Native Coffee, Robusta Beans, Liberica Beans, Barako, Arabica Beans, Philippines">
     <meta name="author" content="[SD] SwipeDex℠">
@@ -15,7 +15,7 @@
     <link rel="canonical" href="https://swipedex.app/cupofjoe">
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Joel L. Gallinero, Cup of Joe" />
+    <meta property="og:title" content="Cup of Joe - Coffee for the Common Man" />
     <meta property="og:description" content="Cup of Joe - Coffee for the Common Man">
     <meta property="og:image" content="https://swipedex.app/cupofjoe/thumbnail.webp">
     <meta property="og:url" content="https://swipedex.app/cupofjoe">
@@ -23,7 +23,7 @@
     <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Joel L. Gallinero, Cup of Joe">
+    <meta name="twitter:title" content="Cup of Joe - Coffee for the Common Man">
     <meta name="twitter:description" content="Cup of Joe - Coffee for the Common Man">
     <meta name="twitter:image" content="https://swipedex.app/cupofjoe/thumbnail.webp">
 
@@ -52,13 +52,13 @@
 
     <link rel="manifest" href="manifest.json">
 
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#221a1a">
 
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Joel L. Gallinero, Cup of Joe",
+    "name": "",
     "image": "https://swipedex.app/cupofjoe/thumbnail.webp",
     "url": "https://swipedex.app/cupofjoe",
     "telephone": "+63 916 472 9358",
@@ -70,106 +70,42 @@
     }
     </script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.17/dist/css/uikit.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.17/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.17/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.19/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.19/dist/js/uikit-icons.min.js"></script>
 
     <script src="../header.js"></script>
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="local.css">
-
-    <script>
-        let license = null;
-        let expireTime = null;
-        let redirectURL = null;
-        fetch("data.json")
-        fetch(`data.json?v=${Date.now()}`, {
-            cache: "no-store"
-        })
-            .then(r => r.json())
-            .then(data => {
-                license = data.license;
-                expireTime = new Date(license.expires).getTime();
-                redirectURL = license.redirect;
-                if (license.disabled) {
-                    lock();
-                    return;
-                }
-                if (Date.now() >= expireTime) {
-                    lock();
-                    return;
-                }
-                const app = document.getElementById("pwa");
-                if (app) app.style.display = "block";
-                startCountdown();
-            })
-            .catch(err => {
-                console.error("License error:", err);
-            });
-        function lock() {
-            const app = document.getElementById("pwa");
-            if (app) app.style.display = "none";
-            UIkit.modal("#license").show();
-            const btn = document.getElementById("provider");
-            if (btn) {
-                btn.onclick = () => {
-                    window.location.href = redirectURL;
-                };
-            }
-        }
-    </script>
-
-    <style>
-        #pwa {
-            display: none;
-        }
-
-        #license h2 {
-            font-family: Montserrat;
-            font-weight: 800;
-            text-transform: uppercase;
-        }
-
-        #license h4 {
-            font-family: Montserrat;
-            font-weight: 700;
-        }
-
-        #license p {
-            font-family: Poppins;
-        }
-
-        #license .uk-button {
-            font-family: Poppins;
-            color: #fff;
-            background-color: #000;
-            border-radius: 30px;
-        }
-    </style>
-
 </head>
 
-<script src="cloak.js"></script>
-
 <body>
-    <div id="pwa">
-        <div class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp"></div>
-<div class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#menu" uk-toggle><img class="icon"
+    <div id="pwa2">
+        <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
+    <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
+        uk-height-viewport>
+        <div class="uk-padding-large uk-position-center">
+            <h2 class="uk-margin-small-bottom">Subscription Renewal Required</h2>
+            <h4 class="uk-margin-small-top">Subscription has Expired or has been Disabled.</h4>
+            <p>
+                To Renew your Subscription or Reactivate your Account,
+                Please Contact your Provider.
+            </p>
+            <button id="provider" class="uk-button">
+                Contact Provider
+            </button>
+        </div>
+    </div>
+</div>
+<div id="logo" class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp"></div>
+<div id="menu" class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#offcanvas" uk-toggle><img class="icon"
             src="../ellipsis.svg"></a>
-    <div id="menu" uk-offcanvas="flip: true; mode: push">
+    <div id="offcanvas" uk-offcanvas="flip: true; mode: push">
         <div class="uk-background-default uk-offcanvas-bar">
             <ul class="uk-nav uk-nav-default poppins-semibold uk-dark">
-                <li><a href="" id="installLink"><span class="uk-margin-xsmall-right" uk-icon="icon: tablet"></span>
-                        Add
-                        to Home Screen</a></li>
-                <li><a href="" onclick="refreshApp(); return false;"><span class="uk-margin-xsmall-right"
-                            uk-icon="icon: refresh"></span> Update Web App</a></li>
-                <li><a href="" id="fullscreenLink"><span class="uk-margin-xsmall-right" uk-icon="icon: expand"></span>
-                        Go Fullscreen</a></li>
-                <li><a href="https://m.me/cupofjoe"><span class="uk-margin-xsmall-right" uk-icon="icon: users"></span>
-                        Contact Provider</a></li>
-                <li><a href="" onclick="UIkit.offcanvas('#menu').hide(); return false;"><span
-                            class="uk-margin-xsmall-right" uk-icon="icon: close-circle"></span> Exit Menu</a></li>
+                <li><a href="" id="installLink"><img class="offcanvas-icon" src="../add2home.svg"> Add to Home Screen</a></li>
+                <li><a href="" onclick="refreshApp(); return false;"><img class="offcanvas-icon" src="../update.svg"> Update Web App</a></li>
+                <li><a href="" id="fullscreenLink"><img class="offcanvas-icon" src="../fullscreen.svg"> Fullscreen</a></li>
+                <li><a href="https://m.me/cupofjoe"><img class="offcanvas-icon" src="../support.svg"> Contact Provider</a></li>
+                <li><a href="" onclick="UIkit.offcanvas('#offcanvas').hide(); return false;"><img class="offcanvas-icon" src="../close.svg">  Exit Menu</a></li>
             </ul>
             <dl class="uk-description-list">
                 <dt><small>Valid Thru:</small></dt>
@@ -181,6 +117,35 @@
         </div>
     </div>
 </div>
+<div id="navigation" class="uk-position-fixed uk-position-bottom-right uk-position-large">
+    <ul class="uk-iconnav uk-iconnav-vertical uk-flex-center uk-margin-small-top">
+        
+    <li>
+      <a href="#slideshow" class="anigen-button" uk-tooltip="Slideshow">
+        <img class="nav-icon" src="../slideshow.svg">
+      </a>
+    </li>
+
+    <li>
+      <a href="#gallery" class="anigen-button" uk-tooltip="Gallery">
+        <img class="nav-icon" src="../gallery.svg">
+      </a>
+    </li>
+
+    <li>
+      <a href="#about" class="anigen-button" uk-tooltip="About">
+        <img class="nav-icon" src="../about.svg">
+      </a>
+    </li>
+
+    <li>
+      <a href="#console" class="anigen-button" uk-tooltip="Contact">
+        <img class="nav-icon" src="../mobile.svg">
+      </a>
+    </li>
+
+    </ul>
+</div>
 <div id="slideshow" class="uk-section snap full uk-padding-remove-vertical">
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
@@ -188,115 +153,76 @@
       uk-slideshow="autoplay: true; autoplay-interval: 7000; animation: push; ratio: false">
       <div class="uk-slideshow-items" uk-height-viewport>
         
-        <div><video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>
-          <div class="uk-position-bottom-left uk-position-large">
-            <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Robusta (Coffea Canephora)</h4>
-            <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>
-            <div uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a></div>
-          </div>
+    <div><video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>
+      <div class="uk-position-bottom-left uk-position-large">
+        <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Robusta (Coffea Canephora)</h4>
+        <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>
+        <div uk-slideshow-parallax="y: 300, 0, 300">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>
         </div>
+      </div>
+    </div>
 
-        <div><img src='slideshow2.webp' uk-cover>
-          <div class="uk-position-bottom-left uk-position-large">
-            <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Barako (Coffea Liberica)</h4>
-            <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p>
-            <div uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a></div>
-          </div>
+    <div><img src='slideshow2.webp' uk-cover>
+      <div class="uk-position-bottom-left uk-position-large">
+        <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Barako (Coffea Liberica)</h4>
+        <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p>
+        <div uk-slideshow-parallax="y: 300, 0, 300">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>
         </div>
+      </div>
+    </div>
 
-        <div><img src='slideshow3.webp' uk-cover>
-          <div class="uk-position-bottom-left uk-position-large">
-            <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Arabica (Coffea Arabica)</h4>
-            <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p>
-            <div uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a></div>
-          </div>
+    <div><img src='slideshow3.webp' uk-cover>
+      <div class="uk-position-bottom-left uk-position-large">
+        <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Arabica (Coffea Arabica)</h4>
+        <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p>
+        <div uk-slideshow-parallax="y: 300, 0, 300">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>
         </div>
+      </div>
+    </div>
 
       </div>
       <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
         uk-slideshow-item="previous"></a>
       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
         uk-slideshow-item="next"></a>
+      <ul class="uk-position-bottom-center uk-position-large uk-slideshow-nav uk-dotnav"></ul>
     </div>
 
   </div>
 </div>
-<div id="grid" class="uk-section snap full uk-padding-remove-vertical">
+<div id="gallery" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
-
-        
-<div class="uk-child-width-1-3@s uk-child-width-1-2 uk-grid-collapse" uk-grid uk-lightbox="animation: slide; counter: true" uk-height-match="row: false; target: > img" uk-height-viewport>
-
+        <div class="uk-child-width-1-3@s uk-child-width-1-2 uk-grid-collapse" uk-lightbox="animation: slide; counter: true"
+            uk-height-match="row: false; target: > img" uk-height-viewport uk-grid="">
+            
     <div class="uk-cover-container">
-    <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)"><img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover></a>
-    </div>
-
-    <div class="uk-cover-container">
-    <a href="gallery2.webp" data-caption="Coffee Machines"><img src="gallery2.webp" alt="Coffee Machines" uk-cover></a>
+      <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)"><img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery3.webp" data-caption="Medium Coffee Grounds"><img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover></a>
+      <a href="gallery2.webp" data-caption="Coffee Machines"><img src="gallery2.webp" alt="Coffee Machines" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery4.webp" data-caption="Espresso Machine"><img src="gallery4.webp" alt="Espresso Machine" uk-cover></a>
+      <a href="gallery3.webp" data-caption="Medium Coffee Grounds"><img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)"><img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover></a>
+      <a href="gallery4.webp" data-caption="Espresso Machine"><img src="gallery4.webp" alt="Espresso Machine" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-    <a href="gallery6.webp" data-caption="Roaster Machine"><img src="gallery6.webp" alt="Roaster Machine" uk-cover></a>
+      <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)"><img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover></a>
     </div>
 
-</div>
-
-
+    <div class="uk-cover-container">
+      <a href="gallery6.webp" data-caption="Roaster Machine"><img src="gallery6.webp" alt="Roaster Machine" uk-cover></a>
     </div>
-</div>
-<div id="about" class="uk-section snap full uk-padding-remove-vertical">
-    <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
-
-        <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary uk-flex"
-            data-src="about.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
-
-            <div id="js-sticky-parallax-container" class="uk-position-relative uk-text-center uk-height-viewport-3">
-                <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-sticky"
-                    uk-sticky="end: #js-sticky-parallax-container" style="position: sticky; top: 0px;">
-                    <div class="uk-padding-large">
-                        <h1 class="uk-margin-remove-bottom" uk-parallax="opacity: 0,1; y: 150,0; end: 70vh + 70%; easing: -2">We are a Trusted
-                            wholesale
-                            supplier of</h1>
-                        <h1 class="uk-heading-large uk-margin-remove-vertical">
-                            <span class="uk-display-inline-block"
-                                uk-parallax="target: #js-sticky-parallax-container; x: -15vw,0; easing: -1; start: 80vh; end: 100vh;"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Arabica,
-                                Robusta</span>
-                            <br>
-                            <span class="uk-display-inline-block"
-                                uk-parallax="target: #js-sticky-parallax-container; x: 10vw,0; easing: -1; start: 70vh; end: 100vh;"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">& Liberica
-                                (Barako)</span>
-                        </h1>
-                        <h1 class="uk-margin-remove-top">Coffee Beans</h1>
-                        <p>Serving roasters,
-                            cafés,
-                            retailers, and distributors. Committed to quality and sustainability, we source carefully
-                            selected
-                            beans to deliver exceptional flavor, freshness, and value. Whether you need green beans,
-                            roasted
-                            coffee, or bulk supply solutions, we are dedicated to helping your coffee business grow.</p>
-                        <a class="uk-button"
-                            href="#">Contact
-                            Us</a>
-                    </div>
-                </div>
-            </div>
 
         </div>
-
     </div>
 </div>
 <div id="faqs" class="uk-section snap uk-padding-remove-vertical">
@@ -308,50 +234,50 @@
                 <h1>FAQs</h1>
                 <ul class="uk-accordion-default" uk-accordion>
                     
-<li>
-    <a class="uk-accordion-title">
+    <li>
+      <a class="uk-accordion-title">
         <h6>What is the difference between Arabica, Robusta, and Liberica coffee beans?</h6> <span uk-accordion-icon>
-    </a>
-    <div class="uk-accordion-content">
+      </a>
+      <div class="uk-accordion-content">
         <p>Arabica beans are known for their smooth, aromatic flavor with mild acidity and notes of fruit, chocolate, or nuts. They generally contain less caffeine. Robusta beans have a stronger, bolder taste with earthy and chocolate-like notes. They contain more caffeine and produce a richer crema, making them popular for espresso blends. Liberica beans are unique for their larger size and distinctive flavor profile, often described as fruity, floral, smoky, and woody. They are less common and sought after by specialty coffee enthusiasts.</p>
-    </div>
-</li>
+      </div>
+  </li>
 
-<li>
-    <a class="uk-accordion-title">
+    <li>
+      <a class="uk-accordion-title">
         <h6>What packaging sizes do you offer for wholesale orders?</h6> <span uk-accordion-icon>
-    </a>
-    <div class="uk-accordion-content">
+      </a>
+      <div class="uk-accordion-content">
         <p>We offer flexible packaging options to meet different business needs, including: 1 kg bags, 5 kg bags, 25 kg sacks & 50 kg sacks. Custom packaging and private labeling options may also be available for qualified wholesale customers.</p>
-    </div>
-</li>
+      </div>
+  </li>
 
-<li>
-    <a class="uk-accordion-title">
+    <li>
+      <a class="uk-accordion-title">
         <h6>Do you supply green coffee beans or roasted coffee beans?</h6> <span uk-accordion-icon>
-    </a>
-    <div class="uk-accordion-content">
+      </a>
+      <div class="uk-accordion-content">
         <p>We can supply: Green (unroasted) coffee beans, Roasted whole beans, Ground coffee (upon request). Customers can choose the roast level and grind size depending on their requirements.</p>
-    </div>
-</li>
+      </div>
+  </li>
 
-<li>
-    <a class="uk-accordion-title">
+    <li>
+      <a class="uk-accordion-title">
         <h6>What is your minimum order quantity (MOQ)?</h6> <span uk-accordion-icon>
-    </a>
-    <div class="uk-accordion-content">
+      </a>
+      <div class="uk-accordion-content">
         <p>Our minimum order quantity varies depending on the product and packaging selected. Typical wholesale orders start at: 25 kg for green beans, 10 kg for roasted beans. Please contact us for customized orders or mixed-bean purchases.</p>
-    </div>
-</li>
+      </div>
+  </li>
 
-<li>
-    <a class="uk-accordion-title">
+    <li>
+      <a class="uk-accordion-title">
         <h6>How do I place an order and request a quotation?</h6> <span uk-accordion-icon>
-    </a>
-    <div class="uk-accordion-content">
+      </a>
+      <div class="uk-accordion-content">
         <p>Simply provide the following information: Coffee variety (Arabica, Robusta, Liberica, or blend), Required quantity, Preferred packaging size, Delivery location & Business name and contact details. Our sales team will prepare a quotation, shipping estimate, and expected delivery schedule.</p>
-    </div>
-</li>
+      </div>
+  </li>
 
                 </ul>
 
@@ -360,46 +286,47 @@
 
     </div>
 </div>
+<div id="about" class="uk-section snap full uk-padding-remove-vertical">
+    <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
+
+        <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary"
+            data-src="about.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
+
+            <div id="js-sticky-parallax-container" class="uk-position-relative uk-text-center uk-height-viewport-3">
+                <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-sticky"
+                    uk-sticky="end: #js-sticky-parallax-container" style="position: sticky; top: 0px;">
+                    <div class="uk-padding-large">
+                        <h3 class="uk-margin-remove-bottom">We are a Trusted wholesale supplier of</h3>
+                        <h1 class="uk-margin-remove-vertical">
+                            <span class="uk-display-inline-block anigen-fontsize"
+                                uk-parallax="target: #js-sticky-parallax-container; x: -15vw,0; easing: -1; start: 80vh; end: 100vh;"
+                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Arabica, Robusta &</span>
+                            <br>
+                            <span class="uk-display-inline-block anigen-fontsize"
+                                uk-parallax="target: #js-sticky-parallax-container; x: 10vw,0; easing: -1; start: 70vh; end: 100vh;"
+                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Liberica (Barako)</span>
+                        </h1>
+                        <h3 class="uk-margin-remove-top">Coffee Beans</h3>
+                        <p>Serving roasters, cafés, retailers, and distributors. Committed to quality and sustainability, we source carefully selected beans to deliver exceptional flavor, freshness, and value. Whether you need green beans, roasted coffee, or bulk supply solutions, we are dedicated to helping your coffee business grow.</p>
+                        <a class="uk-button" href="#console">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
 <div id="console" class="uk-section snap full uk-padding-remove-vertical">
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-    <div
-      class="uk-background-cover uk-background-center-center uk-background-blend-multiply uk-background-secondary uk-position-relative uk-background-fixed"
-      data-src="console.webp" uk-img uk-height-viewport>
+    <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary uk-position-relative"
+      data-src="console.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
 
       <div id="qr-codes"
         class="viewport-grid uk-child-width-1-6@l uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-3 uk-grid-collapse uk-text-center"
         uk-grid>
       </div>
-      <style>
-        .viewport-grid {
-          min-height: 100vh;
-          padding: 40px;
-          box-sizing: border-box;
-        }
-
-        .qr-item {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .qr-trigger {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-          text-decoration: none;
-        }
-
-        .qr-trigger img {
-          width: min(50px, 5vw);
-          height: min(50px, 5vw);
-          object-fit: contain;
-        }
-      </style>
 
     </div>
 
@@ -444,7 +371,7 @@
      data-title="${item.label}"
      data-qr="${item.qr}"
      data-link="${item.value || ''}">
-    <img src="${item.icon}">
+    <img class="icon" src="${item.icon}">
     <div class="qr-label uk-margin-xsmall-top">
       ${item.label}
     </div>
@@ -453,125 +380,12 @@
       grid.appendChild(div);
     }
   })();
-  document.addEventListener("click", (e) => {
-    const el = e.target.closest(".qr-trigger");
-    if (!el) return;
-    const title = el.dataset.title;
-    const qr = el.dataset.qr;
-    const key = el.dataset.key;
-    let link = el.dataset.link || "";
-    document.getElementById("qr-title").textContent = title;
-    document.getElementById("qr-image").src = qr;
-    const linkEl = document.getElementById("qr-link");
-    switch (key) {
-      case "email":
-        link = `mailto:${link}`;
-        break;
-
-      case "mobile":
-      case "landline":
-      case "fax":
-        link = `tel:${link}`;
-        break;
-
-      case "sms":
-        link = `sms:${link}`;
-        break;
-    }
-    if (link) {
-      linkEl.href = link;
-      linkEl.textContent = el.dataset.link;
-      linkEl.style.display = "block";
-    } else {
-      linkEl.style.display = "none";
-    }
-  });
 </script>
-<script>
-    // Global
-    //UIkit.grid('[anigen-container]', {});
-    //UIkit.heightViewport('[anigen-fullscreen]', {});
-    //UIkit.img('[anigen-background]', {});
-    //UIkit.modal('[anigen-popup]', {});
-
-    // Slideshow
-    //UIkit.slideshow('#slideshow [anigen-slides]', { autoplay: 'true', autoplayInterval: '4000', animation: 'push', ratio: 'false' });
-    //UIkit.slideshowParallax('#slideshow h5[anigen-slidescroll]', { y: '100, 0, 100' });
-    //UIkit.slideshowParallax('#slideshow p[anigen-slidescroll]', { y: '200, 0, 200' });
-
-    // Grid
-    //UIkit.lightbox('#grid [anigen-gallery]', { animation: 'slide', counter: 'true' });
-    //UIkit.heightMatch('#grid [anigen-equal]', { row: 'false', target: '> img' });
-
-    // Rates
-    //UIkit.leader('#rates [anigen-dottedline]', {});
-
-    // About
-    //UIkit.img('#about [anigen-background]', { dataSrc: 'slideshow1.webp' });
-    //UIkit.parallax('#about [anigen-scroll]', { bgy: '-300' });
-    //UIkit.scrollspy('#about h1[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '300' });
-    //UIkit.scrollspy('#about p[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '400' });
-    //UIkit.scrollspy('#about a[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '500' });
-
-    // FAQs
-    //UIkit.accordion('#faqs [anigen-collapse]', {});
-    //UIkit.accordionIcon('#faqs [anigen-plus]', {});
-
-    // Console
-    //UIkit.img('#console [anigen-background]', { dataSrc: 'console.webp' });
-</script>
+<div class="loader-body" id="loader">
+    <div class="loader"></div>
+</div>
     </div>
-
-    <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
-        <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
-            uk-height-viewport>
-            <div class="uk-padding-large uk-position-center">
-                <h2 class="uk-margin-small-bottom">Subscription Renewal Required</h2>
-                <h4 class="uk-margin-small-top">Subscription has Expired or has been Disabled.</h4>
-                <p>
-                    To Renew your Subscription or Reactivate your Account,
-                    Please Contact your Provider.
-                </p>
-                <button id="provider" class="uk-button">
-                    Contact Provider
-                </button>
-            </div>
-        </div>
-    </div>
-
     <script src="../footer.js"></script>
-    <script>
-        let timer = null;
-        function startCountdown() {
-            const countdownEl = document.getElementById("countdown");
-            if (!countdownEl) return;
-            function updateCountdown() {
-                let diff = expireTime - Date.now();
-                if (diff <= 0) {
-                    clearInterval(timer);
-                    lock();
-                    return;
-                }
-                const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-                diff %= (1000 * 60 * 60 * 24 * 365);
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                diff %= (1000 * 60 * 60 * 24);
-                const hours = Math.floor(diff / (1000 * 60 * 60));
-                diff %= (1000 * 60 * 60);
-                const minutes = Math.floor(diff / (1000 * 60));
-                diff %= (1000 * 60);
-                const seconds = Math.floor(diff / 1000);
-                countdownEl.textContent =
-                    `${String(years).padStart(2, "0")}Y ` +
-                    `${String(days).padStart(2, "0")}D ` +
-                    `${String(hours).padStart(2, "0")}H ` +
-                    `${String(minutes).padStart(2, "0")}M ` +
-                    `${String(seconds).padStart(2, "0")}S`;
-            }
-            updateCountdown();
-            timer = setInterval(updateCountdown, 1000);
-        }
-    </script>
 </body>
 
 </html>

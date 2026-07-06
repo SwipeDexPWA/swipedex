@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #221a1a;
 }
 
 /* Typography */
@@ -10,6 +10,12 @@ h4,
 h5,
 h6 {
     font-family: "Lato";
+    font-weight: 600;
+}
+
+/* Navigation */
+#navigation .anigen-button {
+    background-color: #221a1a;
 }
 
 /* Slideshow */
@@ -33,9 +39,22 @@ h6 {
     border-radius: 30px;
 }
 
+/* Gallery */
+#gallery {
+    background-color: #fff;
+}
+
 /* About */
 #about h1 {
     color: rgb(255, 255, 255);
+}
+
+#about h3 {
+    color: rgb(255, 255, 255);
+}
+
+#about .anigen-fontsize {
+    font-size: calc(5.5vw + 3vh);
 }
 
 #about p {
@@ -62,7 +81,7 @@ h6 {
 
 /* FAQs */
 #faqs {
-    background-color: rgb(82, 15, 0);
+    background-color: #221a1a;
 }
 
 #faqs h1 {
@@ -78,4 +97,9 @@ h6 {
 #faqs p {
     color: rgb(255, 255, 255);
     margin-top: 0px;
+}
+
+/* Console */
+#console .anigen-bgcolor {
+    background-color: rgba(0, 0, 0, 0.7);
 }

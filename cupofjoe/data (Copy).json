@@ -135,48 +135,45 @@
     }
   ],
   "gallery": {
-    "width": "uk-child-width-1-3@s",
-    "masonry": ""
+    "gridClass": "uk-child-width-1-3@s uk-child-width-1-2",
+    "items": [
+      {
+        "image": "gallery1.webp",
+        "title": "Robusta (Coffea Canephora)",
+        "media": "gallery1.webp"
+      },
+      {
+        "image": "gallery2.webp",
+        "title": "Coffee Machines",
+        "media": "gallery2.webp"
+      },
+      {
+        "image": "gallery3.webp",
+        "title": "Medium Coffee Grounds",
+        "media": "gallery3.webp"
+      },
+      {
+        "image": "gallery4.webp",
+        "title": "Espresso Machine",
+        "media": "gallery4.webp"
+      },
+      {
+        "image": "gallery5.webp",
+        "title": "Barako (Coffea Liberica)",
+        "media": "gallery5.webp"
+      },
+      {
+        "image": "gallery6.webp",
+        "title": "Roaster Machine",
+        "media": "gallery6.webp"
+      }
+    ]
   },
-  "grids": [
-    {
-      "image": "gallery1.webp",
-      "title": "Robusta (Coffea Canephora)",
-      "media": "gallery1.webp",
-      "cover": "uk-cover"
-    },
-    {
-      "image": "gallery2.webp",
-      "title": "Coffee Machines",
-      "media": "gallery2.webp",
-      "cover": "uk-cover"
-    },
-    {
-      "image": "gallery3.webp",
-      "title": "Medium Coffee Grounds",
-      "media": "gallery3.webp",
-      "cover": "uk-cover"
-    },
-    {
-      "image": "gallery4.webp",
-      "title": "Espresso Machine",
-      "media": "gallery4.webp",
-      "cover": "uk-cover"
-    },
-    {
-      "image": "gallery5.webp",
-      "title": "Barako (Coffea Liberica)",
-      "media": "gallery5.webp",
-      "cover": "uk-cover"
-    },
-    {
-      "image": "gallery6.webp",
-      "title": "Roaster Machine",
-      "media": "gallery6.webp",
-      "cover": "uk-cover"
-    }
-  ],
   "rates": [
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    },
     {
       "name": "",
       "price": "₱ per Kilo"
