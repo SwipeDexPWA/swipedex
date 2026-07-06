@@ -1,0 +1,108 @@
+body {
+    background-color: #111111;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+/* Navigation */
+#navigation .anigen-button {
+    background-color: #333333;
+}
+
+/* Slideshow */
+#slideshow h4 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+    font-size: calc(4vw + 3.5vh);
+    line-height: 0.9;
+}
+
+#slideshow p {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+    width: 65vw;
+}
+
+#slideshow .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+}
+
+/* Gallery */
+#gallery {
+    background-color: #000000;
+}
+
+/* About */
+#about h1 {
+    color: rgb(255, 255, 255);
+}
+
+#about h3 {
+    color: rgb(255, 255, 255);
+}
+
+#about .anigen-fontsize {
+    font-size: calc(5.5vw + 3vh);
+}
+
+#about p {
+    color: rgb(255, 255, 255);
+}
+
+#about .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+
+/* Rates */
+#rates .h6 {
+    font-family: "Poppins";
+    font-size: clamp(1rem, 0.75rem + 0.35vw, 1.25rem);
+    font-weight: 600;
+}
+
+
+/* FAQs */
+#faqs {
+    background-color: #221a1a;
+}
+
+#faqs h1 {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#faqs h6 {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#faqs p {
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+/* Console */
+#console .anigen-bgcolor {
+    background-color: rgba(0, 0, 0, 0.5);
+}

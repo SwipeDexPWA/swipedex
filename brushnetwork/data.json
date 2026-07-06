@@ -1,0 +1,307 @@
+{
+  "premium": false,
+  "swipedex": "https://swipedex.app",
+  "share": "https://swipedex.app/brushnetwork",
+  "description": "a Graphic Design & Web Development company since 1997",
+  "keywords": "Philippine, Graphic, Designer, Design, Photopea, Web, WordPress, Elementor, Developer, Development, Philippines",
+  "author": "[SD] SwipeDex℠",
+  "useName": false,
+  "vcardDisplay": "company",
+  "logo": "logo.png",
+  "photo": "",
+  "prefix": "",
+  "firstname": "Joel",
+  "middlename": "L.",
+  "lastname": "Gallinero",
+  "fullname": "Joel L. Gallinero",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "BrushNetwork",
+  "position": "Freelance Graphic Designer & Web Developer",
+  "street": "San Antonio, Oton",
+  "zipcode": "5020",
+  "city": "Iloilo",
+  "state": "",
+  "country": "Philippines",
+  "initial": "PH",
+  "contacts": {
+    "mobile": "+63 916 472 9358",
+    "landline": "",
+    "fax": "",
+    "sms": "+63 916 472 9358",
+    "messenger": "https://m.me/joelgallinero",
+    "whatsapp": "",
+    "viber": "",
+    "telegram": "",
+    "email": "joelgallinero@gmail.com",
+    "website": "https://www.brushnetwork.com"
+  },
+  "maps": {
+    "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/joelgallinero",
+    "fiverr": "https://www.fiverr.com/joelgallinero"
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/joelgallinero",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "mobile",
+    "sms",
+    "email",
+    "website",
+    "googlemaps",
+    "linkedin",
+    "fiverr",
+    "facebook"
+  ],
+  "vcfOrder": [
+    "share",
+    "messenger",
+    "googlemaps",
+    "linkedin",
+    "fiverr",
+    "facebook"
+  ],
+  "navigation": [
+    {
+      "icon": "../slideshow.svg",
+      "tooltip": "Slideshow",
+      "anchor": "#slideshow"
+    },
+    {
+      "icon": "../gallery.svg",
+      "tooltip": "Gallery",
+      "anchor": "#gallery"
+    },
+    {
+      "icon": "../about.svg",
+      "tooltip": "About",
+      "anchor": "#about"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "Contact",
+      "anchor": "#console"
+    }
+  ],
+  "profile": {
+    "pic": "photo.webp",
+    "button": "Contact",
+    "anchor": "#console",
+    "shape": "incline",
+    "blend": "uk-background-blend-luminosity"
+  },
+  "slideshow": [
+    {
+      "media": "<img src='slideshow1.webp' uk-cover>",
+      "title": "Photopea",
+      "description": "Photopea (/ˈfoʊtəˈpiː/ FOH-tə-PEE) is a web-based photo and graphics editor developed by Ivan Kutskir. It is used for image editing, making illustrations, web design or converting between different image formats.",
+      "button": "Go 2 Fiverr",
+      "link": "https://www.fiverr.com/s/Eg3Yx88"
+    },
+    {
+      "media": "<img src='slideshow2.webp' uk-cover>",
+      "title": "Elementor + WordPress",
+      "description": "The Elementor website builder allows WordPress users to create and edit websites with a responsive drag-and-drop technique similar to Divi, Wix, Metaconex, Readymag or Webflow.",
+      "button": "Go 2 Fiverr",
+      "link": "https://www.fiverr.com/s/gDA53bv"
+    }
+  ],
+  "gallery": {
+    "width": "uk-child-width-1-6@s",
+    "masonry": "masonry: pack"
+  },
+  "grids": [
+    {
+      "image": "WhichShouldIChoose.webp",
+      "title": "Category: eBooks",
+      "media": "WhichShouldIChoose.webp",
+      "cover": ""
+    },
+    {
+      "image": "waSH.webp",
+      "title": "Category: Labels",
+      "media": "waSH.webp",
+      "cover": ""
+    },
+    {
+      "image": "Cutdown.webp",
+      "title": "Category: Labels",
+      "media": "Cutdown.webp",
+      "cover": ""
+    },
+    {
+      "image": "Websites-13.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-13.jpg",
+      "cover": ""
+    },
+    {
+      "image": "HowToHireAVirtualAssistant.webp",
+      "title": "Category: Banners",
+      "media": "HowToHireAVirtualAssistant.webp",
+      "cover": ""
+    },
+    {
+      "image": "BannerAd-QatarAirways1.jpg",
+      "title": "Category: Banners",
+      "media": "BannerAd-QatarAirways1.jpg",
+      "cover": ""
+    },
+    {
+      "image": "San Line 3D.png",
+      "title": "Category: Logos",
+      "media": "San Line 3D.png",
+      "cover": ""
+    },
+    {
+      "image": "ScreenDisplay-Shell1.jpg",
+      "title": "Category: Banners",
+      "media": "ScreenDisplay-Shell1.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Websites-7.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-7.jpg",
+      "cover": ""
+    },
+    {
+      "image": "CupOfJoe.webp",
+      "title": "Category: Labels",
+      "media": "CupOfJoe.webp",
+      "cover": ""
+    },
+    {
+      "image": "Websites-6.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-6.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Websites-10.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-10.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Christoff-Groves.webp",
+      "title": "Category: Business Cards",
+      "media": "Christoff-Groves.webp",
+      "cover": ""
+    },
+    {
+      "image": "TLB-Color.svg",
+      "title": "Category: Logos",
+      "media": "TLB-Color.svg",
+      "cover": ""
+    },
+    {
+      "image": "TBQ1.jpg",
+      "title": "Category: Websites",
+      "media": "TBQ1.jpg",
+      "cover": ""
+    },
+    {
+      "image": "RedOakShifters-Final.jpg",
+      "title": "Category: eBooks",
+      "media": "RedOakShifters-Final.jpg",
+      "cover": ""
+    },
+    {
+      "image": "SBCQ1.jpg",
+      "title": "Category: Websites",
+      "media": "SBCQ1.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Websites-5.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-5.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Websites-12.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-12.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Logo-FitWorx.jpg",
+      "title": "Category: Logos",
+      "media": "Logo-FitWorx.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Spunned1.jpg",
+      "title": "Category: Websites",
+      "media": "Spunned1.jpg",
+      "cover": ""
+    },
+    {
+      "image": "CompanyProfile-OSHA8.jpg",
+      "title": "Category: Company Profiles",
+      "media": "CompanyProfile-OSHA8.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Logo-ConferenceEvent.jpg",
+      "title": "Category: Logos",
+      "media": "Logo-ConferenceEvent.jpg",
+      "cover": ""
+    },
+    {
+      "image": "Websites-17.jpg",
+      "title": "Category: Websites",
+      "media": "Websites-17.jpg",
+      "cover": ""
+    }
+  ],
+  "rates": [
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "about": {
+    "subtitle1": "One of the oldest",
+    "title1": "Graphic Design &",
+    "title2": "Web Development",
+    "subtitle2": "companies in Iloilo City, Philippines, since 1997",
+    "paragraph": "Elementor, WordPress, UIkit, Progressive Web App (PWA), Vibe Coding, Prompt Engineering, Aptana, DreamWeaver, Html5, CSS3, JavaScript, jQuery, Photopea, Gimp, PhotoShop, Inkscape, CorelDraw, Scribus, InDesign, Flash ActionScripting, AR & NFC",
+    "button": "Contact Us",
+    "link": "#console",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "theme": "#111111",
+  "license": {
+    "expires": "2076-08-20T00:00:00",
+    "disabled": false,
+    "redirect": "https://m.me/joelgallinero"
+  }
+}

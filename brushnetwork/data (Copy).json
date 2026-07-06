@@ -1,0 +1,298 @@
+{
+  "premium": false,
+  "swipedex": "https://swipedex.app",
+  "share": "https://swipedex.app/brushnetwork",
+  "description": "a Graphic Design & Web Development company since 1997",
+  "keywords": "Philippine, Graphic, Designer, Design, Photopea, Web, WordPress, Elementor, Developer, Development, Philippines",
+  "author": "[SD] SwipeDex℠",
+  "useName": false,
+  "vcardDisplay": "company",
+  "logo": "logo.png",
+  "photo": "",
+  "prefix": "",
+  "firstname": "Joel",
+  "middlename": "L.",
+  "lastname": "Gallinero",
+  "fullname": "Joel L. Gallinero",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "BrushNetwork",
+  "position": "Freelance Graphic Designer & Web Developer",
+  "street": "San Antonio, Oton",
+  "zipcode": "5020",
+  "city": "Iloilo",
+  "state": "",
+  "country": "Philippines",
+  "initial": "PH",
+  "contacts": {
+    "mobile": "+63 916 472 9358",
+    "landline": "",
+    "fax": "",
+    "sms": "+63 916 472 9358",
+    "messenger": "https://m.me/joelgallinero",
+    "whatsapp": "",
+    "viber": "",
+    "telegram": "",
+    "email": "joelgallinero@gmail.com",
+    "website": "https://www.brushnetwork.com"
+  },
+  "maps": {
+    "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/joelgallinero",
+    "fiverr": "https://www.fiverr.com/joelgallinero"
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/joelgallinero",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "mobile",
+    "sms",
+    "email",
+    "website",
+    "googlemaps",
+    "linkedin",
+    "fiverr",
+    "facebook"
+  ],
+  "vcfOrder": [
+    "share",
+    "messenger",
+    "googlemaps",
+    "linkedin",
+    "fiverr",
+    "facebook"
+  ],
+  "navigation": [
+    {
+      "icon": "../slideshow.svg",
+      "tooltip": "Slideshow",
+      "anchor": "#slideshow"
+    },
+    {
+      "icon": "../gallery.svg",
+      "tooltip": "Gallery",
+      "anchor": "#gallery"
+    },
+    {
+      "icon": "../about.svg",
+      "tooltip": "About",
+      "anchor": "#about"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "Contact",
+      "anchor": "#console"
+    }
+  ],
+  "profile": {
+    "pic": "photo.webp",
+    "button": "Contact",
+    "anchor": "#console",
+    "shape": "incline",
+    "blend": "uk-background-blend-luminosity"
+  },
+  "slideshow": [
+    {
+      "media": "<video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>",
+      "title": "Robusta (Coffea Canephora)",
+      "description": "Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.",
+      "button": "More Info",
+      "link": "#"
+    },
+    {
+      "media": "<img src='slideshow2.webp' uk-cover>",
+      "title": "Barako (Coffea Liberica)",
+      "description": "Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.",
+      "button": "More Info",
+      "link": "#"
+    },
+    {
+      "media": "<img src='slideshow3.webp' uk-cover>",
+      "title": "Arabica (Coffea Arabica)",
+      "description": "Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.",
+      "button": "More Info",
+      "link": "#"
+    }
+  ],
+  "gallery": {
+    "gridClass": "uk-child-width-1-6@s uk-child-width-1-2",
+    "gridType": "",
+    "items": [
+      {
+        "image": "WhichShouldIChoose.webp",
+        "title": "Category: eBooks",
+        "media": "WhichShouldIChoose.webp"
+      },
+      {
+        "image": "waSH.webp",
+        "title": "Category: Labels",
+        "media": "waSH.webp"
+      },
+      {
+        "image": "Cutdown.webp",
+        "title": "Category: Labels",
+        "media": "Cutdown.webp"
+      },
+      {
+        "image": "Websites-13.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-13.jpg"
+      },
+      {
+        "image": "HowToHireAVirtualAssistant.webp",
+        "title": "Category: Banners",
+        "media": "HowToHireAVirtualAssistant.webp"
+      },
+      {
+        "image": "BannerAd-QatarAirways1.jpg",
+        "title": "Category: Banners",
+        "media": "BannerAd-QatarAirways1.jpg"
+      },
+      {
+        "image": "San Line 3D.png",
+        "title": "Category: Logos",
+        "media": "San Line 3D.png"
+      },
+      {
+        "image": "ScreenDisplay-Shell1.jpg",
+        "title": "Category: Banners",
+        "media": "ScreenDisplay-Shell1.jpg"
+      },
+      {
+        "image": "Websites-7.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-7.jpg"
+      },
+      {
+        "image": "CupOfJoe.webp",
+        "title": "Category: Labels",
+        "media": "CupOfJoe.webp"
+      },
+      {
+        "image": "Websites-6.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-6.jpg"
+      },
+      {
+        "image": "Websites-10.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-10.jpg"
+      },
+      {
+        "image": "Christoff-Groves.webp",
+        "title": "Category: Business Cards",
+        "media": "Christoff-Groves.webp"
+      },
+      {
+        "image": "TLB-Color.svg",
+        "title": "Category: Logos",
+        "media": "TLB-Color.svg"
+      },
+      {
+        "image": "TBQ1.jpg",
+        "title": "Category: Websites",
+        "media": "TBQ1.jpg"
+      },
+      {
+        "image": "RedOakShifters-Final.jpg",
+        "title": "Category: eBooks",
+        "media": "RedOakShifters-Final.jpg"
+      },
+      {
+        "image": "SBCQ1.jpg",
+        "title": "Category: Websites",
+        "media": "SBCQ1.jpg"
+      },
+      {
+        "image": "Websites-5.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-5.jpg"
+      },
+      {
+        "image": "Websites-12.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-12.jpg"
+      },
+      {
+        "image": "Logo-FitWorx.jpg",
+        "title": "Category: Logos",
+        "media": "Logo-FitWorx.jpg"
+      },
+      {
+        "image": "Spunned1.jpg",
+        "title": "Category: Websites",
+        "media": "Spunned1.jpg"
+      },
+      {
+        "image": "CompanyProfile-OSHA8.jpg",
+        "title": "Category: Company Profiles",
+        "media": "CompanyProfile-OSHA8.jpg"
+      },
+      {
+        "image": "Logo-ConferenceEvent.jpg",
+        "title": "Category: Logos",
+        "media": "Logo-ConferenceEvent.jpg"
+      },
+      {
+        "image": "Websites-17.jpg",
+        "title": "Category: Websites",
+        "media": "Websites-17.jpg"
+      }
+    ]
+  },
+  "rates": [
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    },
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "",
+      "answer": ""
+    },
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "about": {
+    "subtitle1": "One of the oldest",
+    "title1": "Graphic Design &",
+    "title2": "Web Development",
+    "subtitle2": "companies in Iloilo City, Philippines, since 1997",
+    "paragraph": "Elementor, WordPress, UIkit, Progressive Web App (PWA), Vibe Coding, Prompt Engineering, Aptana, DreamWeaver, Html5, CSS3, JavaScript, jQuery, Photopea, Gimp, PhotoShop, Inkscape, CorelDraw, Scribus, InDesign, Flash ActionScripting, AR & NFC",
+    "button": "Contact Us",
+    "link": "#console",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "theme": "#111111",
+  "license": {
+    "expires": "2076-08-20T00:00:00",
+    "disabled": false,
+    "redirect": "https://m.me/joelgallinero"
+  }
+}
