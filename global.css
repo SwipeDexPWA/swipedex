@@ -1,5 +1,9 @@
-/* Typography */
+html, body {
+  max-width: 100%;
+  overflow-x: clip;
+}
 
+/* Typography */
 * {
     font-family: "Poppins";
 }
@@ -11,7 +15,7 @@ h4,
 h5,
 h6 {
     font-family: "Montserrat";
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h1 {
@@ -44,6 +48,7 @@ p {
 
 .uk-button {
     font-size: calc(0.5vw + 0.5rem);
+    font-weight: 600;
 }
 
 /* Logo & Icons */
@@ -57,47 +62,120 @@ p {
     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.3));
 }
 
+.nav-icon {
+    width: calc(0.45vw + 0.45rem);
+}
+
+.anigen-button {
+    border-radius: 50%;
+    padding: calc(0.25vw + 0.25rem);
+}
+
+.offcanvas-icon {
+    width: calc(0.75vw + 0.75rem);
+}
+
 /* Menu */
-#menu .uk-nav a {
+#offcanvas .uk-nav a {
     color: #000000 !important;
     font-size: 12px;
 }
 
-#menu .uk-description-list {
+#offcanvas .uk-description-list {
     color: #000000 !important;
     font-size: 12px;
 }
 
-#menu .uk-margin-remove-bottom,
-#menu .uk-margin-remove-top {
+#offcanvas .uk-margin-remove-bottom,
+#offcanvas .uk-margin-remove-top {
     color: #000000 !important;
     font-size: 9px;
 }
 
+#navigation {
+    z-index: 2;
+}
+
+/* Profile */
+.triangle {
+    width: 100%;
+    clip-path: polygon(50% -1%, 101% 101%, 0 101%);
+}
+
+.triangle-inverted {
+    width: 100%;
+    clip-path: polygon(50% 101%, 101% -1%, 101% 101%, -1% 101%, -1% -1%);
+}
+
+.incline {
+    width: 100%;
+    clip-path: polygon(101% -1%, -1% 101%, 101% 101%);
+}
+
+.decline {
+    width: 100%;
+    clip-path: polygon(-1% -1%, -1% 101%, 101% 101%);
+}
+
+.wave {
+    width: 100%;
+    clip-path: polygon(101% 101%, -1% 101%, 0.00% 98.33%, 2.50% 98.13%, 5.00% 97.51%, 7.50% 96.49%, 10.00% 95.08%, 12.50% 93.28%, 15.00% 91.12%, 17.50% 88.61%, 20.00% 85.78%, 22.50% 82.64%, 25.00% 79.23%, 27.50% 75.59%, 30.00% 71.73%, 32.50% 67.69%, 35.00% 63.52%, 37.50% 59.25%, 40.00% 54.91%, 42.50% 50.54%, 45.00% 46.19%, 47.50% 41.89%, 50.00% 37.68%, 52.50% 33.60%, 55.00% 29.68%, 57.50% 25.96%, 60.00% 22.47%, 62.50% 19.24%, 65.00% 16.30%, 67.50% 13.68%, 70.00% 11.40%, 72.50% 9.48%, 75.00% 7.93%, 77.50% 6.78%, 80.00% 6.03%, 82.50% 5.69%, 85.00% 5.76%, 87.50% 6.24%, 90.00% 7.12%, 92.50% 8.41%, 95.00% 10.08%, 97.50% 12.12%, 100.00% 14.52%);
+}
+
+.wave-reverse {
+    width: 100%;
+    clip-path: polygon(101% 101%, -1% 101%, 0.00% 5.39%, 2.50% 4.82%, 5.00% 4.67%, 7.50% 4.94%, 10.00% 5.63%, 12.50% 6.73%, 15.00% 8.24%, 17.50% 10.13%, 20.00% 12.39%, 22.50% 15.01%, 25.00% 17.95%, 27.50% 21.20%, 30.00% 24.72%, 32.50% 28.48%, 35.00% 32.45%, 37.50% 36.59%, 40.00% 40.87%, 42.50% 45.25%, 45.00% 49.69%, 47.50% 54.15%, 50.00% 58.59%, 52.50% 62.97%, 55.00% 67.25%, 57.50% 71.40%, 60.00% 75.38%, 62.50% 79.15%, 65.00% 82.68%, 67.50% 85.93%, 70.00% 88.89%, 72.50% 91.52%, 75.00% 93.79%, 77.50% 95.70%, 80.00% 97.22%, 82.50% 98.33%, 85.00% 99.04%, 87.50% 99.33%, 90.00% 99.19%, 92.50% 98.64%, 95.00% 97.68%, 97.50% 96.31%, 100.00% 94.54%);
+}
+
 /* Console */
-.qr-trigger img2 {
-    width: calc(1.25vw + 1.25rem);
+#qr-codes.viewport-grid {
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
-.qr-trigger .qr-label {
+#qr-codes .qr-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qr-codes .qr-trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#qr-codes .qr-trigger img {
+    width: min(50px, 5vw);
+    height: min(50px, 5vw);
+    object-fit: contain;
+}
+
+#qr-codes .qr-trigger .qr-label {
     font-size: calc(0.5vw + 0.5rem);
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
 }
 
-.qr-trigger .qr-label,
-a.qr-trigger {
+#qr-codes a.qr-trigger {
     color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
 }
 
-h3#qr-title {
+#qr-popup #qr-title {
     color: rgb(0, 0, 0);
     font-size: calc(2vw + 1.5vh);
 }
 
-img#qr-image {
+#qr-popup #qr-image {
     width: calc(20vw + 15vh);
 }
 
-a#qr-link {
+#qr-popup #qr-link {
     color: rgb(0, 0, 0);
     font-size: calc(1.5vw + 1vh);
 }

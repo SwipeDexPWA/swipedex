@@ -67,9 +67,9 @@ document.getElementById('fullscreenLink').addEventListener('click', (e) => {
 function updateFullscreenLink() {
   const link = document.getElementById('fullscreenLink');
   if (document.fullscreenElement || document.webkitFullscreenElement) {
-    link.innerHTML = '<span class="uk-margin-xsmall-right" uk-icon="icon: shrink"></span> Exit Fullscreen';
+    link.innerHTML = '<img class="offcanvas-icon" src="../restorescreen.svg"> Exit Fullscreen';
   } else {
-    link.innerHTML = '<span class="uk-margin-xsmall-right" uk-icon="icon: expand"></span> Fullscreen';
+    link.innerHTML = '<img class="offcanvas-icon" src="../fullscreen.svg"> Fullscreen';
   }
 }
 document.addEventListener("fullscreenchange", updateFullscreenLink);

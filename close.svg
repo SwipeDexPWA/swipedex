@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<style>
+		.s0 { fill: none } 
+		.s1 { fill: none;stroke: #0c0310;stroke-linecap: round;stroke-width: 8.5 } 
+	</style>
+	<g id="Page-1">
+		<g id="Close-Circle">
+			<path id="Rectangle" fill-rule="evenodd" class="s0" d="m100.4-1.4v101.8h-101.8v-101.8z"/>
+			<path id="Oval" fill-rule="evenodd" class="s1" d="m49.5 87.67c-21.11 0-38.17-17.06-38.17-38.17 0-21.11 17.06-38.17 38.17-38.17 21.11 0 38.17 17.06 38.17 38.17 0 21.11-17.06 38.17-38.17 38.17z"/>
+			<path id="Path" fill-rule="evenodd" class="s1" d="m58.5 40.5l-18 18"/>
+			<path id="Path" fill-rule="evenodd" class="s1" d="m40.5 40.5l18 18"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,26 @@
+/* Validity */
+#pwa {
+    display: none;
+}
+
+#license h2 {
+    font-family: Montserrat;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#license h4 {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+#license p {
+    font-family: Poppins;
+}
+
+#license .uk-button {
+    font-family: Poppins;
+    color: #fff;
+    background-color: #000;
+    border-radius: 30px;
+}
