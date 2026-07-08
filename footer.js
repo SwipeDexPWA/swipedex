@@ -6,6 +6,9 @@
     document.head.appendChild(link);
   }
 
+  // Title
+  loadCSS("");
+
   function loadJS(src, cb) {
     const s = document.createElement("script");
     s.src = src;
@@ -13,15 +16,6 @@
     document.head.appendChild(s);
   }
 
-  // Console
-  loadJS("../console.js");
-
-  // Preloader
-  loadJS("../loader.js");
-  
-  // Countdown
-  loadJS("../countdown.js");
-
-  // PWA
-  loadJS("../pwa.js");
+  // Title
+  loadJS("");
 })();
