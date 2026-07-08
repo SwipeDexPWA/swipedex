@@ -87,7 +87,7 @@
 </head>
 
 <body>
-    <div id="pwa">
+    <div id="pwa2">
         <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
     <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
         uk-height-viewport>
@@ -155,12 +155,12 @@
 
     </ul>
 </div>
-<div id="slideshow" class="uk-section snap full uk-padding-remove-vertical">
-  <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
+<div id="slideshow" class="uk-section snap full uk-padding-remove-vertical anigen-screen">
+  <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove anigen-screen">
 
-    <div class="uk-visible-toggle" tabindex="-1"
+    <div class="uk-visible-toggle anigen-screen" tabindex="-1"
       uk-slideshow="autoplay: true; autoplay-interval: 7000; animation: push; ratio: false">
-      <div class="uk-slideshow-items" uk-height-viewport>
+      <div class="uk-slideshow-items anigen-screen" uk-height-viewport>
         
     <div><img src='slideshow1.webp' uk-cover>
       <div class="uk-position-bottom-left uk-position-large">
@@ -192,6 +192,11 @@
 
   </div>
 </div>
+<style>
+  .anigen-screen {
+    min-height: 100dvh;
+}
+</style>
 <div id="gallery" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
         <div class="uk-child-width-1-6@s uk-child-width-1-2 uk-grid-collapse" uk-lightbox="animation: slide; counter: true"
