@@ -1,5 +1,6 @@
 {
   "premium": false,
+  "theme": "#221a1a",
   "swipedex": "https://swipedex.app",
   "share": "https://swipedex.app/cupofjoe",
   "description": "Coffee for the Common Man",
@@ -217,7 +218,6 @@
   "console": {
     "blend": "uk-background-blend-overlay uk-background-secondary"
   },
-  "theme": "#221a1a",
   "license": {
     "expires": "2076-08-20T00:00:00",
     "disabled": false,
