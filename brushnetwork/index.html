@@ -197,6 +197,13 @@
     min-height: 100dvh;
 }
 </style>
+        <script>
+            window.addEventListener("load", () => {
+    setTimeout(() => {
+        window.dispatchEvent(new Event("resize"));
+    }, 100);
+});
+        </script>
 <div id="gallery" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
         <div class="uk-child-width-1-6@s uk-child-width-1-2 uk-grid-collapse" uk-lightbox="animation: slide; counter: true"
