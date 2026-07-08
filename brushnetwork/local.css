@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins";
+    font-family: "Montserrat" !important;
     font-weight: 600;
 }
 
@@ -48,7 +48,8 @@ h6 {
 }
 
 /* About */
-#about h1 {
+#about h1 span {
+    font-family: "Montserrat" !important;
     color: rgb(255, 255, 255);
 }
 
