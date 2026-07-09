@@ -1,184 +1,97 @@
-const CACHE_NAME = "swipedex-v1";
+const CACHE_NAME = "swipedex-v2";
 
-const allowedHosts = [
-    "swipedex.app",
-    "www.swipedex.app"
-];
+self.addEventListener("install", event => {
 
-const isMobileOrTablet =
-    ("ontouchstart" in self) ||
-    (self.navigator && self.navigator.maxTouchPoints > 0);
+    self.skipWaiting();
 
-const isAllowedHost =
-    allowedHosts.includes(self.location.hostname);
+});
 
 
-if (isAllowedHost && isMobileOrTablet) {
+self.addEventListener("activate", event => {
+
+    event.waitUntil(
+        self.clients.claim()
+    );
+
+});
 
 
-    // INSTALL
-    self.addEventListener("install", event => {
+self.addEventListener("fetch", event => {
 
-        self.skipWaiting();
 
-        event.waitUntil(
+    if (event.request.method !== "GET") {
+        return;
+    }
 
-            caches.open(CACHE_NAME).then(async cache => {
 
-                /*
-                    Cache the service worker scope root.
+    const requestURL = new URL(event.request.url);
 
-                    Example:
-                    /cupofjoe/
-                    /brushnetwork/
-                */
 
-                const scopeURL = new URL(
-                    self.registration.scope
-                );
-
-                await cache.add(
-                    scopeURL.pathname
-                );
-
-            })
-
-        );
-
-    });
+    // Only cache SwipeDex pages
+    if (
+        requestURL.hostname !== "swipedex.app" &&
+        requestURL.hostname !== "www.swipedex.app"
+    ) {
+        return;
+    }
 
 
 
-    // ACTIVATE
-    self.addEventListener("activate", event => {
+    event.respondWith(
 
-        event.waitUntil(
+        caches.match(event.request)
 
-            Promise.all([
+        .then(cached => {
 
-                self.clients.claim(),
 
-                caches.keys().then(cacheNames => {
-
-                    return Promise.all(
-
-                        cacheNames
-                            .filter(name =>
-                                name !== CACHE_NAME
-                            )
-                            .map(name =>
-                                caches.delete(name)
-                            )
-
-                    );
-
-                })
-
-            ])
-
-        );
-
-    });
+            if (cached) {
+                return cached;
+            }
 
 
 
-    // FETCH
-    self.addEventListener("fetch", event => {
+            return fetch(event.request)
+
+            .then(response => {
 
 
-        if (event.request.method !== "GET") {
-            return;
-        }
-
-
-        event.respondWith(
-
-            caches.match(event.request)
-
-            .then(cachedResponse => {
-
-
-                // Return cached file first
-
-                if (cachedResponse) {
-
-                    return cachedResponse;
-
+                if (
+                    !response ||
+                    response.status !== 200
+                ) {
+                    return response;
                 }
 
 
-
-                // Otherwise download it
-
-                return fetch(event.request)
-
-                .then(networkResponse => {
-
-
-                    if (
-
-                        !networkResponse ||
-                        networkResponse.status !== 200 ||
-                        networkResponse.type === "opaque"
-
-                    ) {
-
-                        return networkResponse;
-
-                    }
+                const copy =
+                    response.clone();
 
 
 
-                    const clone =
-                        networkResponse.clone();
+                caches.open(CACHE_NAME)
+
+                .then(cache => {
 
 
-
-                    caches.open(CACHE_NAME)
-
-                    .then(cache => {
-
-                        cache.put(
-                            event.request,
-                            clone
-                        );
-
-                    });
-
-
-
-                    return networkResponse;
-
-
-                })
-
-                .catch(() => {
-
-
-                    // Offline navigation fallback
-
-                    if (
-                        event.request.mode === "navigate"
-                    ) {
-
-                        return caches.match(
-                            new URL(
-                                self.registration.scope
-                            ).pathname
-                        );
-
-                    }
+                    cache.put(
+                        event.request,
+                        copy
+                    );
 
 
                 });
 
 
-            })
 
-        );
-
-
-    });
+                return response;
 
 
-}
+            });
+
+
+        })
+
+    );
+
+
+});
