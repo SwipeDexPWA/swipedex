@@ -1,8 +1,8 @@
 {
     "name": "Cup of Joe",
     "short_name": "CupOfJoe",
-    "start_url": "./",
-    "scope": "./",
+    "start_url": ".",
+    "scope": ".",
     "display": "fullscreen",
     "background_color": "#1d1412",
     "theme_color": "#1d1412",
