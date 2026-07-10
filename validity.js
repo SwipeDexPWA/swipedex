@@ -16,7 +16,7 @@ fetch("data.json")
     license = data.license;)
     .catch(err => {
         console.error("License error:", err);
-    });
+    };
 function lock() {
     const app = document.getElementById("pwa");
     if (app) app.style.display = "none";
