@@ -2,6 +2,9 @@ let license = null;
 let expireTime = null;
 let redirectURL = null;
 fetch("data.json")
+fetch("data.json", {
+cache: "no-cache"
+})
     .then(r => r.json())
     .then(data => {
         license = data.license;
