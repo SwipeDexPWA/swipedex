@@ -3,15 +3,15 @@ window.addEventListener("load", registerSW);
 async function registerSW() {
     const allowedHosts = [
         "swipedex.app",
-        "www.swipedex.app" // Fixed markdown link error
+        "www.swipedex.app"
     ];
 
+    // Accurate touch hardware check (matches your service worker exactly)
     const isMobileOrTablet =
-        window.innerWidth <= 1024 ||
         ("ontouchstart" in window) ||
-        navigator.maxTouchPoints > 0;
+        (navigator.maxTouchPoints > 0);
 
-    // Guard clause: Only register on valid production mobile environments
+    // Guard Clause: Block execution if domain or device type is illegal
     if (!allowedHosts.includes(location.hostname) || !isMobileOrTablet) {
         return;
     }
