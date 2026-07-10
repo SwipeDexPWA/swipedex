@@ -2,9 +2,6 @@ let license = null;
 let expireTime = null;
 let redirectURL = null;
 fetch("data.json")
-fetch(`data.json?v=${Date.now()}`, {
-    cache: "no-store"
-})
     .then(r => r.json())
     .then(data => {
         license = data.license;
