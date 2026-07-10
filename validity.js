@@ -2,87 +2,141 @@ let license = null;
 let expireTime = null;
 let redirectURL = null;
 
-fetch("data.json")
-    .then(r => r.json())
-    .then(data => {
 
-        console.log("DATA:", data);
+async function checkLicense() {
+
+    try {
+
+        const response = await fetch("data.json");
+
+        const data = await response.json();
+
+
+        console.log("License data:", data);
+
 
         if (!data.license) {
-            console.error("No license object!");
 
-            const app = document.getElementById("pwa");
+            console.warn("No license data found. Allowing app.");
 
-            if (app) {
-                app.style.display = "block";
-            }
+            showApp();
 
             return;
+
         }
+
 
         license = data.license;
 
-        expireTime = new Date(license.expires).getTime();
+        expireTime = new Date(
+            license.expires
+        ).getTime();
+
         redirectURL = license.redirect;
 
 
+
         if (license.disabled) {
+
             lock();
+
             return;
+
         }
 
 
         if (Date.now() >= expireTime) {
+
             lock();
+
             return;
+
         }
 
 
-        const app = document.getElementById("pwa");
+        showApp();
 
-        if (app) {
-            app.style.display = "block";
+
+        if (typeof startCountdown === "function") {
+
+            startCountdown();
+
         }
 
 
-        startCountdown();
+    } catch (error) {
 
-    })
-    .catch(err => {
 
-        console.error("License error:", err);
+        console.warn(
+            "Offline mode - skipping license check",
+            error
+        );
 
-        const app = document.getElementById("pwa");
 
-        if (app) {
-            app.style.display = "block";
-        }
+        // Allow cached/offline PWA to run
 
-    });
+        showApp();
+
+
+    }
+
+}
+
+
+
+function showApp() {
+
+    const app =
+        document.getElementById("pwa");
+
+    if (app) {
+
+        app.style.display = "block";
+
+    }
+
+}
 
 
 
 function lock() {
 
-    const app = document.getElementById("pwa");
+
+    const app =
+        document.getElementById("pwa");
+
 
     if (app) {
+
         app.style.display = "none";
+
     }
 
-    UIkit.modal("#license").show();
+
+    if (typeof UIkit !== "undefined") {
+
+        UIkit.modal("#license").show();
+
+    }
 
 
-    const btn = document.getElementById("provider");
+    const btn =
+        document.getElementById("provider");
+
 
     if (btn) {
 
         btn.onclick = () => {
 
-            window.location.href = redirectURL;
+            window.location.href =
+                redirectURL;
 
         };
 
     }
 
 }
+
+
+
+checkLicense();
