@@ -1,137 +1,91 @@
-const CACHE_NAME = "swipedex";
+const CACHE_NAME = "swipedex-v1";
 
-const allowedHosts = [
-    "swipedex.app",
-    "www.swipedex.app"
+// Add paths to the core files your app needs to load initially
+const PRECACHE_ASSETS = [
+    "/",
+    "/index.html",
+    // Add your main CSS or JS files here if needed, e.g., "/styles.css"
 ];
 
-const isMobileOrTablet =
-    ("ontouchstart" in self) ||
-    (self.navigator && self.navigator.maxTouchPoints > 0);
-
-const isAllowedHost =
-    allowedHosts.includes(self.location.hostname);
-
-if (!isAllowedHost || !isMobileOrTablet) {
-    return;
-}
-
+// 1. Install Event: Cache core assets immediately
 self.addEventListener("install", event => {
-
-    self.skipWaiting();
-
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(cache => {
+                return cache.addAll(PRECACHE_ASSETS);
+            })
+            .then(() => self.skipWaiting())
+    );
 });
 
+// 2. Activate Event: Clean up old caches if CACHE_NAME changes
 self.addEventListener("activate", event => {
-
-    event.waitUntil(self.clients.claim());
-
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cache => {
+                    if (cache !== CACHE_NAME) {
+                        return caches.delete(cache);
+                    }
+                })
+            );
+        }).then(() => self.clients.claim())
+    );
 });
 
+// 3. Fetch Event
 self.addEventListener("fetch", event => {
-
-    if (event.request.method !== "GET") {
-        return;
-    }
+    // Only handle standard GET requests
+    if (event.request.method !== "GET") return;
 
     const request = event.request;
 
     // -----------------------------
-    // HTML pages (Network First)
+    // HTML pages (Network First, Cache Fallback)
     // -----------------------------
     if (request.mode === "navigate") {
-
         event.respondWith(
-
             fetch(request)
-
                 .then(response => {
-
-                    const copy = response.clone();
-
-                    caches.open(CACHE_NAME)
-                        .then(cache => {
-
+                    // If valid, clone and save to cache
+                    if (response.status === 200) {
+                        const copy = response.clone();
+                        caches.open(CACHE_NAME).then(cache => {
                             cache.put(request, copy);
-
-                            // Also cache the scope root
-                            cache.put(
-                                new Request(
-                                    new URL(self.registration.scope).pathname
-                                ),
-                                response.clone()
-                            );
-
                         });
-
+                    }
                     return response;
-
                 })
-
                 .catch(async () => {
-
+                    // OFFLINE FALLBACK
                     const cache = await caches.open(CACHE_NAME);
-
-                    return (
-                        await cache.match(request, {
-                            ignoreSearch: true
-                        })
-                    ) ||
-                    (
-                        await cache.match(
-                            new URL(self.registration.scope).pathname
-                        )
-                    );
-
+                    const matched = await cache.match(request, { ignoreSearch: true });
+                    
+                    // Return matched page, or fallback to the cached root "/"
+                    return matched || await cache.match("/");
                 })
-
         );
-
         return;
-
     }
 
     // -----------------------------
-    // CSS / JS / Images / JSON
+    // Assets: CSS / JS / Images (Cache First, Network Fallback)
     // -----------------------------
     event.respondWith(
-
-        caches.match(request, {
-            ignoreSearch: true
-        })
-
-        .then(cached => {
-
-            if (cached) {
-                return cached;
-            }
-
-            return fetch(request)
-
-                .then(response => {
-
-                    if (
-                        response &&
-                        response.status === 200
-                    ) {
-
+        caches.match(request, { ignoreSearch: true })
+            .then(cached => {
+                if (cached) {
+                    return cached;
+                }
+                return fetch(request).then(response => {
+                    if (response && response.status === 200) {
                         const copy = response.clone();
-
-                        caches.open(CACHE_NAME)
-                            .then(cache => {
-
-                                cache.put(request, copy);
-
-                            });
-
+                        caches.open(CACHE_NAME).then(cache => {
+                            cache.put(request, copy);
+                        });
                     }
-
                     return response;
-
                 });
-
-        })
-
+            })
     );
-
 });
