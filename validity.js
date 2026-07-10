@@ -1,135 +1,38 @@
 let license = null;
 let expireTime = null;
 let redirectURL = null;
-
 fetch("data.json")
+fetch("data.json", {
+    cache: "no-cache"
+})
     .then(r => r.json())
     .then(data => {
-
         license = data.license;
         expireTime = new Date(license.expires).getTime();
         redirectURL = license.redirect;
-
         if (license.disabled) {
             lock();
             return;
         }
-
         if (Date.now() >= expireTime) {
             lock();
             return;
         }
-
         const app = document.getElementById("pwa");
-
-        if (app) {
-            app.style.display = "block";
-        }
-
+        if (app) app.style.display = "block";
         startCountdown();
-
     })
     .catch(err => {
-
         console.error("License error:", err);
-
-        // If offline, allow the cached app to continue working.
-        const app = document.getElementById("pwa");
-
-        if (app) {
-            app.style.display = "block";
-        }
-
     });
-
-
 function lock() {
-
     const app = document.getElementById("pwa");
-
-    if (app) {
-        app.style.display = "none";
-    }
-
+    if (app) app.style.display = "none";
     UIkit.modal("#license").show();
-
     const btn = document.getElementById("provider");
-
     if (btn) {
-
         btn.onclick = () => {
-
             window.location.href = redirectURL;
-
         };
-
     }
-
-}let license = null;
-let expireTime = null;
-let redirectURL = null;
-
-fetch("data.json")
-    .then(r => r.json())
-    .then(data => {
-
-        license = data.license;
-        expireTime = new Date(license.expires).getTime();
-        redirectURL = license.redirect;
-
-        if (license.disabled) {
-            lock();
-            return;
-        }
-
-        if (Date.now() >= expireTime) {
-            lock();
-            return;
-        }
-
-        const app = document.getElementById("pwa");
-
-        if (app) {
-            app.style.display = "block";
-        }
-
-        startCountdown();
-
-    })
-    .catch(err => {
-
-        console.error("License error:", err);
-
-        // If offline, allow the cached app to continue working.
-        const app = document.getElementById("pwa");
-
-        if (app) {
-            app.style.display = "block";
-        }
-
-    });
-
-
-function lock() {
-
-    const app = document.getElementById("pwa");
-
-    if (app) {
-        app.style.display = "none";
-    }
-
-    UIkit.modal("#license").show();
-
-    const btn = document.getElementById("provider");
-
-    if (btn) {
-
-        btn.onclick = () => {
-
-            window.location.href = redirectURL;
-
-        };
-
-    }
-
 }
