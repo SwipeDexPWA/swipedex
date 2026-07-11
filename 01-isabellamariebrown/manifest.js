@@ -7,21 +7,21 @@
     }
 
     const manifestData = {
-        "name": "Cup of Joe",
-        "short_name": "CupOfJoe",
-        "description": "Your ultimate companion for Swipedex tracking.",
+        "name": "Isabella Marie Brown",
+        "short_name": "IsabellaBrown",
+        "description": "SEO Specialist, Ascend Corp",
         // Critical: Update paths to point exactly inside your subfolder!
         "start_url": "/01-isabellabrown/", 
         "scope": "/01-isabellabrown/",
         "display": "standalone",
         "orientation": "portrait",
-        "background_color": "#1d1412",
-        "theme_color": "#1d1412",
+        "background_color": "#6d0abf",
+        "theme_color": "#650ca5",
         "icons": [
-            { "src": "/cupofjoe/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-            { "src": "/cupofjoe/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-            { "src": "/cupofjoe/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-            { "src": "/cupofjoe/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+            { "src": "/01-isabellabrown/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+            { "src": "/01-isabellabrown/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+            { "src": "/01-isabellabrown/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+            { "src": "/01-isabellabrown/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
         ]
     };
 
