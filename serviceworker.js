@@ -1,129 +1,67 @@
 const CACHE_NAME = "swipedex-v1";
 
+// Add paths to the core files your app needs to load initially
 const PRECACHE_ASSETS = [
     "/",
-    "/index.html"
+    "/index.html",
+    // Add your main CSS or JS files here if needed, e.g., "/styles.css"
 ];
 
 // 1. Install Event: Cache core assets immediately
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => cache.addAll(PRECACHE_ASSETS))
+            .then(cache => {
+                return cache.addAll(PRECACHE_ASSETS);
+            })
             .then(() => self.skipWaiting())
     );
 });
 
-// 2. Activate Event: Clean up old caches
+// 2. Activate Event: Clean up old caches if CACHE_NAME changes
 self.addEventListener("activate", event => {
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.map(cache => {
-                    if (cache !== CACHE_NAME) return caches.delete(cache);
+                    if (cache !== CACHE_NAME) {
+                        return caches.delete(cache);
+                    }
                 })
             );
         }).then(() => self.clients.claim())
     );
 });
 
-// Helper: Slices a full cached file into a 206 Partial Content response for video/audio
-async function handleRangeRequest(request, cachedResponse) {
-    const rawRange = request.headers.get("range");
-    if (!rawRange) return cachedResponse;
-
-    const arrayBuffer = await cachedResponse.arrayBuffer();
-    const match = rawRange.match(/^bytes=(\d+)-(\d+)?$/);
-
-    if (match) {
-        const start = parseInt(match[1], 10);
-        const end = match[2] ? parseInt(match[2], 10) : arrayBuffer.byteLength - 1;
-
-        const slicedBuffer = arrayBuffer.slice(start, end + 1);
-        
-        return new Response(slicedBuffer, {
-            status: 206,
-            statusText: "Partial Content",
-            headers: {
-                ...Object.fromEntries(cachedResponse.headers.entries()),
-                "Content-Range": `bytes ${start}-${end}/${arrayBuffer.byteLength}`,
-                "Content-Length": slicedBuffer.byteLength
-            }
-        });
-    }
-
-    return new Response(null, { status: 416, statusText: "Range Not Satisfiable" });
-}
-
-// 3. Main Fetch Interceptor (With your Host and Mobile restrictions)
+// 3. Fetch Event
 self.addEventListener("fetch", event => {
-    // --- YOUR CUSTOM ENVIROMENT GUARDS ---
-    const allowedHosts = [
-        "swipedex.app",
-        "www.swipedex.app"
-    ];
-
-    // Check if device is a mobile or tablet layout
-    const isMobileOrTablet =
-        ("ontouchstart" in self) ||
-        (self.navigator && self.navigator.maxTouchPoints > 0);
-
-    const isAllowedHost = allowedHosts.includes(self.location.hostname);
-
-    // If they aren't on mobile OR aren't on your live production host, 
-    // bypass the Service Worker entirely and use normal network behavior.
-    if (!isAllowedHost || !isMobileOrTablet) {
-        return; 
-    }
-    // -------------------------------------
-
     // Only handle standard GET requests
     if (event.request.method !== "GET") return;
 
     const request = event.request;
 
     // -----------------------------
-    // VIDEO / AUDIO / RANGE REQUESTS
+    // HTML pages (Network First, Cache Fallback)
     // -----------------------------
-    if (request.headers.has("range") || request.destination === "video" || request.destination === "audio") {
+    if (request.mode === "navigate") {
         event.respondWith(
-            caches.match(request, { ignoreSearch: true }).then(async cached => {
-                if (cached) {
-                    return handleRangeRequest(request, cached);
-                }
-                
-                return fetch(request).then(response => {
-                    if (response && response.status === 200) {
+            fetch(request)
+                .then(response => {
+                    // If valid, clone and save to cache
+                    if (response.status === 200) {
                         const copy = response.clone();
                         caches.open(CACHE_NAME).then(cache => {
                             cache.put(request, copy);
                         });
                     }
                     return response;
-                }).catch(() => {
-                    return new Response(null, { status: 404 });
-                });
-            })
-        );
-        return;
-    }
-
-    // -----------------------------
-    // HTML pages (Network First)
-    // -----------------------------
-    if (request.mode === "navigate") {
-        event.respondWith(
-            fetch(request)
-                .then(response => {
-                    if (response.status === 200) {
-                        const copy = response.clone();
-                        caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
-                    }
-                    return response;
                 })
                 .catch(async () => {
+                    // OFFLINE FALLBACK
                     const cache = await caches.open(CACHE_NAME);
                     const matched = await cache.match(request, { ignoreSearch: true });
+                    
+                    // Return matched page, or fallback to the cached root "/"
                     return matched || await cache.match("/");
                 })
         );
@@ -131,16 +69,20 @@ self.addEventListener("fetch", event => {
     }
 
     // -----------------------------
-    // Standard Assets: CSS / JS / Images (Cache First)
+    // Assets: CSS / JS / Images (Cache First, Network Fallback)
     // -----------------------------
     event.respondWith(
         caches.match(request, { ignoreSearch: true })
             .then(cached => {
-                if (cached) return cached;
+                if (cached) {
+                    return cached;
+                }
                 return fetch(request).then(response => {
                     if (response && response.status === 200) {
                         const copy = response.clone();
-                        caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+                        caches.open(CACHE_NAME).then(cache => {
+                            cache.put(request, copy);
+                        });
                     }
                     return response;
                 });
