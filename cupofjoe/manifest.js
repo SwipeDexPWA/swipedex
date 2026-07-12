@@ -1,12 +1,14 @@
-(function initGlobalProtection() {
-    const allowedHosts = ["swipedex.app", "www.swipedex.app"];
-    const isMobileOrTablet = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
-    if (!allowedHosts.includes(window.location.hostname) || !isMobileOrTablet) {
-        document.body.innerHTML = "<h1>Unauthorized Environment</h1>";
-        throw new Error("PWA assets locked.");
-    }
-})();
 (function injectDynamicManifest() {
+    const allowedHosts = [
+        "swipedex.app",
+        "www.swipedex.app"
+    ];
+    const isMobileOrTablet =
+        ("ontouchstart" in window) ||
+        (navigator.maxTouchPoints > 0);
+    if (!allowedHosts.includes(location.hostname) || !isMobileOrTablet) {
+        return;
+    }
     const manifestData = {
         "name": "Cup of Joe",
         "short_name": "CupOfJoe",
