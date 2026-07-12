@@ -15,8 +15,8 @@
         "description": "Coffee for the Common Man",
         "start_url": "/",
         "scope": "/",
-        "display": "standalone",
-        "orientation": "portrait",
+        "display": "fullscreen",
+        "orientation": "landscape",
         "background_color": "#1d1412",
         "theme_color": "#1d1412",
         "icons": [
