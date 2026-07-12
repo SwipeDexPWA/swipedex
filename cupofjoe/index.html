@@ -50,8 +50,6 @@
     <link rel="icon" type="image/png" sizes="192x192" href="maskable-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="maskable-512x512.png">
 
-    <link rel="manifest" href="manifest.json">
-
     <meta name="theme-color" content="#221a1a">
 
     <script type="application/ld+json">
@@ -83,10 +81,12 @@
     <link rel="stylesheet" href="../loader.min.css" />
 
     <link rel="stylesheet" href="../pwa.css" />
+    <script src="../validity.js"></script>
+    <script src="manifest.js"></script>
 </head>
 
 <body>
-    <div id="pwa">
+    <div id="pwa2">
         <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
     <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
         uk-height-viewport>
@@ -395,13 +395,10 @@
     </div>
 
     <script src="../console.js"></script>
-    
-    <script src="../validity.js"></script>
+    <script src="../loader.js"></script>
     
     <script src="../countdown.js"></script>
-    <script src="../pwa.js"></script>
-  
-    <script src="../loader.js"></script>
+    <script src="../fetch.js"></script>
 </body>
 
 </html>
