@@ -1,0 +1,203 @@
+{
+  "theme": "#4e6263",
+  "swipedex": "https://swipedex.app",
+  "share": "https://swipedex.app/isabellabrown",
+  "title": "Isabella Marie Brown - SEO Specialist, Ascend",
+  "description": "Ascend - Search Engine Optimization, Promotion & Ranking",
+  "author": "[SD] SwipeDex℠",
+  "vcardDisplay": "person",
+  "logo": "Ascend.svg",
+  "photo": "photo.webp",
+  "prefix": "",
+  "firstname": "Isabella",
+  "middlename": "Marie",
+  "lastname": "Brown",
+  "fullname": "Isabella Marie Brown",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "Ascend",
+  "position": "SEO Specialist",
+  "street": "Suite 1200, 350 Innovation Plaza",
+  "zipcode": "10001",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "initial": "US",
+  "contacts": {
+    "mobile": "+1 098 765 4321",
+    "landline": "+1 123 456 7890",
+    "fax": "+1 123 456 7890",
+    "sms": "+1 098 765 4321",
+    "messenger": "https://m.me/@isabellamariebrown",
+    "whatsapp": "https://wa.me/1234567890",
+    "viber": "viber://chat?number=%1234567890",
+    "telegram": "https://t.me/@isabellamariebrown",
+    "email": "isabellabrown@ascend.seo",
+    "website": "https://www.ascend.seo"
+  },
+  "maps": {
+    "googlemaps": "",
+    "waze": "https://www.waze.com/en/live-map/directions?latlng=0987654321%2C-1234567890",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "https://zoom.us/1234567890",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/@isabellamariebrown",
+    "fiverr": ""
+  },
+  "socials": {
+    "facebook": "",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "whatsapp",
+    "viber",
+    "telegram",
+    "mobile",
+    "landline",
+    "fax",
+    "sms",
+    "email",
+    "website",
+    "linkedin",
+    "waze",
+    "zoom"
+  ],
+  "vcfOrder": [
+    "landline",
+    "fax",
+    "sms",
+    "share",
+    "messenger",
+    "whatsapp",
+    "viber",
+    "telegram",
+    "linkedin",
+    "waze",
+    "zoom"
+  ],
+  "navigation": [
+    {
+      "icon": "../profile.svg",
+      "tooltip": "Profile",
+      "anchor": "#profile"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "Contact",
+      "anchor": "#console"
+    }
+  ],
+  "profile": {
+    "pic": "photo.webp",
+    "button": "Contact",
+    "anchor": "#console",
+    "shape": "incline",
+    "blend": "uk-background-blend-luminosity anigen-bgcolor"
+  },
+  "slideshow": [
+    {
+      "media": "<video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>",
+      "title": "",
+      "description": "",
+      "button": "More Info",
+      "link": "#"
+    },
+    {
+      "media": "<img src='slideshow2.webp' uk-cover>",
+      "title": "",
+      "description": "",
+      "button": "More Info",
+      "link": "#"
+    },
+    {
+      "media": "<img src='slideshow3.webp' uk-cover>",
+      "title": "",
+      "description": "",
+      "button": "More Info",
+      "link": "#"
+    }
+  ],
+  "gallery": {
+    "width": "uk-child-width-1-3@s",
+    "masonry": ""
+  },
+  "grids": [
+    {
+      "image": "gallery1.webp",
+      "title": "",
+      "media": "gallery1.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery2.webp",
+      "title": "",
+      "media": "gallery2.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery3.webp",
+      "title": "",
+      "media": "gallery3.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery4.webp",
+      "title": "",
+      "media": "gallery4.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery5.webp",
+      "title": "",
+      "media": "gallery5.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery6.webp",
+      "title": "",
+      "media": "gallery6.webp",
+      "cover": "uk-cover"
+    }
+  ],
+  "rates": [
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "about": {
+    "subtitle1": "We are a Trusted wholesale supplier of",
+    "title1": "Arabica, Robusta &",
+    "title2": "Liberica (Barako)",
+    "subtitle2": "Coffee Beans",
+    "paragraph": "Serving roasters, cafés, retailers, and distributors. Committed to quality and sustainability, we source carefully selected beans to deliver exceptional flavor, freshness, and value. Whether you need green beans, roasted coffee, or bulk supply solutions, we are dedicated to helping your coffee business grow.",
+    "button": "Contact Us",
+    "link": "#console",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "blend": "uk-background-blend-multiply anigen-bgcolor"
+  },
+  "license": {
+    "expires": "2076-08-20T00:00:00",
+    "disabled": false,
+    "redirect": "https://m.me/joelgallinero"
+  }
+}
