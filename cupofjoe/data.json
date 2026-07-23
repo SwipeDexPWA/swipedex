@@ -1,12 +1,10 @@
 {
-  "premium": false,
   "theme": "#221a1a",
   "swipedex": "https://swipedex.app",
   "share": "https://swipedex.app/cupofjoe",
+  "title": "Cup of Joe - Coffee for the Common Man",
   "description": "Coffee for the Common Man",
-  "keywords": "Philippine, Native Coffee, Robusta Beans, Liberica Beans, Barako, Arabica Beans, Philippines",
   "author": "[SD] SwipeDex℠",
-  "useName": false,
   "vcardDisplay": "company",
   "logo": "CupOfJoe.webp",
   "photo": "",

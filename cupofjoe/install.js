@@ -1,24 +1,18 @@
 (function injectDynamicManifest() {
-    const allowedHosts = [
-        "swipedex.app",
-        "www.swipedex.app"
-    ];
-    const isMobileOrTablet =
-        ("ontouchstart" in window) ||
-        (navigator.maxTouchPoints > 0);
-    if (!allowedHosts.includes(location.hostname) || !isMobileOrTablet) {
-        return;
+    const allowedHosts = ["swipedex.app", "www.swipedex.app"];
+    if (!allowedHosts.includes(window.location.hostname)) {
+        return; 
     }
     const manifestData = {
-        "name": "Cup of Joe",
-        "short_name": "CupOfJoe",
-        "description": "Coffee for the Common Man",
-        "start_url": "/",
+        "name": "Isabella Marie Brown",
+        "short_name": "IsabellaBrown",
+        "description": "SEO Specialist, Ascend Corp",
+        "start_url": "/", 
         "scope": "/",
-        "display": "fullscreen",
-        "orientation": "any",
-        "background_color": "#1d1412",
-        "theme_color": "#1d1412",
+        "display": "standalone",
+        "orientation": "portrait",
+        "background_color": "#95bf0a",
+        "theme_color": "#6fa50c",
         "icons": [
             { "src": "icon-72x72.png", "sizes": "72x72", "type": "image/png" },
             { "src": "icon-96x96.png", "sizes": "96x96", "type": "image/png" },
