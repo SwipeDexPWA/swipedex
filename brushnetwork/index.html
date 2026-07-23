@@ -7,24 +7,24 @@
     <noscript>
         <meta http-equiv="refresh" content="0;url=https://swipedex.app">
     </noscript>
-    <title>BrushNetwork - a Graphic Design & Web Development company since 1997</title>
-    <meta name="description" content="BrushNetwork - a Graphic Design & Web Development company since 1997">
-    <meta name="keywords" content="Philippine, Graphic, Designer, Design, Photopea, Web, WordPress, Elementor, Developer, Development, Philippines">
+    <title>BrushNetwork - Graphic Design & Web Development</title>
+    <meta name="description" content="BrushNetwork is a Graphic Design & Web Development company based in Iloilo City, Philippines since 1997">
+    <meta name="keywords" content="Joel L. Gallinero, Freelance Graphic Designer & Web Developer, BrushNetwork">
     <meta name="author" content="[SD] SwipeDex℠">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://swipedex.app/brushnetwork">
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="BrushNetwork - a Graphic Design & Web Development company since 1997" />
-    <meta property="og:description" content="BrushNetwork - a Graphic Design & Web Development company since 1997">
+    <meta property="og:title" content="BrushNetwork - Graphic Design & Web Development" />
+    <meta property="og:description" content="BrushNetwork is a Graphic Design & Web Development company based in Iloilo City, Philippines since 1997">
     <meta property="og:image" content="https://swipedex.app/brushnetwork/thumbnail.webp">
     <meta property="og:url" content="https://swipedex.app/brushnetwork">
     <meta property="og:site_name" content="[SD] SwipeDex℠">
     <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BrushNetwork - a Graphic Design & Web Development company since 1997">
-    <meta name="twitter:description" content="BrushNetwork - a Graphic Design & Web Development company since 1997">
+    <meta name="twitter:title" content="BrushNetwork - Graphic Design & Web Development">
+    <meta name="twitter:description" content="BrushNetwork is a Graphic Design & Web Development company based in Iloilo City, Philippines since 1997">
     <meta name="twitter:image" content="https://swipedex.app/brushnetwork/thumbnail.webp">
 
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -49,8 +49,6 @@
 
     <link rel="icon" type="image/png" sizes="192x192" href="maskable-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="maskable-512x512.png">
-
-    <link rel="manifest" href="manifest.json">
 
     <meta name="theme-color" content="#111111">
 
@@ -84,10 +82,11 @@
 
     <link rel="stylesheet" href="../pwa.css" />
     <script src="../validity.js"></script>
+    <script src="manifest.js"></script>
 </head>
 
 <body>
-    <div id="pwa">
+    <div id="pwa2">
         <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
     <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
         uk-height-viewport>
@@ -362,7 +361,7 @@
   const grid = document.getElementById("qr-codes");
   let buttons = [];
   try {
-    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/brushnetwork"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"joelgallinero.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/joelgallinero"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 916 472 9358"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+63 916 472 9358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.brushnetwork.com"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"linkedin","label":"LinkedIn","icon":"../linkedin.svg","qr":"qr-linkedin.svg","value":"https://www.linkedin.com/in/joelgallinero"},{"key":"fiverr","label":"Fiverr","icon":"../fiverr.svg","qr":"qr-fiverr.svg","value":"https://www.fiverr.com/joelgallinero"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/joelgallinero"}] || [];
+    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/brushnetwork"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"brushnetwork.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/joelgallinero"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 916 472 9358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.brushnetwork.com"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"linkedin","label":"LinkedIn","icon":"../linkedin.svg","qr":"qr-linkedin.svg","value":"https://www.linkedin.com/in/joelgallinero"},{"key":"fiverr","label":"Fiverr","icon":"../fiverr.svg","qr":"qr-fiverr.svg","value":"https://www.fiverr.com/joelgallinero"}] || [];
   } catch (e) {
     console.error("QR BUTTONS ERROR:", e);
   }
@@ -400,7 +399,7 @@
     <script src="../loader.js"></script>
     
     <script src="../countdown.js"></script>
-    <script src="../pwa.js"></script>
+    <script src="../fetch.js"></script>
 </body>
 
 </html>

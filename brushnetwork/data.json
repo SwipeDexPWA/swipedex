@@ -1,11 +1,10 @@
 {
-  "premium": false,
+  "theme": "#111111",
   "swipedex": "https://swipedex.app",
   "share": "https://swipedex.app/brushnetwork",
-  "description": "a Graphic Design & Web Development company since 1997",
-  "keywords": "Philippine, Graphic, Designer, Design, Photopea, Web, WordPress, Elementor, Developer, Development, Philippines",
+  "title": "BrushNetwork - Graphic Design & Web Development",
+  "description": "BrushNetwork is a Graphic Design & Web Development company based in Iloilo City, Philippines since 1997",
   "author": "[SD] SwipeDex℠",
-  "useName": false,
   "vcardDisplay": "company",
   "logo": "logo.png",
   "photo": "",
@@ -28,7 +27,7 @@
     "mobile": "+63 916 472 9358",
     "landline": "",
     "fax": "",
-    "sms": "+63 916 472 9358",
+    "sms": "",
     "messenger": "https://m.me/joelgallinero",
     "whatsapp": "",
     "viber": "",
@@ -50,7 +49,7 @@
     "fiverr": "https://www.fiverr.com/joelgallinero"
   },
   "socials": {
-    "facebook": "https://www.facebook.com/joelgallinero",
+    "facebook": "",
     "x": "",
     "youtube": "",
     "instagram": "",
@@ -298,7 +297,6 @@
   "console": {
     "blend": "uk-background-blend-overlay uk-background-secondary"
   },
-  "theme": "#111111",
   "license": {
     "expires": "2076-08-20T00:00:00",
     "disabled": false,
