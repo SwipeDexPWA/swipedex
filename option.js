@@ -29,9 +29,9 @@ document.getElementById('maximize').addEventListener('click', (e) => {
 function updateMaximize() {
   const link = document.getElementById('maximize');
   if (document.fullscreenElement || document.webkitFullscreenElement) {
-    link.innerHTML = '<img class="icon" src="../restorescreen.svg">';
+    link.innerHTML = '<img class="icon" src="../minimize.svg">';
   } else {
-    link.innerHTML = '<img class="icon" src="../fullscreen.svg">';
+    link.innerHTML = '<img class="icon" src="../maximize.svg">';
   }
 }
 document.addEventListener("fullscreenchange", updateMaximize);
