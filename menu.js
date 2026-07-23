@@ -14,7 +14,7 @@ document.getElementById('installLink').addEventListener('click', async (e) => {
     deferredPrompt = null;
   } else {
     UIkit.notification({
-      message: '<article class="uk-comment poppins-regular" role="comment"><header class="uk-comment-header uk-border-circle"><div class="uk-grid-small uk-flex-middle uk-padding-small" uk-grid><div class="uk-width-auto"><img class="uk-comment-avatar" src="../anigen-hub/images/chrome.svg" width="80" height="80" alt=""></div><div class="uk-width-expand"><h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset poppins-regular" href="#">Google Chrome</a></h4><p class="uk-comment-meta uk-margin-remove-top">Please Use Chrome to Install this Web App.</p></div></div></header></article>',
+      message: '<article class="uk-comment poppins-regular" role="comment"><header class="uk-comment-header uk-border-circle"><div class="uk-grid-small uk-flex-middle uk-padding-small" uk-grid><div class="uk-width-auto"><img class="uk-comment-avatar" src="../chrome.svg" width="80" height="80" alt=""></div><div class="uk-width-expand"><h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset poppins-regular" href="#">Google Chrome</a></h4><p class="uk-comment-meta uk-margin-remove-top">Please Use Chrome to Install this Web App.</p></div></div></header></article>',
       pos: 'top-center',
       timeout: 5000
     });
