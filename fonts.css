@@ -1,3 +1,11 @@
+/* CreditCard */
+@font-face {
+    font-family: "CreditCard";
+    src: url("CreditCard.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 /* Poppins */
 @font-face {
     font-family: "Poppins";
