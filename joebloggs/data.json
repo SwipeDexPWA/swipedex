@@ -1,0 +1,208 @@
+{
+  "theme": "#333333",
+  "swipedex": "https://swipedex.app",
+  "share": "https://swipedex.app/joebloggs",
+  "title": "Joe Bloggs - Brake Controls Application Design Engineer, Lamborghini",
+  "description": "Lamborghini - an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese",
+  "keywords": "",
+  "author": "[SD] SwipeDex℠",
+  "vcardDisplay": "person",
+  "logo": "Lamborghini.svg",
+  "photo": "photo.webp",
+  "prefix": "",
+  "firstname": "Joe",
+  "middlename": "",
+  "lastname": "Bloggs",
+  "fullname": "Joe Bloggs",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "Lamborghini",
+  "position": "Brake Controls Application Design Engineer",
+  "street": "",
+  "zipcode": "",
+  "city": "Sant'Agata Bolognese",
+  "state": "Emilia-Romagna",
+  "country": "Italy",
+  "initial": "IT",
+  "contacts": {
+    "mobile": "+39 098 765 4321",
+    "landline": "",
+    "fax": "",
+    "sms": "",
+    "messenger": "https://m.me/joebloggs",
+    "whatsapp": "https://wa.me/0987654321",
+    "viber": "viber://chat?number=%0987654321",
+    "telegram": "",
+    "email": "joebloggs@lamborghini.auto",
+    "website": "https://www.lamborghini.auto"
+  },
+  "maps": {
+    "googlemaps": "",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/joebloggs",
+    "fiverr": ""
+  },
+  "socials": {
+    "facebook": "",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "whatsapp",
+    "viber",
+    "telegram",
+    "mobile",
+    "landline",
+    "fax",
+    "sms",
+    "email",
+    "website",
+    "linkedin",
+    "waze",
+    "zoom"
+  ],
+  "vcfOrder": [
+    "landline",
+    "fax",
+    "sms",
+    "share",
+    "messenger",
+    "whatsapp",
+    "viber",
+    "telegram",
+    "linkedin",
+    "waze",
+    "zoom"
+  ],
+  "navigation": [
+    {
+      "icon": "../profile.svg",
+      "tooltip": "Profile",
+      "anchor": "#profile"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "Contact",
+      "anchor": "#console"
+    }
+  ],
+  "profile": {
+    "pic": "photo.webp",
+    "shape": "wave",
+    "blend": "uk-background-blend-multiply"
+  },
+  "creditcard": {
+    "background": "",
+    "blend": "",
+    "map": ""
+  },
+  "slideshow": [
+    {
+      "media": "<video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>",
+      "title": "",
+      "description": "",
+      "button": "More Info",
+      "link": "#"
+    },
+    {
+      "media": "<img src='slideshow2.webp' uk-cover>",
+      "title": "",
+      "description": "",
+      "button": "More Info",
+      "link": "#"
+    },
+    {
+      "media": "<img src='slideshow3.webp' uk-cover>",
+      "title": "",
+      "description": "",
+      "button": "More Info",
+      "link": "#"
+    }
+  ],
+  "gallery": {
+    "width": "uk-child-width-1-3@s",
+    "masonry": ""
+  },
+  "grids": [
+    {
+      "image": "gallery1.webp",
+      "title": "",
+      "media": "gallery1.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery2.webp",
+      "title": "",
+      "media": "gallery2.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery3.webp",
+      "title": "",
+      "media": "gallery3.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery4.webp",
+      "title": "",
+      "media": "gallery4.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery5.webp",
+      "title": "",
+      "media": "gallery5.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery6.webp",
+      "title": "",
+      "media": "gallery6.webp",
+      "cover": "uk-cover"
+    }
+  ],
+  "rates": [
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "about": {
+    "subtitle1": "",
+    "title1": "",
+    "title2": "",
+    "subtitle2": "",
+    "paragraph": "",
+    "button": "",
+    "link": "",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "background": "console.webp",
+    "blend": "uk-background-blend-multiply anigen-bgcolor"
+  },
+  "license": {
+    "expires": "2076-08-20T00:00:00",
+    "disabled": false,
+    "redirect": "https://m.me/joelgallinero"
+  }
+}
