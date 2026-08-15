@@ -25,7 +25,17 @@
   "initial": "US",
   "contacts": {
     "mobile": "+1 098 765 4321",
+    "mobile1": "",
+    "mobile2": "",
+    "mobile3": "",
+    "phone": "",
+    "phone1": "",
+    "phone2": "",
+    "phone3": "",
     "landline": "+1 123 456 7890",
+    "landline1": "",
+    "landline2": "",
+    "landline3": "",
     "fax": "+1 123 456 7890",
     "sms": "+1 098 765 4321",
     "messenger": "https://m.me/janedoe",
@@ -74,9 +84,6 @@
     "zoom"
   ],
   "vcfOrder": [
-    "landline",
-    "fax",
-    "sms",
     "share",
     "messenger",
     "whatsapp",

@@ -76,19 +76,36 @@
     <link rel="stylesheet" href="local.css" />
 
     <link rel="stylesheet" href="../loader.min.css" />
+
+    <link rel="stylesheet" href="../pwa.css" />
+    <script src="../validity.js"></script>
+    <script src="manifest.js"></script>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=https://m.me/joelgallinero">
+    </noscript>
 </head>
 
 <body>
-    <div id="pwa">
-        <div id="logo" class="uk-position-top-left uk-position-large uk-position-z-index-highest"><img class="logo" src="MerrillLynch.svg">
+    <div id="pwa2">
+        <div id="logo" class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="MerrillLynch.svg">
 </div>
-<div id="option" class="uk-position-top-right uk-position-large uk-position-z-index-highest">
-    <a href="" id="maximize">
-        <img class="icon" src="../maximize.svg">
-    </a>
-    <script src="../option.js"></script>
+<div id="menu" class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#offcanvas" uk-toggle><img
+            class="icon" src="../ellipsis.svg"></a>
+    <div id="offcanvas" uk-offcanvas="flip: true; mode: push">
+        <div class="uk-background-default uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-default poppins-semibold uk-dark">
+                <li><a href="" id="installLink" onclick="refreshApp(); return false;"><img class="offcanvas-icon"
+                            src="../update.svg"> Refresh Card</a></li>
+                <li><a href="" id="fullscreenLink"><img class="offcanvas-icon" src="../fullscreen.svg"> Fullscreen View</a>
+                </li>
+                <li><a href="" onclick="UIkit.offcanvas('#offcanvas').hide(); return false;"><img class="offcanvas-icon"
+                            src="../close.svg"> Exit Menu</a></li>
+            </ul>
+            <script src="../menu.js"></script>
+        </div>
+    </div>
 </div>
-<div id="navigation" class="uk-position-fixed uk-position-bottom-right uk-position-large uk-position-z-index-highest">
+<div id="navigation" class="uk-position-fixed uk-position-bottom-right uk-position-large uk-position-z-index">
     <ul class="uk-iconnav uk-iconnav-vertical uk-flex-center uk-margin-small-top">
         
     <li>
@@ -108,7 +125,7 @@
 <div id="profile" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-        <div class="uk-grid-collapse uk-child-width-1-1 uk-text-center uk-background-cover uk-background-center-center uk-background-blend-luminosity anigen-bgcolor"
+        <div class="uk-grid-collapse uk-child-width-1-1 uk-text-center uk-background-cover uk-background-center-center uk-background-blend-luminosity anigen-bgcolor uk-position-relative"
             uk-grid data-src="profile.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
             <div class="uk-position-relative">
                 <div class="anigen-bgcolor incline uk-position-bottom"></div>
@@ -128,7 +145,7 @@
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
     <div class="uk-background-cover uk-background-center-center uk-background-blend-multiply anigen-bgcolor uk-position-relative"
-      data-src="console.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
+      data-src="console.webp" uk-img uk-parallax="bgy: -200" uk-height-viewport>
       <div class="anigen-bgcolor">
         <div id="qr-codes"
           class="viewport-grid uk-child-width-1-6@l uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-3 uk-grid-collapse uk-text-center"
@@ -195,7 +212,11 @@
     </div>
 
     <script src="../console.js"></script>
+    <script src="../price.js"></script>
     <script src="../loader.js"></script>
+    
+    <script src="../countdown.js"></script>
+    <script src="../fetch.js"></script>
 </body>
 
 </html>
