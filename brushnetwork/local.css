@@ -18,17 +18,23 @@ h6 {
     background-color: #333333;
 }
 
+.uk-tooltip {
+    background-color: #333333 !important;
+}
+
+.uk-tooltip::before {
+    background-color: #333333 !important;
+}
+
 /* Slideshow */
 #slideshow h4 {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
-    font-size: calc(4vw + 3.5vh);
+    font-size: calc(3vw + 2.5vh);
     line-height: 0.9;
 }
 
 #slideshow p {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
     width: 65vw;
 }
 
@@ -39,7 +45,6 @@ h6 {
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
-    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
 }
 
 /* Gallery */

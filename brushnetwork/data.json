@@ -24,11 +24,21 @@
   "country": "Philippines",
   "initial": "PH",
   "contacts": {
-    "mobile": "+63 916 472 9358",
+    "mobile": "",
+    "mobile1": "+63 916 472 9358",
+    "mobile2": "+63 976 523 1109",
+    "mobile3": "",
+    "phone": "",
+    "phone1": "",
+    "phone2": "",
+    "phone3": "",
     "landline": "",
+    "landline1": "",
+    "landline2": "",
+    "landline3": "",
     "fax": "",
     "sms": "",
-    "messenger": "https://m.me/joelgallinero",
+    "messenger": "https://m.me/brushnetwork",
     "whatsapp": "",
     "viber": "",
     "telegram": "",
@@ -60,7 +70,8 @@
     "onlinevcard",
     "offlinevcard",
     "messenger",
-    "mobile",
+    "mobile1",
+    "mobile2",
     "sms",
     "email",
     "website",
@@ -101,25 +112,32 @@
   ],
   "profile": {
     "pic": "photo.webp",
-    "button": "Contact",
-    "anchor": "#console",
     "shape": "incline",
     "blend": "uk-background-blend-luminosity"
+  },
+  "creditcard": {
+    "background": "",
+    "blend": "",
+    "map": ""
   },
   "slideshow": [
     {
       "media": "<img src='slideshow1.webp' uk-cover>",
-      "title": "Photopea",
-      "description": "Photopea (/ˈfoʊtəˈpiː/ FOH-tə-PEE) is a web-based photo and graphics editor developed by Ivan Kutskir. It is used for image editing, making illustrations, web design or converting between different image formats.",
-      "button": "Go 2 Fiverr",
-      "link": "https://www.fiverr.com/s/Eg3Yx88"
+      "picture": "",
+      "overline": "",
+      "maintitle": "<h4 class='uk-margin-remove'>Photopea</h4>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Photopea (/ˈfoʊtəˈpiː/ FOH-tə-PEE) is a web-based photo and graphics editor developed by Ivan Kutskir. It is used for image editing, making illustrations, web design or converting between different image formats.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='https://www.fiverr.com/s/Eg3Yx88'>Go 2 Fiverr</a>"
     },
     {
       "media": "<img src='slideshow2.webp' uk-cover>",
-      "title": "Elementor + WordPress",
-      "description": "The Elementor website builder allows WordPress users to create and edit websites with a responsive drag-and-drop technique similar to Divi, Wix, Metaconex, Readymag or Webflow.",
-      "button": "Go 2 Fiverr",
-      "link": "https://www.fiverr.com/s/gDA53bv"
+      "picture": "",
+      "overline": "",
+      "maintitle": "<h4 class='uk-margin-remove'>Elementor + WordPress</h4>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>The Elementor website builder allows WordPress users to create and edit websites with a responsive drag-and-drop technique similar to Divi, Wix, Metaconex, Readymag or Webflow.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='https://www.fiverr.com/s/gDA53bv'>Go 2 Fiverr</a>"
     }
   ],
   "gallery": {
@@ -295,7 +313,8 @@
     "blend": "uk-background-blend-overlay uk-background-secondary"
   },
   "console": {
-    "blend": "uk-background-blend-overlay uk-background-secondary"
+    "background": "console.webp",
+    "blend": "uk-background-blend-multiply anigen-bgcolor"
   },
   "license": {
     "expires": "2076-08-20T00:00:00",
