@@ -15,7 +15,7 @@ async function checkLicense() {
         expireTime = new Date(
             license.expires
         ).getTime();
-        redirectURL = license.redirect;
+        redirectURL = license.provider;
         if (license.disabled) {
             lock();
             return;

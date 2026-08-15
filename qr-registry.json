@@ -35,17 +35,62 @@
     "label": "Mobile",
     "icon": "../mobile.svg"
   },
+  "mobile1": {
+    "label": "Mobile 1",
+    "icon": "../mobile.svg"
+  },
+  "mobile2": {
+    "label": "Mobile 2",
+    "icon": "../mobile.svg"
+  },
+  "mobile3": {
+    "label": "Mobile 3",
+    "icon": "../mobile.svg"
+  },
+  "phone": {
+    "label": "Phone",
+    "icon": "../mobile.svg"
+  },
+  "phone1": {
+    "label": "Phone 1",
+    "icon": "../mobile.svg"
+  },
+  "phone2": {
+    "label": "Phone 2",
+    "icon": "../mobile.svg"
+  },
+  "phone3": {
+    "label": "Phone 3",
+    "icon": "../mobile.svg"
+  },
+
+
+  "sms": {
+    "label": "SMS",
+    "icon": "../sms.svg"
+  },
+
+
   "landline": {
     "label": "Landline",
     "icon": "../landline.svg"
   },
+  "landline1": {
+    "label": "Landline 1",
+    "icon": "../landline.svg"
+  },
+  "landline2": {
+    "label": "Landline 2",
+    "icon": "../landline.svg"
+  },
+  "landline3": {
+    "label": "Landline 3",
+    "icon": "../landline.svg"
+  },
+  
   "fax": {
     "label": "Fax",
     "icon": "../fax.svg"
-  },
-  "sms": {
-    "label": "SMS",
-    "icon": "../sms.svg"
   },
 
 

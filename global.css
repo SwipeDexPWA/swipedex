@@ -17,6 +17,7 @@ h5,
 h6 {
     font-family: "Montserrat";
     font-weight: 600;
+    text-shadow: 1px 1px 2px #333333b3;
 }
 
 h1 {
@@ -45,22 +46,24 @@ h6 {
 
 p {
     font-size: calc(0.5vw + 0.5rem);
+    text-shadow: 1px 1px 2px #333333b3;
 }
 
 .uk-button {
     font-size: calc(0.5vw + 0.5rem);
     font-weight: 600;
+    text-shadow: 1px 1px 2px #333333b3;
 }
 
 /* Logo & Icons */
 .logo {
     width: calc(5vw + 5rem);
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0.1px 0.1px 0.1px #333333b3);
 }
 
 .icon {
     width: calc(1vw + 1rem);
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0.1px 0.1px 0.1px #333333b3);
 }
 
 .nav-icon {
@@ -159,17 +162,17 @@ p {
 
 #qr-codes .qr-trigger .qr-label {
     font-size: calc(0.5vw + 0.5rem);
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
 }
 
 #qr-codes a.qr-trigger {
     color: rgb(255, 255, 255);
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0.1px 0.1px 0.1px #333333b2);
 }
 
 #qr-popup #qr-title {
     color: rgb(0, 0, 0);
     font-size: calc(2vw + 1.5vh);
+    text-shadow: 0px 0px 0px transparent;
 }
 
 #qr-popup #qr-image {
