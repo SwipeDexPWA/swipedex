@@ -18,15 +18,23 @@ h6 {
     background-color: #221a1a;
 }
 
+.uk-tooltip {
+    background-color: #221a1a !important;
+}
+
+.uk-tooltip::before {
+    background-color: #221a1a !important;
+}
+
 /* Slideshow */
 #slideshow h4 {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px #000000;
+    font-size: calc(2vw + 1.5vh);
+    line-height: 0.9;
 }
 
 #slideshow p {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 8px #000000;
     width: 65vw;
 }
 

@@ -24,19 +24,29 @@
   "country": "Philippines",
   "initial": "PH",
   "contacts": {
-    "mobile": "+63 916 472 9358",
+    "mobile": "+63 987 654 3210",
+    "mobile1": "",
+    "mobile2": "",
+    "mobile3": "",
+    "phone": "",
+    "phone1": "",
+    "phone2": "",
+    "phone3": "",
     "landline": "",
+    "landline1": "",
+    "landline2": "",
+    "landline3": "",
     "fax": "",
-    "sms": "+63 916 472 9358",
-    "messenger": "https://m.me/cupofjoe",
+    "sms": "+63 987 654 3210",
+    "messenger": "https://m.me/",
     "whatsapp": "",
     "viber": "",
     "telegram": "",
-    "email": "joelgallinero@gmail.com",
-    "website": "https://www.cupofjoe.wholesaler"
+    "email": "wholesaler@cupofjoe.coffeebeans",
+    "website": "https://www.cupofjoe.coffeebeans"
   },
   "maps": {
-    "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
+    "googlemaps": "",
     "waze": "",
     "openstreetmap": ""
   },
@@ -49,11 +59,11 @@
     "fiverr": ""
   },
   "socials": {
-    "facebook": "https://www.facebook.com/cupofjoe",
-    "x": "https://www.x.com/cupofjoe",
-    "youtube": "https://www.youtube.com/cupofjoe",
-    "instagram": "https://www.instagram.com/cupofjoe",
-    "tiktok": "https://www.tiktok.com/cupofjoe"
+    "facebook": "https://www.facebook.com/",
+    "x": "https://www.x.com/",
+    "youtube": "https://www.youtube.com/",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/"
   },
   "qrOrder": [
     "share",
@@ -64,7 +74,6 @@
     "sms",
     "email",
     "website",
-    "googlemaps",
     "facebook",
     "instagram",
     "x",
@@ -74,7 +83,6 @@
   "vcfOrder": [
     "share",
     "messenger",
-    "googlemaps",
     "facebook",
     "instagram",
     "x",
@@ -104,33 +112,42 @@
     }
   ],
   "profile": {
-    "pic": "photo.webp",
-    "button": "Contact",
-    "anchor": "#console",
-    "shape": "incline",
-    "blend": "uk-background-blend-luminosity"
+    "pic": "",
+    "shape": "",
+    "blend": ""
+  },
+  "creditcard": {
+    "background": "",
+    "blend": "",
+    "map": ""
   },
   "slideshow": [
     {
       "media": "<video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>",
-      "title": "Robusta (Coffea Canephora)",
-      "description": "Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.",
-      "button": "More Info",
-      "link": "#"
+      "picture": "",
+      "overline": "",
+      "maintitle": "<h4 class='uk-margin-remove'>Robusta (Coffea Canephora)</h4>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a>"
     },
     {
       "media": "<img src='slideshow2.webp' uk-cover>",
-      "title": "Barako (Coffea Liberica)",
-      "description": "Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.",
-      "button": "More Info",
-      "link": "#"
+      "picture": "",
+      "overline": "",
+      "maintitle": "<h4 class='uk-margin-remove'>Barako (Coffea Liberica)</h4>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a>"
     },
     {
       "media": "<img src='slideshow3.webp' uk-cover>",
-      "title": "Arabica (Coffea Arabica)",
-      "description": "Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.",
-      "button": "More Info",
-      "link": "#"
+      "picture": "",
+      "overline": "",
+      "maintitle": "<h4 class='uk-margin-remove'>Arabica (Coffea Arabica)</h4>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a>"
     }
   ],
   "gallery": {
@@ -142,36 +159,42 @@
       "image": "gallery1.webp",
       "title": "Robusta (Coffea Canephora)",
       "media": "gallery1.webp",
+      "type": "image",
       "cover": "uk-cover"
     },
     {
       "image": "gallery2.webp",
       "title": "Coffee Machines",
       "media": "gallery2.webp",
+      "type": "image",
       "cover": "uk-cover"
     },
     {
       "image": "gallery3.webp",
       "title": "Medium Coffee Grounds",
       "media": "gallery3.webp",
+      "type": "image",
       "cover": "uk-cover"
     },
     {
       "image": "gallery4.webp",
       "title": "Espresso Machine",
       "media": "gallery4.webp",
+      "type": "image",
       "cover": "uk-cover"
     },
     {
       "image": "gallery5.webp",
       "title": "Barako (Coffea Liberica)",
       "media": "gallery5.webp",
+      "type": "image",
       "cover": "uk-cover"
     },
     {
       "image": "gallery6.webp",
       "title": "Roaster Machine",
       "media": "gallery6.webp",
+      "type": "image",
       "cover": "uk-cover"
     }
   ],
@@ -214,11 +237,12 @@
     "blend": "uk-background-blend-overlay uk-background-secondary"
   },
   "console": {
-    "blend": "uk-background-blend-overlay uk-background-secondary"
+    "background": "console.webp",
+    "blend": "uk-background-blend-multiply anigen-bgcolor"
   },
   "license": {
     "expires": "2076-08-20T00:00:00",
     "disabled": false,
-    "redirect": "https://m.me/joelgallinero"
+    "provider": "https://m.me/joelgallinero"
   }
 }

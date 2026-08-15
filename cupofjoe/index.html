@@ -4,9 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <noscript>
-        <meta http-equiv="refresh" content="0;url=https://swipedex.app">
-    </noscript>
     <title>Cup of Joe - Coffee for the Common Man</title>
     <meta name="description" content="Coffee for the Common Man">
     <meta name="keywords" content="Joel L. Gallinero, Wholesaler, Cup of Joe">
@@ -59,7 +56,7 @@
     "name": "",
     "image": "https://swipedex.app/cupofjoe/thumbnail.webp",
     "url": "https://swipedex.app/cupofjoe",
-    "telephone": "+63 916 472 9358",
+    "telephone": "+63 987 654 3210",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Iloilo",
@@ -75,18 +72,21 @@
     <link rel="preload" href="../Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../fonts.css" />
 
-    <link rel="stylesheet" href="local.css" />
     <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="local.css" />
 
     <link rel="stylesheet" href="../loader.min.css" />
 
     <link rel="stylesheet" href="../pwa.css" />
     <script src="../validity.js"></script>
     <script src="manifest.js"></script>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=">
+    </noscript>
 </head>
 
 <body>
-    <div id="pwa">
+    <div id="pwa2">
         <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
     <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
         uk-height-viewport>
@@ -103,18 +103,23 @@
         </div>
     </div>
 </div>
-<div id="logo" class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp"></div>
-<div id="menu" class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#offcanvas" uk-toggle><img class="icon"
-            src="../ellipsis.svg"></a>
+<div id="logo" class="uk-position-top-left uk-position-large uk-position-z-index"><img class="logo" src="CupOfJoe.webp">
+</div>
+<div id="menu" class="uk-position-top-right uk-position-large uk-position-z-index"><a href="#offcanvas" uk-toggle><img
+            class="icon" src="../ellipsis.svg"></a>
     <div id="offcanvas" uk-offcanvas="flip: true; mode: push">
         <div class="uk-background-default uk-offcanvas-bar">
             <ul class="uk-nav uk-nav-default poppins-semibold uk-dark">
-                <li><a href="" id="installLink"><img class="offcanvas-icon" src="../add2home.svg"> Add to Home Screen</a></li>
-                <li><a href="" id="installLink" onclick="refreshApp(); return false;"><img class="offcanvas-icon" src="../install.svg"> Refresh to Install</a></li>
-                <li><a href="" onclick="refreshApp(); return false;"><img class="offcanvas-icon" src="../update.svg"> Update Web App</a></li>
-                <li><a href="" id="fullscreenLink"><img class="offcanvas-icon" src="../fullscreen.svg"> Fullscreen</a></li>
-                <li><a href="https://m.me/cupofjoe"><img class="offcanvas-icon" src="../support.svg"> Contact Provider</a></li>
-                <li><a href="" onclick="UIkit.offcanvas('#offcanvas').hide(); return false;"><img class="offcanvas-icon" src="../close.svg">  Exit Menu</a></li>
+                <li><a href="" id="installLink"><img class="offcanvas-icon" src="../add2home.svg"> Add to Home
+                        Screen</a></li>
+                <li><a href="" onclick="refreshApp(); return false;"><img class="offcanvas-icon" src="../update.svg">
+                        Update Web App</a></li>
+                <li><a href="" id="fullscreenLink"><img class="offcanvas-icon" src="../fullscreen.svg"> Fullscreen View</a>
+                </li>
+                <li><a href="https://m.me/joelgallinero"><img class="offcanvas-icon" src="../support.svg"> Contact Support</a>
+                </li>
+                <li><a href="" onclick="UIkit.offcanvas('#offcanvas').hide(); return false;"><img class="offcanvas-icon"
+                            src="../close.svg"> Exit Menu</a></li>
             </ul>
             <dl class="uk-description-list">
                 <dt><small>Valid Thru:</small></dt>
@@ -126,7 +131,7 @@
         </div>
     </div>
 </div>
-<div id="navigation" class="uk-position-fixed uk-position-bottom-right uk-position-large">
+<div id="navigation" class="uk-position-fixed uk-position-bottom-right uk-position-large uk-position-z-index">
     <ul class="uk-iconnav uk-iconnav-vertical uk-flex-center uk-margin-small-top">
         
     <li>
@@ -158,37 +163,52 @@
 <div id="slideshow" class="uk-section snap full uk-padding-remove-vertical">
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-    <div class="uk-visible-toggle" tabindex="-1"
+    <div class="uk-visible-toggle uk-position-relative" tabindex="-1"
       uk-slideshow="autoplay: true; autoplay-interval: 7000; animation: push; ratio: false">
       <div class="uk-slideshow-items" uk-height-viewport>
         
     <div><video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>
+      <div class="uk-position-center uk-position-large">
+        
+      </div>
       <div class="uk-position-bottom-left uk-position-large">
-        <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Robusta (Coffea Canephora)</h4>
-        <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>
-        <div uk-slideshow-parallax="y: 300, 0, 300">
-          <a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+          <div class="uk-margin-remove-vertical"></div>
+          <div class="uk-margin-remove-vertical"><h4 class='uk-margin-remove'>Robusta (Coffea Canephora)</h4></div>
+          <div class="uk-margin-remove-vertical"></div>
         </div>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p></div>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a></div>
       </div>
     </div>
 
     <div><img src='slideshow2.webp' uk-cover>
+      <div class="uk-position-center uk-position-large">
+        
+      </div>
       <div class="uk-position-bottom-left uk-position-large">
-        <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Barako (Coffea Liberica)</h4>
-        <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p>
-        <div uk-slideshow-parallax="y: 300, 0, 300">
-          <a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+          <div class="uk-margin-remove-vertical"></div>
+          <div class="uk-margin-remove-vertical"><h4 class='uk-margin-remove'>Barako (Coffea Liberica)</h4></div>
+          <div class="uk-margin-remove-vertical"></div>
         </div>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p></div>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a></div>
       </div>
     </div>
 
     <div><img src='slideshow3.webp' uk-cover>
+      <div class="uk-position-center uk-position-large">
+        
+      </div>
       <div class="uk-position-bottom-left uk-position-large">
-        <h4 class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">Arabica (Coffea Arabica)</h4>
-        <p class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200">Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p>
-        <div uk-slideshow-parallax="y: 300, 0, 300">
-          <a class='uk-button uk-button-small uk-margin-small-top' href='#'>More Info</a>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+          <div class="uk-margin-remove-vertical"></div>
+          <div class="uk-margin-remove-vertical"><h4 class='uk-margin-remove'>Arabica (Coffea Arabica)</h4></div>
+          <div class="uk-margin-remove-vertical"></div>
         </div>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p></div>
+        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a></div>
       </div>
     </div>
 
@@ -197,105 +217,45 @@
         uk-slideshow-item="previous"></a>
       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
         uk-slideshow-item="next"></a>
-      <ul class="uk-position-bottom-center uk-position-large uk-slideshow-nav uk-dotnav"></ul>
     </div>
 
   </div>
 </div>
 <div id="gallery" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
+        
         <div class="uk-child-width-1-3@s uk-child-width-1-2 uk-grid-collapse" uk-lightbox="animation: slide; counter: true"
             uk-height-match="row: false; target: > img" uk-height-viewport uk-grid="">
             
     <div class="uk-cover-container">
-      <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)"><img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover></a>
+      <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)" data-type="image"><img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery2.webp" data-caption="Coffee Machines"><img src="gallery2.webp" alt="Coffee Machines" uk-cover></a>
+      <a href="gallery2.webp" data-caption="Coffee Machines" data-type="image"><img src="gallery2.webp" alt="Coffee Machines" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery3.webp" data-caption="Medium Coffee Grounds"><img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover></a>
+      <a href="gallery3.webp" data-caption="Medium Coffee Grounds" data-type="image"><img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery4.webp" data-caption="Espresso Machine"><img src="gallery4.webp" alt="Espresso Machine" uk-cover></a>
+      <a href="gallery4.webp" data-caption="Espresso Machine" data-type="image"><img src="gallery4.webp" alt="Espresso Machine" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)"><img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover></a>
+      <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)" data-type="image"><img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover></a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery6.webp" data-caption="Roaster Machine"><img src="gallery6.webp" alt="Roaster Machine" uk-cover></a>
+      <a href="gallery6.webp" data-caption="Roaster Machine" data-type="image"><img src="gallery6.webp" alt="Roaster Machine" uk-cover></a>
     </div>
 
         </div>
+        
     </div>
 </div>
-<div id="faqs" class="uk-section snap uk-padding-remove-vertical">
-    <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
-
-        <div class="uk-padding-large" uk-grid>
-            <div class="uk-width-1-1">
-
-                <h1>FAQs</h1>
-                <ul class="uk-accordion-default" uk-accordion>
-                    
-    <li>
-      <a class="uk-accordion-title">
-        <h6>What is the difference between Arabica, Robusta, and Liberica coffee beans?</h6> <span uk-accordion-icon>
-      </a>
-      <div class="uk-accordion-content">
-        <p>Arabica beans are known for their smooth, aromatic flavor with mild acidity and notes of fruit, chocolate, or nuts. They generally contain less caffeine. Robusta beans have a stronger, bolder taste with earthy and chocolate-like notes. They contain more caffeine and produce a richer crema, making them popular for espresso blends. Liberica beans are unique for their larger size and distinctive flavor profile, often described as fruity, floral, smoky, and woody. They are less common and sought after by specialty coffee enthusiasts.</p>
-      </div>
-  </li>
-
-    <li>
-      <a class="uk-accordion-title">
-        <h6>What packaging sizes do you offer for wholesale orders?</h6> <span uk-accordion-icon>
-      </a>
-      <div class="uk-accordion-content">
-        <p>We offer flexible packaging options to meet different business needs, including: 1 kg bags, 5 kg bags, 25 kg sacks & 50 kg sacks. Custom packaging and private labeling options may also be available for qualified wholesale customers.</p>
-      </div>
-  </li>
-
-    <li>
-      <a class="uk-accordion-title">
-        <h6>Do you supply green coffee beans or roasted coffee beans?</h6> <span uk-accordion-icon>
-      </a>
-      <div class="uk-accordion-content">
-        <p>We can supply: Green (unroasted) coffee beans, Roasted whole beans, Ground coffee (upon request). Customers can choose the roast level and grind size depending on their requirements.</p>
-      </div>
-  </li>
-
-    <li>
-      <a class="uk-accordion-title">
-        <h6>What is your minimum order quantity (MOQ)?</h6> <span uk-accordion-icon>
-      </a>
-      <div class="uk-accordion-content">
-        <p>Our minimum order quantity varies depending on the product and packaging selected. Typical wholesale orders start at: 25 kg for green beans, 10 kg for roasted beans. Please contact us for customized orders or mixed-bean purchases.</p>
-      </div>
-  </li>
-
-    <li>
-      <a class="uk-accordion-title">
-        <h6>How do I place an order and request a quotation?</h6> <span uk-accordion-icon>
-      </a>
-      <div class="uk-accordion-content">
-        <p>Simply provide the following information: Coffee variety (Arabica, Robusta, Liberica, or blend), Required quantity, Preferred packaging size, Delivery location & Business name and contact details. Our sales team will prepare a quotation, shipping estimate, and expected delivery schedule.</p>
-      </div>
-  </li>
-
-                </ul>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<div id="about" class="uk-section snap full uk-padding-remove-vertical">
+<div id="about" class="uk-section snap full uk-padding-remove-vertical uk-position-z-index-negative">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
         <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary"
@@ -329,12 +289,13 @@
 <div id="console" class="uk-section snap full uk-padding-remove-vertical">
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-    <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary uk-position-relative"
-      data-src="console.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
-
-      <div id="qr-codes"
-        class="viewport-grid uk-child-width-1-6@l uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-3 uk-grid-collapse uk-text-center"
-        uk-grid>
+    <div class="uk-background-cover uk-background-center-center uk-background-blend-multiply anigen-bgcolor uk-position-relative"
+      data-src="console.webp" uk-img uk-parallax="bgy: -200" uk-height-viewport>
+      <div class="anigen-bgcolor">
+        <div id="qr-codes"
+          class="viewport-grid uk-child-width-1-6@l uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-3 uk-grid-collapse uk-text-center"
+          uk-grid>
+        </div>
       </div>
 
     </div>
@@ -361,7 +322,7 @@
   const grid = document.getElementById("qr-codes");
   let buttons = [];
   try {
-    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"cupofjoe.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/cupofjoe"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 916 472 9358"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+63 916 472 9358"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.cupofjoe.wholesaler"},{"key":"googlemaps","label":"GoogleMaps","icon":"../googlemaps.svg","qr":"qr-googlemaps.svg","value":"https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/cupofjoe"},{"key":"instagram","label":"Instagram","icon":"../instagram.svg","qr":"qr-instagram.svg","value":"https://www.instagram.com/cupofjoe"},{"key":"x","label":"X","icon":"../x.svg","qr":"qr-x.svg","value":"https://www.x.com/cupofjoe"},{"key":"youtube","label":"YouTube","icon":"../youtube.svg","qr":"qr-youtube.svg","value":"https://www.youtube.com/cupofjoe"},{"key":"tiktok","label":"TikTok","icon":"../tiktok.svg","qr":"qr-tiktok.svg","value":"https://www.tiktok.com/cupofjoe"}] || [];
+    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"cupofjoe.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 987 654 3210"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+63 987 654 3210"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"wholesaler@cupofjoe.coffeebeans"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.cupofjoe.coffeebeans"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/"},{"key":"instagram","label":"Instagram","icon":"../instagram.svg","qr":"qr-instagram.svg","value":"https://www.instagram.com/"},{"key":"x","label":"X","icon":"../x.svg","qr":"qr-x.svg","value":"https://www.x.com/"},{"key":"youtube","label":"YouTube","icon":"../youtube.svg","qr":"qr-youtube.svg","value":"https://www.youtube.com/"},{"key":"tiktok","label":"TikTok","icon":"../tiktok.svg","qr":"qr-tiktok.svg","value":"https://www.tiktok.com/"}] || [];
   } catch (e) {
     console.error("QR BUTTONS ERROR:", e);
   }
@@ -390,45 +351,13 @@
     }
   })();
 </script>
-<script>
-    // Global
-    //UIkit.grid('[anigen-container]', {});
-    //UIkit.heightViewport('[anigen-fullscreen]', {});
-    //UIkit.img('[anigen-background]', {});
-    //UIkit.modal('[anigen-popup]', {});
-
-    // Slideshow
-    //UIkit.slideshow('#slideshow [anigen-slides]', { autoplay: 'true', autoplayInterval: '4000', animation: 'push', ratio: 'false' });
-    //UIkit.slideshowParallax('#slideshow h5[anigen-slidescroll]', { y: '100, 0, 100' });
-    //UIkit.slideshowParallax('#slideshow p[anigen-slidescroll]', { y: '200, 0, 200' });
-
-    // Grid
-    //UIkit.lightbox('#grid [anigen-gallery]', { animation: 'slide', counter: 'true' });
-    //UIkit.heightMatch('#grid [anigen-equal]', { row: 'false', target: '> img' });
-
-    // Rates
-    //UIkit.leader('#rates [anigen-dottedline]', {});
-
-    // About
-    //UIkit.img('#about [anigen-background]', { dataSrc: 'slideshow1.webp' });
-    //UIkit.parallax('#about [anigen-scroll]', { bgy: '-300' });
-    //UIkit.scrollspy('#about h1[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '300' });
-    //UIkit.scrollspy('#about p[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '400' });
-    //UIkit.scrollspy('#about a[anigen-animation]', { cls: 'uk-animation-slide-bottom', repeat: 'true', delay: '500' });
-
-    // FAQs
-    //UIkit.accordion('#faqs [anigen-collapse]', {});
-    //UIkit.accordionIcon('#faqs [anigen-plus]', {});
-
-    // Console
-    //UIkit.img('#console [anigen-background]', { dataSrc: 'console.webp' });
-</script>
 <div class="loader-body" id="loader">
     <div class="loader"></div>
 </div>
     </div>
 
     <script src="../console.js"></script>
+    <script src="../price.js"></script>
     <script src="../loader.js"></script>
     
     <script src="../countdown.js"></script>
