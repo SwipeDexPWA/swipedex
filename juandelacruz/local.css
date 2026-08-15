@@ -34,12 +34,12 @@ h6 {
     color: rgba(255, 255, 255);
 }
 
-#info h5 {
+#creditcard h5 {
     font-family: CreditCard !important;
     font-size: calc(2vw + 2vh);
     color: rgba(255, 255, 255) !important;
 }
-#info p {
+#creditcard p {
     color: rgba(255, 255, 255) !important;
 }
 
