@@ -10,15 +10,15 @@
         return;
     }
     const manifestData = {
-        "name": "Cup of Joe",
-        "short_name": "CupOfJoe",
-        "description": "Coffee for the Common Man",
+        "name": "SwipeDex℠",
+        "short_name": "SwipeDex℠",
+        "description": "Digital Business Cards & Progressive Web Apps (PWA)",
         "start_url": "/",
         "scope": "/",
         "display": "fullscreen",
         "orientation": "any",
-        "background_color": "#1d1412",
-        "theme_color": "#1d1412",
+        "background_color": "#222222",
+        "theme_color": "#222222",
         "icons": [
             { "src": "icon-72x72.png", "sizes": "72x72", "type": "image/png" },
             { "src": "icon-96x96.png", "sizes": "96x96", "type": "image/png" },
