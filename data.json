@@ -1,0 +1,210 @@
+{
+  "theme": "#2b3038",
+  "swipedex": "https://www.swipedex.app",
+  "share": "https://www.swipedex.app",
+  "title": "SwipeDex℠ - Digital Business Cards & Progressive Web Apps (PWA)",
+  "description": "Swipeable Smart Virtual Digital Business Cards & Progressive Web Apps (PWA) that are also fully working websites, with downloadable vCard/VCF.",
+  "author": "[SD] SwipeDex℠",
+  "vcardDisplay": "company",
+  "logo": "SwipeDex3D.webp",
+  "photo": "",
+  "prefix": "",
+  "firstname": "Joel",
+  "middlename": "L.",
+  "lastname": "Gallinero",
+  "fullname": "Joel L. Gallinero",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "SwipeDex",
+  "position": "Web App Developer",
+  "street": "San Antonio, Oton",
+  "zipcode": "5020",
+  "city": "Iloilo",
+  "state": "",
+  "country": "Philippines",
+  "initial": "PH",
+  "contacts": {
+    "mobile": "",
+    "mobile1": "+63 916 472 9358",
+    "mobile2": "+63 976 523 1109",
+    "mobile3": "",
+    "phone": "",
+    "phone1": "",
+    "phone2": "",
+    "phone3": "",
+    "landline": "",
+    "landline1": "",
+    "landline2": "",
+    "landline3": "",
+    "fax": "",
+    "sms": "+63 916 472 9358",
+    "messenger": "https://m.me/swipedex",
+    "whatsapp": "",
+    "viber": "",
+    "telegram": "",
+    "email": "joelgallinero@gmail.com",
+    "website": "https://www.swipedex.app"
+  },
+  "maps": {
+    "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "",
+    "fiverr": ""
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/swipedex",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "mobile1",
+    "mobile2",
+    "sms",
+    "email",
+    "website",
+    "facebook"
+  ],
+  "vcfOrder": [
+    "messenger",
+    "facebook"
+  ],
+  "navigation": [
+    {
+      "icon": "../slideshow.svg",
+      "tooltip": "Slideshow",
+      "anchor": "#slideshow"
+    },
+    {
+      "icon": "../gallery.svg",
+      "tooltip": "Gallery",
+      "anchor": "#gallery"
+    },
+    {
+      "icon": "../about.svg",
+      "tooltip": "About",
+      "anchor": "#about"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "Contact",
+      "anchor": "#console"
+    }
+  ],
+  "profile": {
+    "pic": "",
+    "shape": "",
+    "blend": ""
+  },
+  "creditcard": {
+    "background": "",
+    "blend": "",
+    "map": ""
+  },
+  "slideshow": [
+    {
+      "media": "<img src='slideshow2.webp' uk-cover>",
+      "picture": "",
+      "overline": "<h1 class='uk-heading-small uk-margin-remove' id='standard-price'><small>/Year</small></h1>",
+      "maintitle": "<h6 class='uk-margin-remove'>3-Section Digital Business Card</h6>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section and a Contact section with QR codes and downloadable vCard.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a>"
+    },
+    {
+      "media": "<img src='slideshow1.webp' uk-cover>",
+      "picture": "",
+      "overline": "<h1 class='uk-heading-small uk-margin-remove' id='basic-price'><small>/Year</small></h1>",
+      "maintitle": "<h6 class='uk-margin-remove'>2-Section Digital Business Card</h6>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Choose Profile, Slideshow, or Gallery for your main section, plus a Contact section with QR codes and downloadable vCard.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a>"
+    },
+    {
+      "media": "<img src='slideshow3.webp' uk-cover>",
+      "picture": "",
+      "overline": "<h1 class='uk-heading-small uk-margin-remove' id='premium-price'><small>/Year</small></h1>",
+      "maintitle": "<h6 class='uk-margin-remove'>4-Section Digital Business Card</h6>",
+      "subtitle": "",
+      "description": "<p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section, an About section and a Contact section with QR codes and downloadable vCard.</p>",
+      "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a>"
+    }
+  ],
+  "gallery": {
+    "width": "uk-child-width-1-2@s",
+    "masonry": ""
+  },
+  "grids": [
+    {
+      "image": "gallery1.webp",
+      "title": "Mario Rossi",
+      "media": "https://www.swipedex.app/mariorossi",
+      "type": "iframe",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery2.webp",
+      "title": "Cup of Joe",
+      "media": "https://www.swipedex.app/cupofjoe",
+      "type": "iframe",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery3.webp",
+      "title": "Juan de la Cruz",
+      "media": "https://www.swipedex.app/juandelacruz",
+      "type": "iframe",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery4.webp",
+      "title": "Jane Doe",
+      "media": "https://www.swipedex.app/janedoe",
+      "type": "iframe",
+      "cover": "uk-cover"
+    }
+  ],
+  "rates": [
+    {
+      "name": "",
+      "price": "₱ per Kilo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "about": {
+    "subtitle1": "<strong>[SD]</strong> SwipeDex<sup>SM</sup>",
+    "title1": "Digital Business Cards &",
+    "title2": "Progressive Web Apps (PWA)",
+    "subtitle2": "",
+    "paragraph": "Swipeable Smart Virtual Digital Business Cards & Progressive Web Apps (PWA) that are also fully working websites, with downloadable vCard/VCF.",
+    "button": "Contact Us",
+    "link": "#console",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "background": "console.webp",
+    "blend": "uk-background-blend-screen anigen-bgcolor"
+  },
+  "license": {
+    "expires": "2076-08-20T00:00:00",
+    "disabled": false,
+    "provider": "https://m.me/joelgallinero"
+  }
+}

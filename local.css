@@ -1,0 +1,130 @@
+body {
+    background-color: #666;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat" !important;
+    font-weight: 600;
+}
+
+/* Navigation */
+#navigation .anigen-button {
+    background-color: #666;
+}
+
+.uk-tooltip {
+    background-color: #666 !important;
+}
+
+.uk-tooltip::before {
+    background-color: #666 !important;
+}
+
+/* Slideshow */
+#slideshow h1,
+#slideshow h2,
+#slideshow h3,
+#slideshow h4,
+#slideshow h5,
+#slideshow h6 {
+    color: rgb(255, 255, 255);
+}
+
+#slideshow h1>small,
+#slideshow h2>small,
+#slideshow h3>small,
+#slideshow h4>small,
+#slideshow h5>small,
+#slideshow h6>small {
+    font-size: calc(0.6vw + 0.6rem) !important;
+}
+
+#slideshow p {
+    color: rgb(255, 255, 255);
+    width: 30vw;
+}
+
+#slideshow .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+/* Gallery */
+#gallery {
+    background-color: #fff;
+}
+
+/* About */
+#about h1 span {
+    font-family: "Poppins" !important;
+    color: rgb(255, 255, 255);
+}
+
+#about h3 {
+    color: rgb(255, 255, 255);
+}
+
+#about h3 sup {
+    font-size: calc(0.75vw + 0.75vh);
+}
+
+#about .anigen-fontsize {
+    font-size: calc(3.5vw + 2vh);
+}
+
+#about p {
+    color: rgb(255, 255, 255);
+}
+
+#about .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+
+/* Rates */
+#rates .h6 {
+    font-family: "Poppins";
+    font-size: clamp(1rem, 0.75rem + 0.35vw, 1.25rem);
+    font-weight: 600;
+}
+
+
+/* FAQs */
+#faqs {
+    background-color: #221a1a;
+}
+
+#faqs h1 {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#faqs h6 {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#faqs p {
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+/* Console */
+#console .anigen-bgcolor {
+    background-color: #111111b3;
+}
