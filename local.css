@@ -34,6 +34,7 @@ h6 {
 #slideshow h5,
 #slideshow h6 {
     color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 
 #slideshow h1>small,
@@ -43,6 +44,7 @@ h6 {
 #slideshow h5>small,
 #slideshow h6>small {
     font-size: calc(0.6vw + 0.6rem) !important;
+    font-weight: 500;
 }
 
 #slideshow p {
