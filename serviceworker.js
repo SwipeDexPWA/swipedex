@@ -11,9 +11,9 @@ if (!allowedHosts.includes(location.hostname) || !isMobileOrTablet) {
 const CACHE_NAME = 'swipedex-offline-v1';
 
 const APP_SHELL = [
-    './',
-    './index.html',
-    './data.json'
+    '/',
+    '/index.html',
+    '/data.json'
 ];
 
 // Install: cache the complete app shell
