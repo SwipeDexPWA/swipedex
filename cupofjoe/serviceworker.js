@@ -1,91 +1,81 @@
-const CACHE_NAME = "swipedex-v1";
+const CACHE_NAME = 'swipedex-offline-v1';
 
-// Add paths to the core files your app needs to load initially
-const PRECACHE_ASSETS = [
-    "/",
-    "/index.html",
-    // Add your main CSS or JS files here if needed, e.g., "/styles.css"
+const APP_SHELL = [
+    './',
+    './index.html',
+    './style.css',
+    './script.js',
+    './data.json'
 ];
 
-// 1. Install Event: Cache core assets immediately
-self.addEventListener("install", event => {
+// Install: cache the complete app shell
+self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => {
-                return cache.addAll(PRECACHE_ASSETS);
-            })
+            .then(cache => cache.addAll(APP_SHELL))
             .then(() => self.skipWaiting())
     );
 });
 
-// 2. Activate Event: Clean up old caches if CACHE_NAME changes
-self.addEventListener("activate", event => {
+// Activate: remove old caches
+self.addEventListener('activate', event => {
     event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames.map(cache => {
-                    if (cache !== CACHE_NAME) {
-                        return caches.delete(cache);
-                    }
-                })
-            );
-        }).then(() => self.clients.claim())
+        caches.keys().then(keys =>
+            Promise.all(
+                keys
+                    .filter(key => key !== CACHE_NAME)
+                    .map(key => caches.delete(key))
+            )
+        ).then(() => self.clients.claim())
     );
 });
 
-// 3. Fetch Event
-self.addEventListener("fetch", event => {
-    // Only handle standard GET requests
-    if (event.request.method !== "GET") return;
+// Fetch: Cache First
+self.addEventListener('fetch', event => {
 
-    const request = event.request;
+    // Only handle GET requests
+    if (event.request.method !== 'GET') return;
 
-    // -----------------------------
-    // HTML pages (Network First, Cache Fallback)
-    // -----------------------------
-    if (request.mode === "navigate") {
-        event.respondWith(
-            fetch(request)
-                .then(response => {
-                    // If valid, clone and save to cache
-                    if (response.status === 200) {
-                        const copy = response.clone();
-                        caches.open(CACHE_NAME).then(cache => {
-                            cache.put(request, copy);
-                        });
-                    }
-                    return response;
-                })
-                .catch(async () => {
-                    // OFFLINE FALLBACK
-                    const cache = await caches.open(CACHE_NAME);
-                    const matched = await cache.match(request, { ignoreSearch: true });
-                    
-                    // Return matched page, or fallback to the cached root "/"
-                    return matched || await cache.match("/");
-                })
-        );
-        return;
-    }
-
-    // -----------------------------
-    // Assets: CSS / JS / Images (Cache First, Network Fallback)
-    // -----------------------------
     event.respondWith(
-        caches.match(request, { ignoreSearch: true })
-            .then(cached => {
-                if (cached) {
-                    return cached;
-                }
-                return fetch(request).then(response => {
-                    if (response && response.status === 200) {
-                        const copy = response.clone();
+        caches.match(event.request).then(cachedResponse => {
+
+            // Use cached file when available
+            if (cachedResponse) {
+                return cachedResponse;
+            }
+
+            // Otherwise try the network
+            return fetch(event.request)
+                .then(networkResponse => {
+
+                    // Only cache valid responses
+                    if (
+                        networkResponse &&
+                        networkResponse.status === 200 &&
+                        networkResponse.type === 'basic'
+                    ) {
+                        const responseClone = networkResponse.clone();
+
                         caches.open(CACHE_NAME).then(cache => {
-                            cache.put(request, copy);
+                            cache.put(event.request, responseClone);
                         });
                     }
-                    return response;
+
+                    return networkResponse;
+                })
+                .catch(() => {
+
+                    // If navigation fails completely,
+                    // return the cached index.html
+                    if (event.request.mode === 'navigate') {
+                        return caches.match('./index.html');
+                    }
+
+                    return new Response('', {
+                        status: 503,
+                        statusText: 'Offline'
+                    });
                 });
-            })
+        })
     );
 });
