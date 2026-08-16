@@ -79,7 +79,7 @@
 
     <link rel="stylesheet" href="../pwa.css" />
     <script src="../validity.js"></script>
-    <link rel="manifest" href="manifest.json">
+    <script src="manifest.js"></script>
     <noscript>
         <meta http-equiv="refresh" content="0;url=">
     </noscript>
@@ -361,25 +361,7 @@
     <script src="../loader.js"></script>
     
     <script src="../countdown.js"></script>
-    <script>
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('serviceworker.js')
-            .then(registration => {
-                console.log(
-                    'Service Worker registered:',
-                    registration.scope
-                );
-            })
-            .catch(error => {
-                console.error(
-                    'Service Worker registration failed:',
-                    error
-                );
-            });
-    });
-}
-</script>
+    <script src="../fetch.js"></script>
 </body>
 
 </html>
