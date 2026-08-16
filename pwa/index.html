@@ -8,26 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.21/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.21/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.21/dist/js/uikit-icons.min.js"></script>
+    <script src="fetch.js"></script>
 </head>
 
 <body>
-    <script>
-        window.addEventListener("load", () => {
-            registerSW();
-        });
-        async function registerSW() {
-            if ("serviceWorker" in navigator) {
-                try {
-                    await navigator
-                        .serviceWorker
-                        .register("serviceworker.js");
-                }
-                catch (e) {
-                    console.log("SW registration failed");
-                }
-            }
-        }
-    </script>
+    <h1>PWA</h1>
 </body>
 
 </html>
