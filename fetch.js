@@ -1,30 +1,19 @@
-window.addEventListener("load", registerSW);
+window.addEventListener("load", () => {
+    registerSW();
+});
 async function registerSW() {
-    const allowedHosts = [
-        "swipedex.app",
-        "www.swipedex.app"
-    ];
+    const allowedHosts = ["swipedex.app", "www.swipedex.app"];
     const isMobileOrTablet =
+        window.innerWidth <= 1024 ||
         ("ontouchstart" in window) ||
-        (navigator.maxTouchPoints > 0);
+        navigator.maxTouchPoints > 0;
     if (!allowedHosts.includes(location.hostname) || !isMobileOrTablet) {
         return;
     }
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/serviceworker.js')
-                .then(registration => {
-                    console.log(
-                        'Service Worker registered:',
-                        registration.scope
-                    );
-                })
-                .catch(error => {
-                    console.error(
-                        'Service Worker registration failed:',
-                        error
-                    );
-                });
-        });
+    if ("serviceWorker" in navigator) {
+        try {
+            await navigator.serviceWorker.register("../serviceworker.js");
+        } catch (e) {
+        }
     }
 }
