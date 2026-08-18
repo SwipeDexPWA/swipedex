@@ -103,6 +103,11 @@
       "anchor": "#console"
     }
   ],
+  "splash": {
+    "desktop": "splash-desktop.webp",
+    "tablet": "splash-tablet.webp",
+    "mobile": "splash-mobile.webp"
+  },
   "profile": {
     "pic": "",
     "shape": "",
