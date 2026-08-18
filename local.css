@@ -70,6 +70,7 @@ h6 {
 #about h1 div {
     font-family: "Poppins" !important;
     color: rgb(255, 255, 255);
+    font-size: calc(3.5vw + 2vh);
 }
 
 #about h3 {
@@ -81,6 +82,7 @@ h6 {
 }
 
 #about #animation1, #about #animation2 {
+    color: rgb(255, 255, 255);
     font-size: calc(3.5vw + 2vh);
 }
 
