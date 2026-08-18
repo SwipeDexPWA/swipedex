@@ -9,7 +9,7 @@
   "logo": "SwipeDex3D.webp",
   "photo": "",
   "prefix": "",
-  "firstname": "[SD] SwipeDex℠",
+  "firstname": "SwipeDex℠",
   "middlename": "",
   "lastname": "",
   "fullname": "Joel L. Gallinero",
@@ -152,28 +152,28 @@
       "title": "Mario Rossi",
       "media": "https://www.swipedex.app/mariorossi",
       "type": "iframe",
-      "cover": "uk-cover"
+      "cover": ""
     },
     {
       "image": "gallery2.webp",
       "title": "Cup of Joe",
       "media": "https://www.swipedex.app/cupofjoe",
       "type": "iframe",
-      "cover": "uk-cover"
+      "cover": ""
     },
     {
       "image": "gallery3.webp",
       "title": "Juan de la Cruz",
       "media": "https://www.swipedex.app/juandelacruz",
       "type": "iframe",
-      "cover": "uk-cover"
+      "cover": ""
     },
     {
       "image": "gallery4.webp",
       "title": "Jane Doe",
       "media": "https://www.swipedex.app/janedoe",
       "type": "iframe",
-      "cover": "uk-cover"
+      "cover": ""
     }
   ],
   "rates": [
