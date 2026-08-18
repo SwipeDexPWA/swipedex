@@ -66,8 +66,6 @@
     </script>
 
     <link rel="stylesheet" href="uikit.min.css" />
-    <script src="uikit.min.js" defer></script>
-    <script src="uikit-icons.min.js" defer></script>
 
     <link rel="preload" href="Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts.css" />
@@ -76,18 +74,8 @@
     <link rel="stylesheet" href="local.css" />
 
     <link rel="stylesheet" href="loader.min.css" />
-    <script src="loader.js" defer></script>
-
-    <script src="console.js" defer></script>
-    <script src="price.js" defer></script>
-    <script src="cQure.js" defer></script>
-
-    <script src="manifest.js" defer></script>
-    <script src="fetch.js" defer defer></script>
     
     <link rel="stylesheet" href="pwa.css" />
-    <script src="validity.js" defer></script>
-    <script src="countdown.js" defer></script>
     <noscript>
         <meta http-equiv="refresh" content="0;url=noscript.html">
     </noscript>
@@ -168,13 +156,13 @@
 
     </ul>
 </div>
-<div id="company" class="uk-section snap full uk-padding-remove-vertical">
+<div id="splash" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
         <div class="uk-flex uk-flex-center uk-flex-middle uk-background-cover" sources='[
-       {"srcset": "SwipeDex-Desktop.webp", "media": "(min-width: 835px)"},
-       {"srcset": "SwipeDex-Tablet.webp", "media": "(min-width: 415px)"}
-     ]' data-src="SwipeDex-Mobile.webp" uk-img uk-parallax="bgy: -200" uk-height-viewport>
+            {"srcset": "splash-desktop.webp", "media": "(min-width: 835px)"},
+            {"srcset": "splash-tablet.webp", "media": "(min-width: 415px)"}
+            ]' data-src="splash-mobile.webp" uk-img uk-parallax="bgy: -200" uk-height-viewport>
         </div>
 
     </div>
@@ -182,8 +170,7 @@
 <div id="slideshow" class="uk-section snap full uk-padding-remove-vertical">
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-    <div class="uk-visible-toggle uk-position-relative" tabindex="-1"
-      uk-slideshow="autoplay: true; autoplay-interval: 7000; animation: push; ratio: false">
+    <div id="player" class="uk-visible-toggle uk-position-relative" tabindex="-1">
       <div class="uk-slideshow-items" uk-height-viewport>
         
     <div><img src='slideshow2.webp' uk-cover>
@@ -191,13 +178,13 @@
         
       </div>
       <div class="uk-position-bottom-left uk-position-large">
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+        <div id="animation1" class="uk-margin-remove-vertical">
           <div class="uk-margin-remove-vertical"><h1 class='uk-heading-small uk-margin-remove' id='standard-price'><small>/Year</small></h1></div>
           <div class="uk-margin-remove-vertical"><h6 class='uk-margin-remove'>3-Section Digital Business Card</h6></div>
           <div class="uk-margin-remove-vertical"></div>
         </div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section and a Contact section with QR codes and downloadable vCard.</p></div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
+        <div id="animation2" class="uk-margin-remove-vertical"><p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section and a Contact section with QR codes and downloadable vCard.</p></div>
+        <div id="animation3" class="uk-margin-remove-vertical"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
       </div>
     </div>
 
@@ -206,13 +193,13 @@
         
       </div>
       <div class="uk-position-bottom-left uk-position-large">
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+        <div id="animation1" class="uk-margin-remove-vertical">
           <div class="uk-margin-remove-vertical"><h1 class='uk-heading-small uk-margin-remove' id='basic-price'><small>/Year</small></h1></div>
           <div class="uk-margin-remove-vertical"><h6 class='uk-margin-remove'>2-Section Digital Business Card</h6></div>
           <div class="uk-margin-remove-vertical"></div>
         </div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Choose Profile, Slideshow, or Gallery for your main section, plus a Contact section with QR codes and downloadable vCard.</p></div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
+        <div id="animation2" class="uk-margin-remove-vertical"><p class='uk-margin-remove'>Choose Profile, Slideshow, or Gallery for your main section, plus a Contact section with QR codes and downloadable vCard.</p></div>
+        <div id="animation3" class="uk-margin-remove-vertical"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
       </div>
     </div>
 
@@ -221,13 +208,13 @@
         
       </div>
       <div class="uk-position-bottom-left uk-position-large">
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+        <div id="animation1" class="uk-margin-remove-vertical">
           <div class="uk-margin-remove-vertical"><h1 class='uk-heading-small uk-margin-remove' id='premium-price'><small>/Year</small></h1></div>
           <div class="uk-margin-remove-vertical"><h6 class='uk-margin-remove'>4-Section Digital Business Card</h6></div>
           <div class="uk-margin-remove-vertical"></div>
         </div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section, an About section and a Contact section with QR codes and downloadable vCard.</p></div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
+        <div id="animation2" class="uk-margin-remove-vertical"><p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section, an About section and a Contact section with QR codes and downloadable vCard.</p></div>
+        <div id="animation3" class="uk-margin-remove-vertical"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
       </div>
     </div>
 
@@ -269,8 +256,8 @@
 <div id="about" class="uk-section snap full uk-padding-remove-vertical uk-position-z-index-negative">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-        <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary"
-            data-src="about.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
+        <div id="background" class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary"
+            data-src="about.webp" uk-img>
 
             <div id="js-sticky-parallax-container" class="uk-position-relative uk-text-center">
                 <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-sticky"
@@ -278,13 +265,10 @@
                     <div class="uk-padding-large">
                         <h3 class="uk-margin-remove-bottom"><strong>[SD]</strong> SwipeDex<sup>SM</sup></h3>
                         <h1 class="uk-margin-remove-vertical">
-                            <span class="uk-display-inline-block anigen-fontsize"
-                                uk-parallax="target: #js-sticky-parallax-container; x: -15vw,0; easing: -1; start: 80vh; end: 100vh;"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Digital Business Cards &</span>
-                            <br>
-                            <span class="uk-display-inline-block anigen-fontsize"
-                                uk-parallax="target: #js-sticky-parallax-container; x: 10vw,0; easing: -1; start: 70vh; end: 100vh;"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Progressive Web Apps (PWA)</span>
+                            <div id="animation1" class="uk-display-inline-block"
+                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Digital Business Cards &</div>
+                            <div id="animation2" class="uk-display-inline-block"
+                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Progressive Web Apps (PWA)</div>
                         </h1>
                         <h3 class="uk-margin-remove-top"></h3>
                         <p>Swipeable Smart Virtual Digital Business Cards & Progressive Web Apps (PWA) that are also fully working websites, with downloadable vCard/VCF.</p>
@@ -366,6 +350,17 @@
     <div class="loader"></div>
 </div>
     </div>
+    <script src="uikit.min.js" defer></script>
+    <script src="uikit-icons.min.js" defer></script>
+    <script src="loader.js" defer></script>
+    <script src="console.js" defer></script>
+    <script src="price.js" defer></script>
+    <script src="anigen.js" defer></script>
+
+    <script src="manifest.js" defer></script>
+    <script src="fetch.js" defer></script>
+    <script src="validity.js" defer></script>
+    <script src="countdown.js" defer></script>
 </body>
 
 </html>
