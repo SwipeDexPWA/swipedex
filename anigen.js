@@ -3,10 +3,7 @@
         "swipedex.app",
         "www.swipedex.app"
     ];
-    const isMobileOrTablet =
-        ("ontouchstart" in window) ||
-        (navigator.maxTouchPoints > 0);
-    if (!allowedHosts.includes(window.location.hostname) || !isMobileOrTablet) {
+    if (!allowedHosts.includes(window.location.hostname)) {
         //return;
     }
 
