@@ -47,7 +47,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="maskable-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="maskable-512x512.png">
 
-    <meta name="theme-color" content="#2b3038">
+    <meta name="theme-color" content="#666666">
 
     <script type="application/ld+json">
     {
@@ -65,20 +65,33 @@
     }
     </script>
 
+    <link rel="preload" href="splash-desktop.webp" as="image" />
+    <link rel="preload" href="splash-tablet.webp" as="image" />
+    <link rel="preload" href="splash-mobile.webp" as="image" />
+
+    <link rel="preload" href="uikit.min.css" as="style" />
+    <link rel="preload" href="global.css" as="style" />
+    <link rel="preload" href="local.css" as="style" />
+
+    <link rel="stylesheet" href="loader.min.css" />
     <link rel="stylesheet" href="uikit.min.css" />
-
-    <link rel="preload" href="Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts.css" />
-
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="local.css" />
 
-    <link rel="stylesheet" href="loader.min.css" />
-    
     <link rel="stylesheet" href="pwa.css" />
+
     <noscript>
-        <meta http-equiv="refresh" content="0;url=../noscript.html">
+        <meta http-equiv="refresh" content="0;url=noscript.html">
     </noscript>
+
+    <link rel="preload" href="uikit.min.js" as="script" />
+    <link rel="preload" href="uikit-icons.min.js" as="script" />
+    <link rel="preload" href="anigen.js" as="script" />
+
+    <link rel="preload" href="Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -131,25 +144,25 @@
     <ul class="uk-iconnav uk-iconnav-vertical uk-flex-center uk-margin-small-top">
         
     <li>
-      <a href="#slideshow" class="anigen-button" uk-tooltip="Slideshow">
+      <a href="#slideshow" class="anigen-navigation" uk-tooltip="Slideshow">
         <img class="nav-icon" src="slideshow.svg">
       </a>
     </li>
 
     <li>
-      <a href="#gallery" class="anigen-button" uk-tooltip="Gallery">
+      <a href="#gallery" class="anigen-navigation" uk-tooltip="Gallery">
         <img class="nav-icon" src="gallery.svg">
       </a>
     </li>
 
     <li>
-      <a href="#about" class="anigen-button" uk-tooltip="About">
+      <a href="#about" class="anigen-navigation" uk-tooltip="About">
         <img class="nav-icon" src="about.svg">
       </a>
     </li>
 
     <li>
-      <a href="#console" class="anigen-button" uk-tooltip="Contact">
+      <a href="#console" class="anigen-navigation" uk-tooltip="Contact">
         <img class="nav-icon" src="mobile.svg">
       </a>
     </li>
@@ -177,45 +190,87 @@
       <div class="uk-position-center uk-position-large">
         
       </div>
+
       <div class="uk-position-bottom-left uk-position-large">
+
         <div id="animation1" class="uk-margin-remove-vertical">
+
           <div class="uk-margin-remove-vertical"><h1 class='uk-heading-small uk-margin-remove' id='standard-price'><small>/Year</small></h1></div>
+
           <div class="uk-margin-remove-vertical"><h6 class='uk-margin-remove'>3-Section Digital Business Card</h6></div>
+
           <div class="uk-margin-remove-vertical"></div>
+
         </div>
-        <div id="animation2" class="uk-margin-remove-vertical"><p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section and a Contact section with QR codes and downloadable vCard.</p></div>
-        <div id="animation3" class="uk-margin-remove-vertical"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
+
+        <div id="animation2" class="uk-margin-remove-vertical">
+          <p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section and a Contact section with QR codes and downloadable vCard.</p>
+        </div>
+
+        <div id="animation3" class="uk-margin-remove-vertical">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a>
+        </div>
+
       </div>
+
     </div>
 
     <div><img src='slideshow1.webp' uk-cover>
       <div class="uk-position-center uk-position-large">
         
       </div>
+
       <div class="uk-position-bottom-left uk-position-large">
+
         <div id="animation1" class="uk-margin-remove-vertical">
+
           <div class="uk-margin-remove-vertical"><h1 class='uk-heading-small uk-margin-remove' id='basic-price'><small>/Year</small></h1></div>
+
           <div class="uk-margin-remove-vertical"><h6 class='uk-margin-remove'>2-Section Digital Business Card</h6></div>
+
           <div class="uk-margin-remove-vertical"></div>
+
         </div>
-        <div id="animation2" class="uk-margin-remove-vertical"><p class='uk-margin-remove'>Choose Profile, Slideshow, or Gallery for your main section, plus a Contact section with QR codes and downloadable vCard.</p></div>
-        <div id="animation3" class="uk-margin-remove-vertical"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
+
+        <div id="animation2" class="uk-margin-remove-vertical">
+          <p class='uk-margin-remove'>Choose Profile, Slideshow, or Gallery for your main section, plus a Contact section with QR codes and downloadable vCard.</p>
+        </div>
+
+        <div id="animation3" class="uk-margin-remove-vertical">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a>
+        </div>
+
       </div>
+
     </div>
 
     <div><img src='slideshow3.webp' uk-cover>
       <div class="uk-position-center uk-position-large">
         
       </div>
+
       <div class="uk-position-bottom-left uk-position-large">
+
         <div id="animation1" class="uk-margin-remove-vertical">
+
           <div class="uk-margin-remove-vertical"><h1 class='uk-heading-small uk-margin-remove' id='premium-price'><small>/Year</small></h1></div>
+
           <div class="uk-margin-remove-vertical"><h6 class='uk-margin-remove'>4-Section Digital Business Card</h6></div>
+
           <div class="uk-margin-remove-vertical"></div>
+
         </div>
-        <div id="animation2" class="uk-margin-remove-vertical"><p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section, an About section and a Contact section with QR codes and downloadable vCard.</p></div>
-        <div id="animation3" class="uk-margin-remove-vertical"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a></div>
+
+        <div id="animation2" class="uk-margin-remove-vertical">
+          <p class='uk-margin-remove'>Choose Profile or Slideshow for your main section, plus a Gallery section, an About section and a Contact section with QR codes and downloadable vCard.</p>
+        </div>
+
+        <div id="animation3" class="uk-margin-remove-vertical">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#console'>Contact Us</a>
+        </div>
+
       </div>
+
     </div>
 
       </div>
@@ -227,26 +282,34 @@
 
   </div>
 </div>
-<div id="gallery" class="uk-section snap uk-padding-remove-vertical">
+<div id="gallery" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
         
         <div class="uk-child-width-1-2@s uk-child-width-1-2 uk-grid-collapse" uk-lightbox="animation: slide; counter: true"
-            uk-height-match="row: false; target: > img" uk-grid="">
+            uk-height-match="row: false; target: > img" uk-height-viewport uk-grid="">
             
     <div class="uk-cover-container">
-      <a href="https://www.swipedex.app/mariorossi" data-caption="Mario Rossi" data-type="iframe"><img src="gallery1.webp" alt="Mario Rossi" ></a>
+      <a href="https://www.swipedex.app/mariorossi" data-caption="Mario Rossi" data-type="iframe">
+        <img src="gallery1.webp" alt="Mario Rossi" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="https://www.swipedex.app/cupofjoe" data-caption="Cup of Joe" data-type="iframe"><img src="gallery2.webp" alt="Cup of Joe" ></a>
+      <a href="https://www.swipedex.app/cupofjoe" data-caption="Cup of Joe" data-type="iframe">
+        <img src="gallery2.webp" alt="Cup of Joe" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="https://www.swipedex.app/juandelacruz" data-caption="Juan de la Cruz" data-type="iframe"><img src="gallery3.webp" alt="Juan de la Cruz" ></a>
+      <a href="https://www.swipedex.app/juandelacruz" data-caption="Juan de la Cruz" data-type="iframe">
+        <img src="gallery3.webp" alt="Juan de la Cruz" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="https://www.swipedex.app/janedoe" data-caption="Jane Doe" data-type="iframe"><img src="gallery4.webp" alt="Jane Doe" ></a>
+      <a href="https://www.swipedex.app/janedoe" data-caption="Jane Doe" data-type="iframe">
+        <img src="gallery4.webp" alt="Jane Doe" uk-cover>
+      </a>
     </div>
 
         </div>
@@ -266,9 +329,9 @@
                         <h3 class="uk-margin-remove-bottom"><strong>[SD]</strong> SwipeDex<sup>SM</sup></h3>
                         <h1 class="uk-margin-remove-vertical">
                             <div id="animation1" class="uk-display-inline-block"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Digital Business Cards &</div>
+                                style="transform: translateX(0vw); will-change: transform;">Digital Business Cards &</div>
                             <div id="animation2" class="uk-display-inline-block"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Progressive Web Apps (PWA)</div>
+                                style="transform: translateX(0vw); will-change: transform;">Progressive Web Apps (PWA)</div>
                         </h1>
                         <h3 class="uk-margin-remove-top"></h3>
                         <p>Swipeable Smart Virtual Digital Business Cards & Progressive Web Apps (PWA) that are also fully working websites, with downloadable vCard/VCF.</p>
@@ -317,7 +380,7 @@
   const grid = document.getElementById("qr-codes");
   let buttons = [];
   try {
-    buttons = [{"key":"share","label":"Share","icon":"share.svg","qr":"qr-share.svg","value":"https://www.swipedex.app"},{"key":"onlinevcard","label":"Online vCard","icon":"onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"swipedex.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/swipedex"},{"key":"mobile1","label":"Mobile 1","icon":"mobile.svg","qr":"qr-mobile1.svg","value":"+63 916 472 9358"},{"key":"mobile2","label":"Mobile 2","icon":"mobile.svg","qr":"qr-mobile2.svg","value":"+63 976 523 1109"},{"key":"sms","label":"SMS","icon":"sms.svg","qr":"qr-sms.svg","value":"+63 916 472 9358"},{"key":"email","label":"Email","icon":"email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"website.svg","qr":"qr-website.svg","value":"https://www.swipedex.app"},{"key":"facebook","label":"Facebook","icon":"facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/swipedex"}] || [];
+    buttons = [{"key":"share","label":"Share","icon":"share.svg","qr":"qr-share.svg","value":"https://www.swipedex.app"},{"key":"onlinevcard","label":"Online vCard","icon":"onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"swipedex.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/joelgallinero"},{"key":"mobile1","label":"Mobile 1","icon":"mobile.svg","qr":"qr-mobile1.svg","value":"+63 916 472 9358"},{"key":"mobile2","label":"Mobile 2","icon":"mobile.svg","qr":"qr-mobile2.svg","value":"+63 976 523 1109"},{"key":"sms","label":"SMS","icon":"sms.svg","qr":"qr-sms.svg","value":"+63 916 472 9358"},{"key":"email","label":"Email","icon":"email.svg","qr":"qr-email.svg","value":"joelgallinero@gmail.com"},{"key":"website","label":"Website","icon":"website.svg","qr":"qr-website.svg","value":"https://www.swipedex.app"},{"key":"facebook","label":"Facebook","icon":"facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/swipedex"}] || [];
   } catch (e) {
     console.error("QR BUTTONS ERROR:", e);
   }
@@ -350,15 +413,16 @@
     <div class="loader"></div>
 </div>
     </div>
-    <script src="uikit.min.js" defer></script>
-    <script src="uikit-icons.min.js" defer></script>
-    <script src="loader.js" defer></script>
+    <script src="loader.js"></script>
+    <script src="uikit.min.js"></script>
+    <script src="uikit-icons.min.js"></script>
+    <script src="anigen.js"></script>
+
     <script src="console.js" defer></script>
     <script src="price.js" defer></script>
-    <script src="anigen.js" defer></script>
 
-    <script src="manifest.js" defer></script>
-    <script src="fetch.js" defer></script>
+    <script src="manifest.js"></script>
+    <script src="fetch.js"></script>
     <script src="validity.js" defer></script>
     <script src="countdown.js" defer></script>
 </body>
