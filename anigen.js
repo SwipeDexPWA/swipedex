@@ -7,7 +7,7 @@
         ("ontouchstart" in window) ||
         (navigator.maxTouchPoints > 0);
     if (!allowedHosts.includes(window.location.hostname) || !isMobileOrTablet) {
-        //return;
+        return;
     }
 
     // Slideshow
