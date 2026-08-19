@@ -1,5 +1,8 @@
 {
-  "theme": "#2b3038",
+  "theme": "#666666",
+  "titles": "Montserrat-SemiBold.woff2",
+  "subtitles": "Montserrat-Medium.woff2",
+  "paragraphs": "Poppins-Regular.woff2",
   "swipedex": "https://www.swipedex.app",
   "share": "https://www.swipedex.app",
   "title": "SwipeDex℠ - Digital Business Cards & Progressive Web Apps (PWA)",
@@ -38,7 +41,7 @@
     "landline3": "",
     "fax": "",
     "sms": "+63 916 472 9358",
-    "messenger": "https://m.me/swipedex",
+    "messenger": "https://m.me/joelgallinero",
     "whatsapp": "",
     "viber": "",
     "telegram": "",
@@ -157,28 +160,28 @@
       "title": "Mario Rossi",
       "media": "https://www.swipedex.app/mariorossi",
       "type": "iframe",
-      "cover": ""
+      "cover": "uk-cover"
     },
     {
       "image": "gallery2.webp",
       "title": "Cup of Joe",
       "media": "https://www.swipedex.app/cupofjoe",
       "type": "iframe",
-      "cover": ""
+      "cover": "uk-cover"
     },
     {
       "image": "gallery3.webp",
       "title": "Juan de la Cruz",
       "media": "https://www.swipedex.app/juandelacruz",
       "type": "iframe",
-      "cover": ""
+      "cover": "uk-cover"
     },
     {
       "image": "gallery4.webp",
       "title": "Jane Doe",
       "media": "https://www.swipedex.app/janedoe",
       "type": "iframe",
-      "cover": ""
+      "cover": "uk-cover"
     }
   ],
   "rates": [
