@@ -6,7 +6,7 @@
     const isMobileOrTablet =
         ("ontouchstart" in window) ||
         (navigator.maxTouchPoints > 0);
-    if (!allowedHosts.includes(location.hostname) || !isMobileOrTablet) {
+    if (!allowedHosts.includes(window.location.hostname) || !isMobileOrTablet) {
         return;
     }
     const manifestData = {
