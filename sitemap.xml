@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<url>
+  <loc>https://swipedex.com/</loc>
+</url>
 <url>
   <loc>https://swipedex.com/brushnetwork/</loc>
 </url>
@@ -11,18 +13,9 @@
   <loc>https://swipedex.com/janedoe/</loc>
 </url>
 <url>
-  <loc>https://swipedex.com/joebloggs/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/johndoe/</loc>
-</url>
-<url>
   <loc>https://swipedex.com/juandelacruz/</loc>
 </url>
 <url>
   <loc>https://swipedex.com/mariorossi/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/swipedex/</loc>
 </url>
 </urlset>
