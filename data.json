@@ -1,12 +1,41 @@
 {
   "theme": "#666666",
-  "titles": "Montserrat-SemiBold.woff2",
-  "subtitles": "Montserrat-Medium.woff2",
-  "paragraphs": "Poppins-Regular.woff2",
+  "images": [
+    {
+      "image": "splash-desktop.webp",
+      "type": "image/webp"
+    },
+    {
+      "image": "splash-tablet.webp",
+      "type": "image/webp"
+    },
+    {
+      "image": "splash-mobile.webp",
+      "type": "image/webp"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "Montserrat-SemiBold.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Montserrat-Medium.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Regular.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Medium.woff2",
+      "type": "font/woff2"
+    }
+  ],
   "swipedex": "https://www.swipedex.app",
   "share": "https://www.swipedex.app",
-  "title": "SwipeDex℠ - Digital Business Cards & Progressive Web Apps (PWA)",
-  "description": "Swipeable Smart Virtual Digital Business Cards & Progressive Web Apps (PWA) that are also fully working websites, with downloadable vCard/VCF.",
+  "title": "SwipeDex℠ - Philippine Digital Business Cards & Progressive Web Apps (PWA) Philippines",
+  "description": "Swipeable Smart Virtual Digital Business Card featuring Progressive Web App (PWA), QR Code, and downloadable vCard/VCF that doubles as a fully functional One Page Website — with Optional NFC for tap-to-share convenience.",
   "author": "[SD] SwipeDex℠",
   "vcardDisplay": "company",
   "logo": "SwipeDex3D.webp",
@@ -49,7 +78,7 @@
     "website": "https://www.swipedex.app"
   },
   "maps": {
-    "googlemaps": "https://maps.app.goo.gl/oMQfEypEwxpaU7Xu8",
+    "googlemaps": "https://maps.app.goo.gl/Cj89AQkKZ9wk3Nqf7",
     "waze": "",
     "openstreetmap": ""
   },
@@ -78,6 +107,7 @@
     "sms",
     "email",
     "website",
+    "googlemaps",
     "facebook"
   ],
   "vcfOrder": [
@@ -86,23 +116,28 @@
   ],
   "navigation": [
     {
+      "icon": "../profile.svg",
+      "tooltip": "title: Home; pos: left",
+      "anchor": "#splash"
+    },
+    {
       "icon": "../slideshow.svg",
-      "tooltip": "Slideshow",
+      "tooltip": "title: Slideshow; pos: left",
       "anchor": "#slideshow"
     },
     {
       "icon": "../gallery.svg",
-      "tooltip": "Gallery",
+      "tooltip": "title: Gallery; pos: left",
       "anchor": "#gallery"
     },
     {
       "icon": "../about.svg",
-      "tooltip": "About",
+      "tooltip": "title: About; pos: left",
       "anchor": "#about"
     },
     {
       "icon": "../mobile.svg",
-      "tooltip": "Contact",
+      "tooltip": "title: Contact; pos: left",
       "anchor": "#console"
     }
   ],
@@ -151,7 +186,7 @@
     }
   ],
   "gallery": {
-    "width": "uk-child-width-1-2@s",
+    "width": "uk-child-width-1-3@s",
     "masonry": ""
   },
   "grids": [
@@ -171,15 +206,22 @@
     },
     {
       "image": "gallery3.webp",
+      "title": "Jane Doe",
+      "media": "https://www.swipedex.app/janedoe",
+      "type": "iframe",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery4.webp",
       "title": "Juan de la Cruz",
       "media": "https://www.swipedex.app/juandelacruz",
       "type": "iframe",
       "cover": "uk-cover"
     },
     {
-      "image": "gallery4.webp",
-      "title": "Jane Doe",
-      "media": "https://www.swipedex.app/janedoe",
+      "image": "gallery5.webp",
+      "title": "BrushNetwork",
+      "media": "https://www.swipedex.app/brushnetwork",
       "type": "iframe",
       "cover": "uk-cover"
     }
@@ -197,11 +239,11 @@
     }
   ],
   "about": {
-    "subtitle1": "<strong>[SD]</strong> SwipeDex<sup>SM</sup>",
+    "subtitle1": "[SD] SwipeDex<sup>SM</sup>",
     "title1": "Digital Business Cards &",
     "title2": "Progressive Web Apps (PWA)",
     "subtitle2": "",
-    "paragraph": "Swipeable Smart Virtual Digital Business Cards & Progressive Web Apps (PWA) that are also fully working websites, with downloadable vCard/VCF.",
+    "paragraph": "Swipeable Smart Virtual Digital Business Card featuring Progressive Web App (PWA), QR Code, and downloadable vCard/VCF that doubles as a fully functional One Page Website — with Optional NFC for tap-to-share convenience.",
     "button": "Contact Us",
     "link": "#console",
     "blend": "uk-background-blend-overlay uk-background-secondary"

@@ -1,5 +1,5 @@
 body {
-    background-color: #666;
+    background-color: #222222;
 }
 
 /* Typography */
@@ -9,21 +9,27 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat";
     font-weight: 600;
 }
 
 /* Navigation */
-#navigation .anigen-button {
-    background-color: #666;
-}
-
-.uk-tooltip {
-    background-color: #666 !important;
-}
-
+.anigen-navigation,
+.uk-tooltip,
 .uk-tooltip::before {
-    background-color: #666 !important;
+    background-color: #666666;
+}
+
+/* Splash */
+#splash h6 {
+    color: rgba(255, 255, 255);
+    width: 50vw;
+}
+
+#splash p {
+    color: rgba(255, 255, 255);
+    width: 50vw;
+
 }
 
 /* Slideshow */
@@ -61,28 +67,22 @@ h6 {
     border-radius: 30px;
 }
 
-/* Gallery */
-#gallery {
-    background-color: #fff;
-}
-
 /* About */
+#about h3 {
+    font-family: "Poppins" !important;
+}
 #about h1 div {
     font-family: "Poppins" !important;
     color: rgb(255, 255, 255) !important;
     font-size: calc(3.5vw + 2vh) !important;
 }
 
-#about h3 {
+#about h3, #about p {
     color: rgb(255, 255, 255);
 }
 
 #about h3 sup {
     font-size: calc(0.75vw + 0.75vh);
-}
-
-#about p {
-    color: rgb(255, 255, 255);
 }
 
 #about .uk-button {
@@ -92,35 +92,6 @@ h6 {
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
-}
-
-
-/* Rates */
-#rates .h6 {
-    font-family: "Poppins";
-    font-size: clamp(1rem, 0.75rem + 0.35vw, 1.25rem);
-    font-weight: 600;
-}
-
-
-/* FAQs */
-#faqs {
-    background-color: #221a1a;
-}
-
-#faqs h1 {
-    color: rgb(255, 255, 255);
-    margin: 0px;
-}
-
-#faqs h6 {
-    color: rgb(255, 255, 255);
-    margin: 0px;
-}
-
-#faqs p {
-    color: rgb(255, 255, 255);
-    margin-top: 0px;
 }
 
 /* Console */
