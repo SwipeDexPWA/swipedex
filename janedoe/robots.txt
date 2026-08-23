@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swipedex.com/janedoe/sitemap.xml
