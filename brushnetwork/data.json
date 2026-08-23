@@ -1,5 +1,33 @@
 {
   "theme": "#111111",
+  "images": [
+    {
+      "image": "slideshow1.webp",
+      "type": "image/webp"
+    },
+    {
+      "image": "slideshow2.webp",
+      "type": "image/webp"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "Montserrat-SemiBold.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Montserrat-Medium.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Regular.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Medium.woff2",
+      "type": "font/woff2"
+    }
+  ],
   "swipedex": "https://swipedex.app",
   "share": "https://swipedex.app/brushnetwork",
   "title": "BrushNetwork - Graphic Design & Web Development",
@@ -125,7 +153,7 @@
       "media": "<img src='slideshow1.webp' uk-cover>",
       "picture": "",
       "overline": "",
-      "maintitle": "<h4 class='uk-margin-remove'>Photopea</h4>",
+      "maintitle": "<h1 class='uk-margin-remove'>Photopea</h1>",
       "subtitle": "",
       "description": "<p class='uk-margin-remove'>Photopea (/ˈfoʊtəˈpiː/ FOH-tə-PEE) is a web-based photo and graphics editor developed by Ivan Kutskir. It is used for image editing, making illustrations, web design or converting between different image formats.</p>",
       "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='https://www.fiverr.com/s/Eg3Yx88'>Go 2 Fiverr</a>"
@@ -134,7 +162,7 @@
       "media": "<img src='slideshow2.webp' uk-cover>",
       "picture": "",
       "overline": "",
-      "maintitle": "<h4 class='uk-margin-remove'>Elementor + WordPress</h4>",
+      "maintitle": "<h1 class='uk-margin-remove'>Elementor + WordPress</h1>",
       "subtitle": "",
       "description": "<p class='uk-margin-remove'>The Elementor website builder allows WordPress users to create and edit websites with a responsive drag-and-drop technique similar to Divi, Wix, Metaconex, Readymag or Webflow.</p>",
       "button": "<a class='uk-button uk-button-small uk-margin-small-top' href='https://www.fiverr.com/s/gDA53bv'>Go 2 Fiverr</a>"
