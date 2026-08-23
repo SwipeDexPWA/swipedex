@@ -1,5 +1,39 @@
 {
   "theme": "#221a1a",
+  "videos": [
+    {
+      "video": "slideshow1.webm",
+      "type": "video/webm"
+    }
+  ],
+  "images": [
+    {
+      "image": "slideshow2.webp",
+      "type": "image/webp"
+    },
+    {
+      "image": "slideshow3.webp",
+      "type": "image/webp"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "Lato-Bold.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Lato-Black.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Lato-Regular.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Regular.woff2",
+      "type": "font/woff2"
+    }
+  ],
   "swipedex": "https://swipedex.app",
   "share": "https://swipedex.app/cupofjoe",
   "title": "Cup of Joe - Coffee for the Common Man",

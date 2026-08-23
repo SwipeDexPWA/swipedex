@@ -65,29 +65,44 @@
     }
     </script>
 
+    
+    <link rel="preload" href="slideshow1.webm" as="video" type="video/webm" />
+    
+    <link rel="preload" href="slideshow2.webp" as="image" type="image/webp" />
+    <link rel="preload" href="slideshow3.webp" as="image" type="image/webp" />
+    
+    <link rel="preload" href="../Lato-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../Lato-Black.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../Lato-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="preload" href="../uikit.min.css" as="style" />
+    <link rel="preload" href="../fonts.css" as="style" />
+    <link rel="preload" href="../global.css" as="style" />
+    <link rel="preload" href="local.css" as="style" />
+
+    <link rel="preload" href="../uikit.min.js" as="script" />
+    <link rel="preload" href="../uikit-icons.min.js" as="script" />
+
+    <link rel="stylesheet" href="../loader.min.css" />
     <link rel="stylesheet" href="../uikit.min.css" />
-    <script src="../uikit.min.js"></script>
-    <script src="../uikit-icons.min.js"></script>
-
-    <link rel="preload" href="../Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../fonts.css" />
-
     <link rel="stylesheet" href="../global.css" />
     <link rel="stylesheet" href="local.css" />
 
-    <link rel="stylesheet" href="../loader.min.css" />
-
-    <link rel="stylesheet" href="../pwa.css" />
-    <script src="../validity.js"></script>
-    <script src="manifest.js"></script>
     <noscript>
-        <meta http-equiv="refresh" content="0;url=">
+        <meta http-equiv="refresh" content="0;url=../noscript.html">
     </noscript>
+
+    <meta name="google-site-verification" content="Ie3fQ70ki7bAY4msg2bwTw3TREzM_l8TO4SAKbxy4uA" />
 </head>
 
 <body>
-    <div id="pwa">
-        <div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
+    <div id="pwa2">
+        <div class="loader-body" id="loader">
+    <div class="loader"></div>
+</div>
+<div id="license" class="uk-modal-full" uk-modal="bg-close: false; esc-close: false">
     <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-padding uk-position-relative"
         uk-height-viewport>
         <div class="uk-padding-large uk-position-center">
@@ -135,25 +150,25 @@
     <ul class="uk-iconnav uk-iconnav-vertical uk-flex-center uk-margin-small-top">
         
     <li>
-      <a href="#slideshow" class="anigen-button" uk-tooltip="Slideshow">
+      <a href="#slideshow" class="anigen-navigation" uk-tooltip="Slideshow">
         <img class="nav-icon" src="../slideshow.svg">
       </a>
     </li>
 
     <li>
-      <a href="#gallery" class="anigen-button" uk-tooltip="Gallery">
+      <a href="#gallery" class="anigen-navigation" uk-tooltip="Gallery">
         <img class="nav-icon" src="../gallery.svg">
       </a>
     </li>
 
     <li>
-      <a href="#about" class="anigen-button" uk-tooltip="About">
+      <a href="#about" class="anigen-navigation" uk-tooltip="About">
         <img class="nav-icon" src="../about.svg">
       </a>
     </li>
 
     <li>
-      <a href="#console" class="anigen-button" uk-tooltip="Contact">
+      <a href="#console" class="anigen-navigation" uk-tooltip="Contact">
         <img class="nav-icon" src="../mobile.svg">
       </a>
     </li>
@@ -163,53 +178,94 @@
 <div id="slideshow" class="uk-section snap full uk-padding-remove-vertical">
   <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-    <div class="uk-visible-toggle uk-position-relative" tabindex="-1"
-      uk-slideshow="autoplay: true; autoplay-interval: 7000; animation: push; ratio: false">
+    <div id="player" class="uk-visible-toggle uk-position-relative" tabindex="-1">
       <div class="uk-slideshow-items" uk-height-viewport>
         
     <div><video src='slideshow1.webm' autoplay loop muted playsinline uk-cover></video>
       <div class="uk-position-center uk-position-large">
         
       </div>
+
       <div class="uk-position-bottom-left uk-position-large">
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+
+        <div id="animation1" class="uk-margin-remove-vertical">
+
           <div class="uk-margin-remove-vertical"></div>
+
           <div class="uk-margin-remove-vertical"><h4 class='uk-margin-remove'>Robusta (Coffea Canephora)</h4></div>
+
           <div class="uk-margin-remove-vertical"></div>
+
         </div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p></div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a></div>
+
+        <div id="animation2" class="uk-margin-remove-vertical">
+          <p class='uk-margin-remove'>Coffea canephora (especially C. canephora subvar. robusta, syn. Coffea robusta, or commonly robusta coffee) is a species of coffee plant that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>
+        </div>
+
+        <div id="animation3" class="uk-margin-remove-vertical">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a>
+        </div>
+
       </div>
+
     </div>
 
     <div><img src='slideshow2.webp' uk-cover>
       <div class="uk-position-center uk-position-large">
         
       </div>
+
       <div class="uk-position-bottom-left uk-position-large">
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+
+        <div id="animation1" class="uk-margin-remove-vertical">
+
           <div class="uk-margin-remove-vertical"></div>
+
           <div class="uk-margin-remove-vertical"><h4 class='uk-margin-remove'>Barako (Coffea Liberica)</h4></div>
+
           <div class="uk-margin-remove-vertical"></div>
+
         </div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p></div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a></div>
+
+        <div id="animation2" class="uk-margin-remove-vertical">
+          <p class='uk-margin-remove'>Coffea liberica, commonly known as Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola), and has become naturalised in areas including Colombia, Venezuela, the Philippines, Sumatra, Borneo and Java.</p>
+        </div>
+
+        <div id="animation3" class="uk-margin-remove-vertical">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a>
+        </div>
+
       </div>
+
     </div>
 
     <div><img src='slideshow3.webp' uk-cover>
       <div class="uk-position-center uk-position-large">
         
       </div>
+
       <div class="uk-position-bottom-left uk-position-large">
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 100, 0, 100">
+
+        <div id="animation1" class="uk-margin-remove-vertical">
+
           <div class="uk-margin-remove-vertical"></div>
+
           <div class="uk-margin-remove-vertical"><h4 class='uk-margin-remove'>Arabica (Coffea Arabica)</h4></div>
+
           <div class="uk-margin-remove-vertical"></div>
+
         </div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 200, 0, 200"><p class='uk-margin-remove'>Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p></div>
-        <div class="uk-margin-remove-vertical" uk-slideshow-parallax="y: 300, 0, 300"><a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a></div>
+
+        <div id="animation2" class="uk-margin-remove-vertical">
+          <p class='uk-margin-remove'>Coffea arabica (/əˈræbɪkə/), also known as the Arabica coffee, is a species of flowering plant in the coffee and madder family Rubiaceae. It is believed to be the first species of coffee to have been cultivated and is the dominant cultivar, representing about 60% of global production.</p>
+        </div>
+
+        <div id="animation3" class="uk-margin-remove-vertical">
+          <a class='uk-button uk-button-small uk-margin-small-top' href='#console'>More Info</a>
+        </div>
+
       </div>
+
     </div>
 
       </div>
@@ -228,38 +284,50 @@
             uk-height-match="row: false; target: > img" uk-height-viewport uk-grid="">
             
     <div class="uk-cover-container">
-      <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)" data-type="image"><img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover></a>
+      <a href="gallery1.webp" data-caption="Robusta (Coffea Canephora)" data-type="image">
+        <img src="gallery1.webp" alt="Robusta (Coffea Canephora)" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery2.webp" data-caption="Coffee Machines" data-type="image"><img src="gallery2.webp" alt="Coffee Machines" uk-cover></a>
+      <a href="gallery2.webp" data-caption="Coffee Machines" data-type="image">
+        <img src="gallery2.webp" alt="Coffee Machines" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery3.webp" data-caption="Medium Coffee Grounds" data-type="image"><img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover></a>
+      <a href="gallery3.webp" data-caption="Medium Coffee Grounds" data-type="image">
+        <img src="gallery3.webp" alt="Medium Coffee Grounds" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery4.webp" data-caption="Espresso Machine" data-type="image"><img src="gallery4.webp" alt="Espresso Machine" uk-cover></a>
+      <a href="gallery4.webp" data-caption="Espresso Machine" data-type="image">
+        <img src="gallery4.webp" alt="Espresso Machine" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)" data-type="image"><img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover></a>
+      <a href="gallery5.webp" data-caption="Barako (Coffea Liberica)" data-type="image">
+        <img src="gallery5.webp" alt="Barako (Coffea Liberica)" uk-cover>
+      </a>
     </div>
 
     <div class="uk-cover-container">
-      <a href="gallery6.webp" data-caption="Roaster Machine" data-type="image"><img src="gallery6.webp" alt="Roaster Machine" uk-cover></a>
+      <a href="gallery6.webp" data-caption="Roaster Machine" data-type="image">
+        <img src="gallery6.webp" alt="Roaster Machine" uk-cover>
+      </a>
     </div>
 
         </div>
         
     </div>
 </div>
-<div id="about" class="uk-section snap full uk-padding-remove-vertical uk-position-z-index-negative">
+<div id="about" class="uk-section snap full uk-padding-remove-vertical">
     <div class="uk-container uk-container-expand uk-padding-remove-horizontal uk-margin-remove">
 
-        <div class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary"
-            data-src="about.webp" uk-img uk-parallax="bgy: -300" uk-height-viewport>
+        <div id="background" class="uk-background-cover uk-background-center-center uk-background-blend-overlay uk-background-secondary"
+            data-src="about.webp" uk-img>
 
             <div id="js-sticky-parallax-container" class="uk-position-relative uk-text-center">
                 <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-sticky"
@@ -267,13 +335,10 @@
                     <div class="uk-padding-large">
                         <h3 class="uk-margin-remove-bottom">We are a Trusted wholesale supplier of</h3>
                         <h1 class="uk-margin-remove-vertical">
-                            <span class="uk-display-inline-block anigen-fontsize"
-                                uk-parallax="target: #js-sticky-parallax-container; x: -15vw,0; easing: -1; start: 80vh; end: 100vh;"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Arabica, Robusta &</span>
-                            <br>
-                            <span class="uk-display-inline-block anigen-fontsize"
-                                uk-parallax="target: #js-sticky-parallax-container; x: 10vw,0; easing: -1; start: 70vh; end: 100vh;"
-                                style="transform: translateX(0vw); will-change: transform; font-weight: 600;">Liberica (Barako)</span>
+                            <div id="animation1" class="uk-display-inline-block"
+                                style="transform: translateX(0vw); will-change: transform;">Arabica, Robusta &</div>
+                            <div id="animation2" class="uk-display-inline-block"
+                                style="transform: translateX(0vw); will-change: transform;">Liberica (Barako)</div>
                         </h1>
                         <h3 class="uk-margin-remove-top">Coffee Beans</h3>
                         <p>Serving roasters, cafés, retailers, and distributors. Committed to quality and sustainability, we source carefully selected beans to deliver exceptional flavor, freshness, and value. Whether you need green beans, roasted coffee, or bulk supply solutions, we are dedicated to helping your coffee business grow.</p>
@@ -322,7 +387,7 @@
   const grid = document.getElementById("qr-codes");
   let buttons = [];
   try {
-    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe"},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"cupofjoe.vcf"},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/"},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 987 654 3210"},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+63 987 654 3210"},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"wholesaler@cupofjoe.coffeebeans"},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.cupofjoe.coffeebeans"},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/"},{"key":"instagram","label":"Instagram","icon":"../instagram.svg","qr":"qr-instagram.svg","value":"https://www.instagram.com/"},{"key":"x","label":"X","icon":"../x.svg","qr":"qr-x.svg","value":"https://www.x.com/"},{"key":"youtube","label":"YouTube","icon":"../youtube.svg","qr":"qr-youtube.svg","value":"https://www.youtube.com/"},{"key":"tiktok","label":"TikTok","icon":"../tiktok.svg","qr":"qr-tiktok.svg","value":"https://www.tiktok.com/"}] || [];
+    buttons = [{"key":"share","label":"Share","icon":"../share.svg","qr":"qr-share.svg","value":"https://swipedex.app/cupofjoe","location":""},{"key":"onlinevcard","label":"Online vCard","icon":"../onlinevcard.svg","qr":"qr-onlinevcard.svg","value":"cupofjoe.vcf","location":""},{"key":"offlinevcard","label":"Offline vCard","icon":"../offlinevcard.svg","qr":"qr-offlinevcard.svg","value":"","location":""},{"key":"messenger","label":"Messenger","icon":"../messenger.svg","qr":"qr-messenger.svg","value":"https://m.me/","location":""},{"key":"mobile","label":"Mobile","icon":"../mobile.svg","qr":"qr-mobile.svg","value":"+63 987 654 3210","location":""},{"key":"sms","label":"SMS","icon":"../sms.svg","qr":"qr-sms.svg","value":"+63 987 654 3210","location":""},{"key":"email","label":"Email","icon":"../email.svg","qr":"qr-email.svg","value":"wholesaler@cupofjoe.coffeebeans","location":""},{"key":"website","label":"Website","icon":"../website.svg","qr":"qr-website.svg","value":"https://www.cupofjoe.coffeebeans","location":""},{"key":"facebook","label":"Facebook","icon":"../facebook.svg","qr":"qr-facebook.svg","value":"https://www.facebook.com/","location":""},{"key":"instagram","label":"Instagram","icon":"../instagram.svg","qr":"qr-instagram.svg","value":"https://www.instagram.com/","location":""},{"key":"x","label":"X","icon":"../x.svg","qr":"qr-x.svg","value":"https://www.x.com/","location":""},{"key":"youtube","label":"YouTube","icon":"../youtube.svg","qr":"qr-youtube.svg","value":"https://www.youtube.com/","location":""},{"key":"tiktok","label":"TikTok","icon":"../tiktok.svg","qr":"qr-tiktok.svg","value":"https://www.tiktok.com/","location":""}] || [];
   } catch (e) {
     console.error("QR BUTTONS ERROR:", e);
   }
@@ -340,7 +405,8 @@
      data-key="${item.key}"
      data-title="${item.label}"
      data-qr="${item.qr}"
-     data-link="${item.value || ''}">
+     data-link="${item.value || ''}"
+     data-location="${item.location || ''}">
     <img class="icon" src="${item.icon}">
     <div class="qr-label uk-margin-xsmall-top">
       ${item.label}
@@ -351,18 +417,22 @@
     }
   })();
 </script>
-<div class="loader-body" id="loader">
-    <div class="loader"></div>
-</div>
-    </div>
-
-    <script src="../console.js"></script>
-    <script src="../price.js"></script>
-    <script src="../cQure.js"></script>
-    <script src="../loader.js"></script>
-    
-    <script src="../countdown.js"></script>
+   
+    <link rel="stylesheet" href="../pwa.css" />
+    <script src="manifest.js"></script>
     <script src="fetch.js"></script>
+    <script src="../validity.js" defer></script>
+    <script src="../countdown.js" defer></script>
+
+    <script src="../uikit.min.js"></script>
+    <script src="../uikit-icons.min.js"></script>
+    <script src="../anigen.js"></script>
+
+    <script src="../console.js" defer></script>
+    <script src="../price.js" defer></script>
+
+    <script src="../loader.js"></script>
+    </div>
 </body>
 
 </html>

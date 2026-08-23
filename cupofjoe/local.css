@@ -14,28 +14,36 @@ h6 {
 }
 
 /* Navigation */
-#navigation .anigen-button {
+.anigen-navigation,
+.uk-tooltip,
+.uk-tooltip::before {
     background-color: #221a1a;
 }
 
-.uk-tooltip {
-    background-color: #221a1a !important;
-}
-
-.uk-tooltip::before {
-    background-color: #221a1a !important;
-}
-
 /* Slideshow */
-#slideshow h4 {
+#slideshow h1,
+#slideshow h2,
+#slideshow h3,
+#slideshow h4,
+#slideshow h5,
+#slideshow h6 {
     color: rgb(255, 255, 255);
-    font-size: calc(2vw + 1.5vh);
-    line-height: 0.9;
+    font-weight: 700;
+}
+
+#slideshow h1>small,
+#slideshow h2>small,
+#slideshow h3>small,
+#slideshow h4>small,
+#slideshow h5>small,
+#slideshow h6>small {
+    font-size: calc(0.6vw + 0.6rem) !important;
+    font-weight: 500;
 }
 
 #slideshow p {
     color: rgb(255, 255, 255);
-    width: 65vw;
+    width: 60vw;
 }
 
 #slideshow .uk-button {
@@ -53,21 +61,18 @@ h6 {
 }
 
 /* About */
-#about h1 span {
+#about h1 div {
     font-family: "Lato" !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: calc(4.5vw + 3vh) !important;
+}
+
+#about h3, #about p {
     color: rgb(255, 255, 255);
 }
 
-#about h3 {
-    color: rgb(255, 255, 255);
-}
-
-#about .anigen-fontsize {
-    font-size: calc(5.5vw + 3vh);
-}
-
-#about p {
-    color: rgb(255, 255, 255);
+#about h3 sup {
+    font-size: calc(0.75vw + 0.75vh);
 }
 
 #about .uk-button {
