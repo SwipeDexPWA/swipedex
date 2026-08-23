@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://swipedex.com/brushnetwork/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/cupofjoe/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/janedoe/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/juandelacruz/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/mariorossi/</loc>
-</url>
-<url>
-  <loc>https://swipedex.com/</loc>
-</url>
-</urlset>
+  <sitemap>
+    <loc>https://swipedex.com/sitemap-main.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://swipedex.com/brushnetwork/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://swipedex.com/cupofjoe/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://swipedex.com/janedoe/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://swipedex.com/juandelacruz/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://swipedex.com/mariorossi/sitemap.xml</loc>
+  </sitemap>
+
+</sitemapindex>
