@@ -17,15 +17,14 @@ h5,
 h6 {
     font-family: "Montserrat";
     font-weight: 600;
-    text-shadow: 1px 1px 2px #333333b3;
 }
 
 h1 {
-    font-size: calc(1.1vw + 1.1rem);
+    font-size: calc(1.2vw + 1.2rem);
 }
 
 h2 {
-    font-size: calc(1vw + 1rem);
+    font-size: calc(1.05vw + 1.05rem);
 }
 
 h3 {
@@ -33,26 +32,24 @@ h3 {
 }
 
 h4 {
-    font-size: calc(0.8vw + 0.8rem);
+    font-size: calc(0.75vw + 0.75rem);
 }
 
 h5 {
-    font-size: calc(0.7vw + 0.7rem);
-}
-
-h6 {
     font-size: calc(0.6vw + 0.6rem);
 }
 
-p {
-    font-size: calc(0.5vw + 0.5rem);
-    text-shadow: 1px 1px 2px #333333b3;
+h6 {
+    font-size: calc(0.45vw + 0.45rem);
+}
+
+p, .uk-list {
+    font-size: calc(0.45vw + 0.45rem);
 }
 
 .uk-button {
     font-size: calc(0.5vw + 0.5rem);
     font-weight: 600;
-    text-shadow: 1px 1px 2px #333333b3;
 }
 
 /* Logo & Icons */

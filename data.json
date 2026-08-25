@@ -78,6 +78,7 @@
     "website": "https://www.swipedex.app"
   },
   "maps": {
+    "location": "https://maps.app.goo.gl/Cj89AQkKZ9wk3Nqf7",
     "googlemaps": "https://maps.app.goo.gl/Cj89AQkKZ9wk3Nqf7",
     "waze": "",
     "openstreetmap": ""
@@ -107,7 +108,7 @@
     "sms",
     "email",
     "website",
-    "googlemaps",
+    "location",
     "facebook"
   ],
   "vcfOrder": [
@@ -121,14 +122,14 @@
       "anchor": "#splash"
     },
     {
-      "icon": "../slideshow.svg",
-      "tooltip": "title: Slideshow; pos: left",
-      "anchor": "#slideshow"
-    },
-    {
       "icon": "../gallery.svg",
       "tooltip": "title: Gallery; pos: left",
       "anchor": "#gallery"
+    },
+    {
+      "icon": "../rates.svg",
+      "tooltip": "title: Rates; pos: left",
+      "anchor": "#rates"
     },
     {
       "icon": "../about.svg",

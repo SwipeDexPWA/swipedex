@@ -38,7 +38,7 @@ document.addEventListener("click", (e) => {
         linkEl.href = link;
 
         linkEl.textContent =
-            ["googlemaps", "waze", "openstreetmap"].includes(key)
+            ["location", "location1", "location2", "location3", "address", "address1", "address2", "address3", "googlemaps", "waze", "openstreetmap"].includes(key)
                 ? location
                 : el.dataset.link;
 

@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat";
+    font-family: "Poppins";
     font-weight: 600;
 }
 
@@ -30,6 +30,11 @@ h6 {
     color: rgba(255, 255, 255);
     width: 50vw;
 
+}
+
+/* Rates */
+#rates .uk-heading-medium, #rates .uk-heading-large {
+    font-family: Montserrat;
 }
 
 /* Slideshow */
@@ -71,13 +76,15 @@ h6 {
 #about h3 {
     font-family: "Poppins" !important;
 }
+
 #about h1 div {
     font-family: "Poppins" !important;
     color: rgb(255, 255, 255) !important;
     font-size: calc(3.5vw + 2vh) !important;
 }
 
-#about h3, #about p {
+#about h3,
+#about p {
     color: rgb(255, 255, 255);
 }
 
