@@ -4,7 +4,7 @@
         "www.swipedex.app"
     ];
     if (!allowedHosts.includes(window.location.hostname)) {
-        //return;
+        return;
     }
 
     // Slideshow
