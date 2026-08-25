@@ -98,12 +98,70 @@
     "label": "Email",
     "icon": "../email.svg"
   },
+  "email1": {
+    "label": "Email1",
+    "icon": "../email.svg"
+  },
+  "email2": {
+    "label": "Email2",
+    "icon": "../email.svg"
+  },
+  "email3": {
+    "label": "Email3",
+    "icon": "../email.svg"
+  },
+
+
   "website": {
     "label": "Website",
     "icon": "../website.svg"
   },
+  "website1": {
+    "label": "Website1",
+    "icon": "../website.svg"
+  },
+  "website2": {
+    "label": "Website2",
+    "icon": "../website.svg"
+  },
+  "website3": {
+    "label": "Website3",
+    "icon": "../website.svg"
+  },
 
 
+  "location": {
+    "label": "Location",
+    "icon": "../location.svg"
+  },
+  "location1": {
+    "label": "Location1",
+    "icon": "../location.svg"
+  },
+  "location2": {
+    "label": "Location2",
+    "icon": "../location.svg"
+  },
+  "location3": {
+    "label": "Location3",
+    "icon": "../location.svg"
+  },
+  "address": {
+    "label": "Address",
+    "icon": "../location.svg"
+  },
+  "address1": {
+    "label": "Address1",
+    "icon": "../location.svg"
+  },
+  "address2": {
+    "label": "Address2",
+    "icon": "../location.svg"
+  },
+  "address3": {
+    "label": "Address3",
+    "icon": "../location.svg"
+  },
   "googlemaps": {
     "label": "GoogleMaps",
     "icon": "../googlemaps.svg"
