@@ -169,152 +169,212 @@
     }
   ],
   "gallery": {
-    "width": "uk-child-width-1-6@s",
-    "masonry": "masonry: pack"
+    "width": "uk-child-width-1-3@s",
+    "masonry": "masonry: pack",
+    "bgcolor": "uk-background-default"
   },
   "grids": [
     {
       "image": "WhichShouldIChoose.webp",
       "title": "Category: eBooks",
       "media": "WhichShouldIChoose.webp",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "waSH.webp",
       "title": "Category: Labels",
       "media": "waSH.webp",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Cutdown.webp",
       "title": "Category: Labels",
       "media": "Cutdown.webp",
+      "type": "image",
+      "cover": ""
+    },
+    {
+      "image": "SwipeDexApp.webp",
+      "title": "Category: WebApps",
+      "media": "https://www.swipedex.app",
+      "type": "iframe",
       "cover": ""
     },
     {
       "image": "Websites-13.jpg",
       "title": "Category: Websites",
       "media": "Websites-13.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "HowToHireAVirtualAssistant.webp",
       "title": "Category: Banners",
       "media": "HowToHireAVirtualAssistant.webp",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "BannerAd-QatarAirways1.jpg",
       "title": "Category: Banners",
       "media": "BannerAd-QatarAirways1.jpg",
+      "type": "image",
+      "cover": ""
+    },
+    {
+      "image": "JaneDoeApp.webp",
+      "title": "Category: WebApps",
+      "media": "https://www.swipedex.app/janedoe",
+      "type": "iframe",
       "cover": ""
     },
     {
       "image": "San Line 3D.png",
       "title": "Category: Logos",
       "media": "San Line 3D.png",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "ScreenDisplay-Shell1.jpg",
       "title": "Category: Banners",
       "media": "ScreenDisplay-Shell1.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Websites-7.jpg",
       "title": "Category: Websites",
       "media": "Websites-7.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "CupOfJoe.webp",
       "title": "Category: Labels",
       "media": "CupOfJoe.webp",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Websites-6.jpg",
       "title": "Category: Websites",
       "media": "Websites-6.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Websites-10.jpg",
       "title": "Category: Websites",
       "media": "Websites-10.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Christoff-Groves.webp",
       "title": "Category: Business Cards",
       "media": "Christoff-Groves.webp",
+      "type": "image",
+      "cover": ""
+    },
+    {
+      "image": "CupOfJoeApp.webp",
+      "title": "Category: WebApps",
+      "media": "https://www.swipedex.app/cupofjoe",
+      "type": "iframe",
       "cover": ""
     },
     {
       "image": "TLB-Color.svg",
       "title": "Category: Logos",
       "media": "TLB-Color.svg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "TBQ1.jpg",
       "title": "Category: Websites",
       "media": "TBQ1.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "RedOakShifters-Final.jpg",
       "title": "Category: eBooks",
       "media": "RedOakShifters-Final.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "SBCQ1.jpg",
       "title": "Category: Websites",
       "media": "SBCQ1.jpg",
+      "type": "image",
+      "cover": ""
+    },
+    {
+      "image": "MarioRossiApp.webp",
+      "title": "Category: WebApps",
+      "media": "https://www.swipedex.app/mariorossi",
+      "type": "iframe",
       "cover": ""
     },
     {
       "image": "Websites-5.jpg",
       "title": "Category: Websites",
       "media": "Websites-5.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Websites-12.jpg",
       "title": "Category: Websites",
       "media": "Websites-12.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Logo-FitWorx.jpg",
       "title": "Category: Logos",
       "media": "Logo-FitWorx.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Spunned1.jpg",
       "title": "Category: Websites",
       "media": "Spunned1.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "CompanyProfile-OSHA8.jpg",
       "title": "Category: Company Profiles",
       "media": "CompanyProfile-OSHA8.jpg",
+      "type": "image",
+      "cover": ""
+    },
+    {
+      "image": "JuanDeLaCruzApp.webp",
+      "title": "Category: WebApps",
+      "media": "https://www.swipedex.app/juandelacruz",
+      "type": "iframe",
       "cover": ""
     },
     {
       "image": "Logo-ConferenceEvent.jpg",
       "title": "Category: Logos",
       "media": "Logo-ConferenceEvent.jpg",
+      "type": "image",
       "cover": ""
     },
     {
       "image": "Websites-17.jpg",
       "title": "Category: Websites",
       "media": "Websites-17.jpg",
+      "type": "image",
       "cover": ""
     }
   ],
