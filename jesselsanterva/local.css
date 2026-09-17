@@ -1,0 +1,73 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins" !important;
+    font-weight: 600;
+}
+
+/* Navigation */
+.anigen-navigation,
+.uk-tooltip,
+.uk-tooltip::before {
+    background-color: #073991;
+}
+
+/* Brand */
+#brand .logo {
+    width: calc(20vw + 20vh);
+}
+
+#brand h3 {
+    color: #073991;
+}
+
+#brand p {
+    color: #073991;
+
+}
+
+#brand .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+#brand .anigen-bgcolor {
+    background-color: rgb(51, 51, 51, 0.0);
+}
+
+/* About */
+#about h1 div {
+    font-family: "Lato" !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: calc(6vw + 6vh) !important;
+}
+
+#about h3, #about p {
+    color: rgb(255, 255, 255);
+}
+
+#about h3 sup {
+    font-size: calc(0.75vw + 0.75vh);
+}
+
+#about .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+/* Console */
+#console .anigen-bgcolor {
+    background-color: #073991b3;
+}
