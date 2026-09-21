@@ -17,8 +17,8 @@
         "scope": "/",
         "display": "fullscreen",
         "orientation": "any",
-        "background_color": "#000000",
-        "theme_color": "#000000",
+        "background_color": "#073991",
+        "theme_color": "#073991",
         "icons": [
             { "src": "icon-72x72.png", "sizes": "72x72", "type": "image/png" },
             { "src": "icon-96x96.png", "sizes": "96x96", "type": "image/png" },
