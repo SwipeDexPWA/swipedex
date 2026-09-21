@@ -1,0 +1,234 @@
+{
+  "theme": "#073991",
+  "images": [
+    {
+      "image": "photo.webp",
+      "type": "image/webp"
+    },
+    {
+      "image": "profile.webp",
+      "type": "image/webp"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "Poppins-Black.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Bold.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Medium.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Regular.woff2",
+      "type": "font/woff2"
+    }
+  ],
+  "swipedex": "https://swipedex.app",
+  "share": "https://swipedex.app/artchives",
+  "title": "Jessel Santerva, Artchives",
+  "description": "",
+  "keywords": "",
+  "author": "[SD] SwipeDex℠",
+  "vcardDisplay": "person",
+  "logo": "blank.webp",
+  "photo": "photo.webp",
+  "prefix": "",
+  "firstname": "Jessel",
+  "middlename": "M",
+  "lastname": "Santerva",
+  "fullname": "Jessel Santerva",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "Artchives",
+  "position": "Artist",
+  "street": "",
+  "zipcode": "",
+  "city": "Iloilo",
+  "state": "",
+  "country": "Philippines",
+  "initial": "PH",
+  "contacts": {
+    "mobile": "+63 929 355 5618",
+    "mobile1": "",
+    "mobile2": "",
+    "mobile3": "",
+    "phone": "",
+    "phone1": "",
+    "phone2": "",
+    "phone3": "",
+    "landline": "",
+    "landline1": "",
+    "landline2": "",
+    "landline3": "",
+    "fax": "",
+    "sms": "",
+    "messenger": "https://m.me/jsanterva",
+    "whatsapp": "",
+    "viber": "",
+    "telegram": "",
+    "email": "jesselmsanterva@gmail.com",
+    "website": ""
+  },
+  "maps": {
+    "googlemaps": "",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "",
+    "fiverr": ""
+  },
+  "socials": {
+    "facebook": "",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "messenger",
+    "mobile",
+    "email"
+  ],
+  "vcfOrder": [
+    "share",
+    "messenger"
+  ],
+  "navigation": [
+    {
+      "icon": "../profile.svg",
+      "tooltip": "title: Home; pos: left",
+      "anchor": "#home"
+    },
+    {
+      "icon": "../gallery.svg",
+      "tooltip": "title: Gallery; pos: left",
+      "anchor": "#gallery"
+    },
+    {
+      "icon": "../about.svg",
+      "tooltip": "title: About; pos: left",
+      "anchor": "#about"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "title: Contact; pos: left",
+      "anchor": "#console"
+    }
+  ],
+  "brand": {
+    "background": "home.webp",
+    "foreground": "",
+    "icon": ""
+
+  },
+  "gallery": {
+    "width": "uk-child-width-1-4@s",
+    "masonry": ""
+  },
+  "grids": [
+    {
+      "image": "gallery1.webp",
+      "title": "",
+      "media": "gallery1.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery2.webp",
+      "title": "",
+      "media": "gallery2.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery3.webp",
+      "title": "",
+      "media": "gallery3.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery4.webp",
+      "title": "",
+      "media": "gallery4.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery5.webp",
+      "title": "",
+      "media": "gallery5.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery6.webp",
+      "title": "",
+      "media": "gallery6.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery7.webp",
+      "title": "",
+      "media": "gallery7.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery8.webp",
+      "title": "SOLD",
+      "media": "gallery8.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery9.webp",
+      "title": "SOLD",
+      "media": "gallery9.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery10.webp",
+      "title": "SOLD",
+      "media": "gallery10.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery11.webp",
+      "title": "SOLD",
+      "media": "gallery11.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery12.webp",
+      "title": "",
+      "media": "gallery12.webp",
+      "cover": "uk-cover"
+    }
+  ],
+  "about": {
+    "subtitle1": "",
+    "title1": "Artchives by",
+    "title2": "Jessel Santerva",
+    "subtitle2": "",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "button": "Contact Us",
+    "link": "#console",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "background": "console.webp",
+    "blend": "uk-background-blend-multiply anigen-bgcolor"
+  },
+  "license": {
+    "expires": "2076-09-18T00:00:00",
+    "disabled": false,
+    "provider": "https://m.me/joelgallinero"
+  }
+}

@@ -1,0 +1,61 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Libre Baskerville" !important;
+    font-weight: 600;
+}
+
+/* Menu */
+#menu .icon, #home .icon {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(51%) saturate(4769%) hue-rotate(214deg) brightness(93%) contrast(96%);
+}
+
+/* Navigation */
+.anigen-navigation,
+.uk-tooltip,
+.uk-tooltip::before {
+    background-color: #073991;
+}
+
+/* Profile */
+#profile h3 {
+    color: #073991;
+}
+
+#profile p {
+    color: #073991;
+
+}
+
+/* About */
+#about h1 div {
+    font-family: "Libre Baskerville" !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: calc(6vw + 6vh) !important;
+}
+
+#about h3, #about p {
+    color: rgb(255, 255, 255);
+}
+
+#about h3 sup {
+    font-size: calc(0.75vw + 0.75vh);
+}
+
+#about .uk-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+/* Console */
+#console .anigen-bgcolor {
+    background-color: #073991b3;
+}
