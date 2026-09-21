@@ -1,7 +1,8 @@
-html, body {
-  max-width: 100%;
-  overflow-x: clip;
-  overscroll-behavior: none;
+html,
+body {
+    max-width: 100%;
+    overflow-x: clip;
+    overscroll-behavior: none;
 }
 
 /* Typography */
@@ -43,13 +44,256 @@ h6 {
     font-size: calc(0.45vw + 0.45rem);
 }
 
-p, .uk-list {
+p,
+.uk-list {
     font-size: calc(0.45vw + 0.45rem);
 }
 
 .uk-button {
     font-size: calc(0.5vw + 0.5rem);
     font-weight: 600;
+}
+
+/* Width */
+.w01 {
+    width: calc(1vw + 1vh);
+}
+
+.w02 {
+    width: calc(2vw + 2vh);
+}
+
+.w03 {
+    width: calc(3vw + 3vh);
+}
+
+.w04 {
+    width: calc(4vw + 4vh);
+}
+
+.w05 {
+    width: calc(5vw + 5vh);
+}
+
+.w06 {
+    width: calc(6vw + 6vh);
+}
+
+.w07 {
+    width: calc(7vw + 7vh);
+}
+
+.w08 {
+    width: calc(8vw + 8vh);
+}
+
+.w09 {
+    width: calc(9vw + 9vh);
+}
+
+.w10 {
+    width: calc(10vw + 10vh);
+}
+
+.w11 {
+    width: calc(11vw + 11vh);
+}
+
+.w12 {
+    width: calc(12vw + 12vh);
+}
+
+.w13 {
+    width: calc(13vw + 13vh);
+}
+
+.w14 {
+    width: calc(14vw + 14vh);
+}
+
+.w15 {
+    width: calc(15vw + 15vh);
+}
+
+.w16 {
+    width: calc(16vw + 16vh);
+}
+
+.w17 {
+    width: calc(17vw + 17vh);
+}
+
+.w18 {
+    width: calc(18vw + 18vh);
+}
+
+.w19 {
+    width: calc(19vw + 19vh);
+}
+
+.w20 {
+    width: calc(20vw + 20vh);
+}
+
+.w21 {
+    width: calc(21vw + 21vh);
+}
+
+.w22 {
+    width: calc(22vw + 22vh);
+}
+
+.w23 {
+    width: calc(23vw + 23vh);
+}
+
+.w24 {
+    width: calc(24vw + 24vh);
+}
+
+.w25 {
+    width: calc(25vw + 25vh);
+}
+
+.w26 {
+    width: calc(26vw + 26vh);
+}
+
+.w27 {
+    width: calc(27vw + 27vh);
+}
+
+.w28 {
+    width: calc(28vw + 28vh);
+}
+
+.w29 {
+    width: calc(29vw + 29vh);
+}
+
+.w30 {
+    width: calc(30vw + 30vh);
+}
+
+/* Font Size */
+.fs01 {
+    font-size: calc(1vw + 1rem);
+}
+
+.fs02 {
+    font-size: calc(2vw + 2rem);
+}
+
+.fs03 {
+    font-size: calc(3vw + 3rem);
+}
+
+.fs04 {
+    font-size: calc(4vw + 4rem);
+}
+
+.fs05 {
+    font-size: calc(5vw + 5rem);
+}
+
+.fs06 {
+    font-size: calc(6vw + 6rem);
+}
+
+.fs07 {
+    font-size: calc(7vw + 7rem);
+}
+
+.fs08 {
+    font-size: calc(8vw + 8rem);
+}
+
+.fs09 {
+    font-size: calc(9vw + 9rem);
+}
+
+.fs10 {
+    font-size: calc(10vw + 10rem);
+}
+
+.fs11 {
+    font-size: calc(11vw + 11rem);
+}
+
+.fs12 {
+    font-size: calc(12vw + 12rem);
+}
+
+.fs13 {
+    font-size: calc(13vw + 13rem);
+}
+
+.fs14 {
+    font-size: calc(14vw + 14rem);
+}
+
+.fs15 {
+    font-size: calc(15vw + 15rem);
+}
+
+.fs16 {
+    font-size: calc(16vw + 16rem);
+}
+
+.fs17 {
+    font-size: calc(17vw + 17rem);
+}
+
+.fs18 {
+    font-size: calc(18vw + 18rem);
+}
+
+.fs19 {
+    font-size: calc(19vw + 19rem);
+}
+
+.fs20 {
+    font-size: calc(20vw + 20rem);
+}
+
+.fs21 {
+    font-size: calc(21vw + 21rem);
+}
+
+.fs22 {
+    font-size: calc(22vw + 22rem);
+}
+
+.fs23 {
+    font-size: calc(23vw + 23rem);
+}
+
+.fs24 {
+    font-size: calc(24vw + 24rem);
+}
+
+.fs25 {
+    font-size: calc(25vw + 25rem);
+}
+
+.fs26 {
+    font-size: calc(26vw + 26rem);
+}
+
+.fs27 {
+    font-size: calc(27vw + 27rem);
+}
+
+.fs28 {
+    font-size: calc(28vw + 28rem);
+}
+
+.fs29 {
+    font-size: calc(29vw + 29rem);
+}
+
+.fs30 {
+    font-size: calc(30vw + 30rem);
 }
 
 /* Logo & Icons */
