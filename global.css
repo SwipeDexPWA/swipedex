@@ -373,6 +373,9 @@ p,
     pointer-events: none !important;
 }
 
+#about .uk-button {
+    pointer-events: auto !important;
+}
 /* Console */
 #qr-codes.viewport-grid {
     min-height: 100vh;

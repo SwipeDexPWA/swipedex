@@ -1,0 +1,8 @@
+#qr-share {
+    text-align: center;
+}
+
+#qr-share>a {
+    display: inline-block;
+    float: none !important;
+}
