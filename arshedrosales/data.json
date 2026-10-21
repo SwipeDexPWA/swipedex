@@ -181,5 +181,10 @@
   "console": {
     "background": "console.webp",
     "blend": "uk-background-blend-multiply anigen-bgcolor"
+  },
+  "license": {
+    "expires": "2076-09-20T00:00:00",
+    "disabled": false,
+    "provider": "https://m.me/joelgallinero"
   }
 }
