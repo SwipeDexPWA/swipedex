@@ -25,6 +25,10 @@
     "label": "Viber",
     "icon": "../viber.svg"
   },
+  "wechat": {
+    "label": "WeChat",
+    "icon": "../wechat.svg"
+  },
   "telegram": {
     "label": "Telegram",
     "icon": "../telegram.svg"
