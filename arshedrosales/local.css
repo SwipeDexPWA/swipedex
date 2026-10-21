@@ -13,7 +13,7 @@ h6 {
 .anigen-navigation,
 .uk-tooltip,
 .uk-tooltip::before {
-    background-color: #03060d;
+    background-color: #101723;
 }
 
 /* Profile */
@@ -40,7 +40,7 @@ h6 {
 }
 
 #video .anigen-bgcolor {
-    background-color: #0136446d;
+    background-color: #1017236d;
 }
 
 /* About */
@@ -69,5 +69,5 @@ h6 {
 
 /* Console */
 #console .anigen-bgcolor {
-    background-color: #0136446d;
+    background-color: #1017236d;
 }
