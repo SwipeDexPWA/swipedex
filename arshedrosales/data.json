@@ -1,0 +1,185 @@
+{
+  "theme": "#333333",
+  "images": [
+    {
+      "image": "photo.webp",
+      "type": "image/webp"
+    },
+    {
+      "image": "profile.webp",
+      "type": "image/webp"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "Poppins-Black.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Bold.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Medium.woff2",
+      "type": "font/woff2"
+    },
+    {
+      "font": "Poppins-Regular.woff2",
+      "type": "font/woff2"
+    }
+  ],
+  "swipedex": "https://swipedex.app",
+  "share": "https://www.lamborghini.auto/arshedrosales",
+  "title": "Arshed G. Rosales - Product Specialist, MACC",
+  "description": "",
+  "keywords": "",
+  "author": "[SD] SwipeDex℠",
+  "vcardDisplay": "person",
+  "logo": "logo.svg",
+  "photo": "",
+  "prefix": "",
+  "firstname": "Arshed",
+  "middlename": "G.",
+  "lastname": "Rosales",
+  "fullname": "Arshed Rosales",
+  "suffix": "",
+  "type": "LocalBusiness",
+  "company": "MACC",
+  "position": "Product Specialist",
+  "street": "EDSA cor Seminary Road, Bahay Toro",
+  "zipcode": "1106",
+  "city": "Quezon City",
+  "state": "",
+  "country": "Philippines",
+  "initial": "PH",
+  "contacts": {
+    "mobile": "",
+    "mobile1": "+63 947 606 5120",
+    "mobile2": "+63 917 805 1954",
+    "mobile3": "",
+    "phone": "",
+    "phone1": "",
+    "phone2": "",
+    "phone3": "",
+    "landline": "",
+    "landline1": "",
+    "landline2": "",
+    "landline3": "",
+    "fax": "",
+    "sms": "",
+    "messenger": "",
+    "whatsapp": "https://wa.me/639476065120",
+    "viber": "viber://chat?number=%2B639476065120",
+    "telegram": "",
+    "wechat": "https://wechat",
+    "email": "arshed.rosales@macc.ph",
+    "website": "https://www.macc.ph"
+  },
+  "maps": {
+    "googlemaps": "",
+    "waze": "",
+    "openstreetmap": ""
+  },
+  "meetings": {
+    "zoom": "",
+    "jitsi": ""
+  },
+  "links": {
+    "linkedin": "",
+    "fiverr": ""
+  },
+  "socials": {
+    "facebook": "",
+    "x": "",
+    "youtube": "",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "qrOrder": [
+    "share",
+    "onlinevcard",
+    "offlinevcard",
+    "mobile1",
+    "mobile2",
+    "whatsapp",
+    "viber",
+    "wechat",
+    "email",
+    "website"
+  ],
+  "vcfOrder": [
+    "share",
+    "whatsapp",
+    "viber",
+    "wechat"
+  ],
+  "navigation": [
+    {
+      "icon": "../profile.svg",
+      "tooltip": "title: Home; pos: left",
+      "anchor": "#video"
+    },
+    {
+      "icon": "../gallery.svg",
+      "tooltip": "title: Gallery; pos: left",
+      "anchor": "#gallery"
+    },
+    {
+      "icon": "../about.svg",
+      "tooltip": "title: About; pos: left",
+      "anchor": "#about"
+    },
+    {
+      "icon": "../mobile.svg",
+      "tooltip": "title: Contact; pos: left",
+      "anchor": "#console"
+    }
+  ],
+  "video": {
+    "pic": "fulllogo.svg"
+  },
+  "gallery": {
+    "width": "uk-child-width-1-2@s",
+    "masonry": ""
+  },
+  "grids": [
+    {
+      "image": "gallery1.webp",
+      "title": "",
+      "media": "gallery1.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery2.webp",
+      "title": "",
+      "media": "gallery2.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery3.webp",
+      "title": "",
+      "media": "gallery3.webp",
+      "cover": "uk-cover"
+    },
+    {
+      "image": "gallery4.webp",
+      "title": "",
+      "media": "gallery4.webp",
+      "cover": "uk-cover"
+    }
+  ],
+  "about": {
+    "subtitle1": "",
+    "title1": "European Engineering.",
+    "title2": "Filipino Service.",
+    "subtitle2": "",
+    "paragraph": "MACC brings you MAN’s legendary German engineering, Volkswagen innovation, Schwing Stetter precision and reliability, and Yutong’s electric future.",
+    "button": "Contact Us",
+    "link": "#console",
+    "blend": "uk-background-blend-overlay uk-background-secondary"
+  },
+  "console": {
+    "background": "console.webp",
+    "blend": "uk-background-blend-multiply anigen-bgcolor"
+  }
+}
