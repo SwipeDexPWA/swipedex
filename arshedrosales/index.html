@@ -100,7 +100,7 @@
 </head>
 
 <body>
-    <div id="pwa">
+    <div id="pwa2">
         <div class="loader-body" id="loader">
     <div class="loader"></div>
 </div>
@@ -185,12 +185,17 @@
                 <video src="MACC.webm" width="1920" height="1080" playsinline loop muted uk-video="autoplay: inview"
                     uk-cover></video>
                 <div class="uk-position-cover uk-blend-multiply" style="background-color: #0136446d;"></div>
+
+                <div class="uk-position-bottom-left uk-padding uk-position-z-index">
+                    <a href="#qr-popup" uk-toggle class="uk-button qr-trigger" data-key="offlinevcard"
+                        data-title="Offline vCard" data-qr="qr-offlinevcard.svg" data-link="" data-location="">vCard</a>
+                </div>
             </div>
             <div class="uk-position-center">
                 <img class="anigen-photo" src="fulllogo.svg">
                 <h3 class="uk-margin-small-top uk-margin-remove-bottom">Arshed Rosales</h3>
                 <p class="uk-margin-remove-top uk-margin-small-bottom">Product Specialist, MACC</p>
-                <a class="uk-margin-remove-bottom" href="#console"><img class="icon" src="../swipe.svg"></a>
+                <a class="uk-margin-remove-bottom" href="#qr-popup"><img class="icon" src="../swipe.svg"></a>
             </div>
         </div>
 
